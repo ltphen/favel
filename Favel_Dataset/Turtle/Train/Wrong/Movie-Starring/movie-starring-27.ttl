@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Torrente_3:_El_protector> ns1:starring <http://dbpedia.org/resource/Selma_Blair> .
+

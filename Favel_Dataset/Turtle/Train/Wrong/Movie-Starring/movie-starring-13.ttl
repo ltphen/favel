@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Aavida_Maa_Aavide> ns1:starring <http://dbpedia.org/resource/Helena_Bonham_Carter> .
+

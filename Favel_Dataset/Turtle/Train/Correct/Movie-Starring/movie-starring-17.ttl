@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Gods_and_Monsters_(film)> ns1:starring <http://dbpedia.org/resource/Brendan_Fraser>,
+        <http://dbpedia.org/resource/Lynn_Redgrave> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Alpine_Antics_(1936_film)> ns1:director <http://dbpedia.org/resource/Bernice_Hansen> .
+

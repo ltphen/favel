@@ -1,0 +1,6 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Ray_Jayawardhana> ns1:knownFor <http://dbpedia.org/resource/Brown_dwarf>,
+        <http://dbpedia.org/resource/Nebular_hypothesis>,
+        <http://dbpedia.org/resource/Popular_science> .
+

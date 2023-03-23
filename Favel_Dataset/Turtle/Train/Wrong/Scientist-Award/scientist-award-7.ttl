@@ -1,0 +1,6 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Xiaowei_Zhuang> ns1:award <http://dbpedia.org/resource/Carl_Friedrich_Gauss_Prize>,
+        <http://dbpedia.org/resource/Chemical_Pioneer_Award>,
+        <http://dbpedia.org/resource/IEEE_Founders_Medal> .
+

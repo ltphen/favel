@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Dhaka_International_University> ns1:affiliation <http://dbpedia.org/resource/Association_of_MBAs> .
+

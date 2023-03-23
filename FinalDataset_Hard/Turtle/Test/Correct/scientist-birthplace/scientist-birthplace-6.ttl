@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Peter_F._Green> ns1:birthPlace <http://dbpedia.org/resource/Jamaica> .
+

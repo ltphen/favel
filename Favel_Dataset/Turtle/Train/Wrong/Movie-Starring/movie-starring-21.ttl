@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Paddington_2> ns1:starring <http://dbpedia.org/resource/Reese_Witherspoon> .
+

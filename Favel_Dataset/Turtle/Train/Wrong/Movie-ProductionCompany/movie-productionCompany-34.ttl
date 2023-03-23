@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/A_Gentleman_of_Paris_(1931_film)> ns1:productionCompany <http://dbpedia.org/resource/The_ULULU_Company> .
+

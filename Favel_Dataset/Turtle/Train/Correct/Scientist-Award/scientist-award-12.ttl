@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/David_Keightley> ns1:award <http://dbpedia.org/resource/Guggenheim_Fellowship>,
+        <http://dbpedia.org/resource/MacArthur_Fellows_Program> .
+

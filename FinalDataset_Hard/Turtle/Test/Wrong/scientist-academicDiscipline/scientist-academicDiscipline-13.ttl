@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Michael_Cole_(psychologist)> ns1:academicDiscipline <http://dbpedia.org/resource/Cross-cultural_psychology> .
+

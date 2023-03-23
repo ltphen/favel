@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/After_Your_Own_Heart> ns1:director <http://dbpedia.org/resource/George_Marshall_(director)> .
+

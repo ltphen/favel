@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Vasireddy_Venkatadri_Institute_of_Technology> ns1:affiliation <http://dbpedia.org/resource/Pakistan_Veterinary_Medical_Council> .
+

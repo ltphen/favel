@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Charles_Geschke> ns1:award <http://dbpedia.org/resource/David_Packard_Medal_of_Achievement>,
+        <http://dbpedia.org/resource/Marconi_Prize> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Mongolian_University_of_Life_Sciences> ns1:type <http://dbpedia.org/resource/Public_university> .
+

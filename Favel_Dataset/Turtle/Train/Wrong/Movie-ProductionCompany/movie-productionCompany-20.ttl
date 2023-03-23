@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Annie_(1982_film)> ns1:productionCompany <http://dbpedia.org/resource/Mosfilm> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Faculty_of_Health_Sciences_and_Physical_Culture_of_Kazimierz_Pułaski_University_of_Technology_and_Humanities_in_Radom> ns1:city <http://dbpedia.org/resource/Radom> .
+

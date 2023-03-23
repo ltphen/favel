@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Boys_and_Girls_(2000_film)> ns1:productionCompany <http://dbpedia.org/resource/Dimension_Films> .
+

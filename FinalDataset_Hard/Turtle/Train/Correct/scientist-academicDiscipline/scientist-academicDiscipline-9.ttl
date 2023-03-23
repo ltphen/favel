@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Lawrence_B._Mohr> ns1:academicDiscipline <http://dbpedia.org/resource/Policy_studies> .
+

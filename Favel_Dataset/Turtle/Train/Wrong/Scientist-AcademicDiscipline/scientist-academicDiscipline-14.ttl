@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Stephen_R._Bourne> ns1:academicDiscipline <http://dbpedia.org/resource/Family_therapy> .
+

@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Stowaway_on_Board> ns1:starring <http://dbpedia.org/resource/G._K._Pillai_(actor)>,
+        <http://dbpedia.org/resource/Leslie_Nielsen> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Bernhard_Neumann> ns1:deathPlace <http://dbpedia.org/resource/German_Empire> .
+

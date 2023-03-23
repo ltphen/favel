@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/University_of_Haifa> ns1:city <http://dbpedia.org/resource/Karachi>,
+        <http://dbpedia.org/resource/New_Delhi> .
+

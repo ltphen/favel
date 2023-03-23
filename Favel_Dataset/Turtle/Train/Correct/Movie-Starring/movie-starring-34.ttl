@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Password_(2019_Bangladeshi_film)> ns1:starring <http://dbpedia.org/resource/Misha_Sawdagor>,
+        <http://dbpedia.org/resource/Shobnom_Bubly> .
+

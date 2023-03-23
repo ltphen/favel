@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/University_of_Sunderland> ns1:city <http://dbpedia.org/resource/Vizianagaram> .
+

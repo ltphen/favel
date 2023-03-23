@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Nameless_Gangster:_Rules_of_the_Time> ns1:starring <http://dbpedia.org/resource/Choi_Min-sik> .
+

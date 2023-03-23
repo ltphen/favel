@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Ceylon_University_College> ns1:type <http://dbpedia.org/resource/Public_university> .
+

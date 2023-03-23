@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/College_of_Engineering_Karunagappally> ns1:city <http://dbpedia.org/resource/Karunagappalli> .
+

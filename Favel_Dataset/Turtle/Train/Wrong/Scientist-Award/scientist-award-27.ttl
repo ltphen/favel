@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Malcolm_Baker> ns1:award <http://dbpedia.org/resource/Salem_Prize> .
+

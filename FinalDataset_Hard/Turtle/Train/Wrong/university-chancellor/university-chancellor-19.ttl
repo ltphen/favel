@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Universiti_Sains_Malaysia> ns1:chancellor <http://dbpedia.org/resource/Wan_Rosdy_Wan_Ismail> .
+

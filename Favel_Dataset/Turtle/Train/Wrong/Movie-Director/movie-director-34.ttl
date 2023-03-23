@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/The_Island_(1934_film)> ns1:director <http://dbpedia.org/resource/Friz_Freleng> .
+

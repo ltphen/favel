@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/David_H._Frisch> ns1:award <http://dbpedia.org/resource/Nobel_Prize_in_Physics> .
+

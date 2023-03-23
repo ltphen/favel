@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/John_C._Crabbe> ns1:award <http://dbpedia.org/resource/Research_Society_on_Alcoholism> .
+

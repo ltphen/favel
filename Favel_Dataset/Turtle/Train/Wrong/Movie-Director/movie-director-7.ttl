@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/House_of_the_Damned_(1963_film)> ns1:director <http://dbpedia.org/resource/R._Krishnamoorthy> .
+

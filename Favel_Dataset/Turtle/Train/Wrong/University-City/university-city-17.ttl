@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Cross_River_University_of_Technology> ns1:city <http://dbpedia.org/resource/Columbia,_South_Carolina> .
+

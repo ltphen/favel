@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Kamaladalam> ns1:starring <http://dbpedia.org/resource/Parvathy_Jayaram> .
+

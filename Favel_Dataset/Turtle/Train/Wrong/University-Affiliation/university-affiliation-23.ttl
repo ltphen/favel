@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Federal_University,_Lokoja> ns1:affiliation <http://dbpedia.org/resource/Association_of_Arab_Universities> .
+

@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Neal_Schmitt> ns1:knownFor <http://dbpedia.org/resource/Kevlar>,
+        <http://dbpedia.org/resource/Operational_semantics> .
+

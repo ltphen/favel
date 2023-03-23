@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Jaypee_University_of_Information_Technology> ns1:city <http://dbpedia.org/resource/Shimla> .
+

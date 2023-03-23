@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Kip_Thorne> ns1:award <http://dbpedia.org/resource/National_Women's_Hall_of_Fame>,
+        <http://dbpedia.org/resource/Steacie_Prize> .
+

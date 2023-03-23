@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Paul_Milgrom> ns1:award <http://dbpedia.org/resource/MacArthur_Fellows_Program>,
+        <http://dbpedia.org/resource/Nierenberg_Prize> .
+

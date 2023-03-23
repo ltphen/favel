@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Charlie_Bartlett> ns1:productionCompany <http://dbpedia.org/resource/Sidney_Kimmel_Entertainment> .
+

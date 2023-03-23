@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Zohar_Manna> ns1:academicDiscipline <http://dbpedia.org/resource/First-order_logic> .
+

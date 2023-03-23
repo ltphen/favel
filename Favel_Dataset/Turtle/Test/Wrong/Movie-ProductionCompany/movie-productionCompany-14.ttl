@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Gypsies_Are_Found_Near_Heaven> ns1:productionCompany <http://dbpedia.org/resource/The_ULULU_Company> .
+

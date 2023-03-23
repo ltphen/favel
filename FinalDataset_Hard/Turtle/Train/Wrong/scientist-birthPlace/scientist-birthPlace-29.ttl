@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Susan_L._Swain> ns1:birthPlace <http://dbpedia.org/resource/La_Jolla> .
+

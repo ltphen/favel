@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/The_Day_After_Tomorrow> ns1:starring <http://dbpedia.org/resource/Lewis_Waller> .
+

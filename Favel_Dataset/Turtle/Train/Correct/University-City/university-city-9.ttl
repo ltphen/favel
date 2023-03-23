@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Awadhesh_Pratap_Singh_University> ns1:city <http://dbpedia.org/resource/India>,
+        <http://dbpedia.org/resource/Rewa,_Madhya_Pradesh> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/David_Gale> ns1:deathPlace <http://dbpedia.org/resource/New_York_(state)> .
+

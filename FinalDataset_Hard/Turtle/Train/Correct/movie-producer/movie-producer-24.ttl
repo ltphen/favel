@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Dark_Victory> ns1:producer <http://dbpedia.org/resource/David_Lewis_(producer)> .
+

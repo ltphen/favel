@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Demons_of_the_Mind> ns1:producer <http://dbpedia.org/resource/Michael_Carreras> .
+

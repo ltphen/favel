@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/All_the_Fine_Young_Cannibals> ns1:productionCompany <http://dbpedia.org/resource/The_Cannon_Group,_Inc.> .
+

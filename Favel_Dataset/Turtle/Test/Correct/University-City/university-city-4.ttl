@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Majhighariani_Institute_of_Technology_and_Science> ns1:city <http://dbpedia.org/resource/Odisha> .
+

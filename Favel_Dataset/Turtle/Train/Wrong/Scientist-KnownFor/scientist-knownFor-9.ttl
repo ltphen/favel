@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/John_Hughes_(neuroscientist)> ns1:knownFor <http://dbpedia.org/resource/Asymptotic_freedom> .
+

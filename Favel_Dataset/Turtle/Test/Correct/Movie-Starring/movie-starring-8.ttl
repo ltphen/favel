@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/C.I.D._(1955_film)> ns1:starring <http://dbpedia.org/resource/Prem_Nazir> .
+

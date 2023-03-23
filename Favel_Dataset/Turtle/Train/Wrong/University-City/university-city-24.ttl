@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/University_of_Kotli> ns1:city <http://dbpedia.org/resource/Jhajjar>,
+        <http://dbpedia.org/resource/Lake_Jackson,_Texas> .
+

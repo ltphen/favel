@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Gene_F._Franklin> ns1:deathPlace <http://dbpedia.org/resource/Palo_Alto,_California> .
+

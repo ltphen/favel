@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/All_Together_(1942_film)> ns1:director <http://dbpedia.org/resource/Jack_King_(animator)> .
+

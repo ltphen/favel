@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Northwest_Territory_(film)> ns1:director <http://dbpedia.org/resource/Frank_McDonald_(director)> .
+

@@ -1,0 +1,6 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Beverly_Hills_Chihuahua> ns1:producer <http://dbpedia.org/resource/David_Hoberman>,
+        <http://dbpedia.org/resource/John_Jacobs_(producer)>,
+        <http://dbpedia.org/resource/Todd_Lieberman> .
+

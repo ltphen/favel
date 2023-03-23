@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Futurama:_Bender's_Game> ns1:productionCompany <http://dbpedia.org/resource/Davis_Entertainment>,
+        <http://dbpedia.org/resource/Troma_Entertainment> .
+

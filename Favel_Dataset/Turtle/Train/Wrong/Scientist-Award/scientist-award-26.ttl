@@ -1,0 +1,8 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Kip_Thorne> ns1:award <http://dbpedia.org/resource/David_Packard_Medal_of_Achievement>,
+        <http://dbpedia.org/resource/Fellow>,
+        <http://dbpedia.org/resource/Gruber_Prize_in_Cosmology>,
+        <http://dbpedia.org/resource/Lilienfeld_Prize>,
+        <http://dbpedia.org/resource/Presidential_Medal_of_Freedom> .
+

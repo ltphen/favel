@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Hard_Cash_(2002_film)> ns1:productionCompany <http://dbpedia.org/resource/Emmett/Furla_Oasis> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Robert_H._Grubbs> ns1:academicDiscipline <http://dbpedia.org/resource/Organometallic_chemistry> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Dan_in_Real_Life> ns1:starring <http://dbpedia.org/resource/A._O._Scott> .
+

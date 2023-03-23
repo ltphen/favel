@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Sergi_Jikia> ns1:academicDiscipline <http://dbpedia.org/resource/Turkology> .
+

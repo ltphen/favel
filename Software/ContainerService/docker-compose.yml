@@ -1,0 +1,63 @@
+version: "3.8"
+
+services:
+
+  adamic_adar:
+    build: ./adamic_adar
+    ports:
+      - 4000:4000
+
+  degree_product:
+    build: ./degree_product
+    ports:
+      - 4001:4001
+
+  jaccard:
+    build: ./jaccard
+    ports:
+      - 4002:4002
+
+  katz:
+    build: ./katz
+    ports:
+      - 4003:4003
+
+  klinker:
+    build: ./klinker
+    ports:
+      - 4004:4004
+
+  relklinker:
+    build: ./relklinker
+    ports:
+      - 4005:4005
+
+  knowledgestream:
+    build: ./knowledgestream
+    ports:
+      - 4006:4006
+
+  pathent:
+    build: ./pathent
+    ports:
+      - 4007:4007
+
+  simrank:
+    build: ./simrank
+    ports:
+      - 4008:4008
+
+  pra:
+    build: ./pra
+    ports:
+      - 4009:4009
+
+  predpath:
+    build: ./predpath
+    ports:
+      - 4010:4010
+
+  copaal: 
+    build: ./copaal
+    ports: 
+      - 3333:3333

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/University_School_of_Law_and_Legal_Studies> ns1:chancellor <http://dbpedia.org/resource/List_of_lieutenant_governors_of_Delhi> .
+

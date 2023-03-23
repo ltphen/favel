@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Ubaidur_Rahman> ns1:birthPlace <http://dbpedia.org/resource/Presidencies_and_provinces_of_British_India> .
+

@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/North-West_University> ns1:city <http://dbpedia.org/resource/Potchefstroom>,
+        <http://dbpedia.org/resource/Vanderbijlpark> .
+

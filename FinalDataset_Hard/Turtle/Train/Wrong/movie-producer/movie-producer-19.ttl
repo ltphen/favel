@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/All_at_Sea_(1935_film)> ns1:producer <http://dbpedia.org/resource/Alex_Bryce> .
+

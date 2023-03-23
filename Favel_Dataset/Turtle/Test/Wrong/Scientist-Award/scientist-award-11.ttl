@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Norman_Allinger> ns1:award <http://dbpedia.org/resource/American_Academy_of_Child_and_Adolescent_Psychiatry> .
+

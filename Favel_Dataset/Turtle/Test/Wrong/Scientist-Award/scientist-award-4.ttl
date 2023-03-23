@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Douglas_Easton> ns1:award <http://dbpedia.org/resource/Life_peer> .
+

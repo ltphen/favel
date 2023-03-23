@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Tamil_Nadu_Fisheries_University> ns1:chancellor <http://dbpedia.org/resource/List_of_governors_of_Tamil_Nadu> .
+

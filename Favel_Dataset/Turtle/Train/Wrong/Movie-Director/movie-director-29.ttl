@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Kaalapani> ns1:director <http://dbpedia.org/resource/Chor_Yuen> .
+

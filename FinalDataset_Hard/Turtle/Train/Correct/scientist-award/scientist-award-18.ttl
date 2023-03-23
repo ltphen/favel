@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Robert_H._Grubbs> ns1:award <http://dbpedia.org/resource/American_Institute_of_Chemists_Gold_Medal> .
+

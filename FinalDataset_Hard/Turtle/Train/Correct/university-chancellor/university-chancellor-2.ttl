@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/University_of_Technology_Sarawak> ns1:chancellor <http://dbpedia.org/resource/Abdul_Taib_Mahmud> .
+

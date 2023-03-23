@@ -127,3 +127,17 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Eclipse
+.project
+.pydevproject
+
+# Mac OS
+.DS_Store
+
+# Libreoffice
+*.~lock.*
+
+# Plots
+Analysis/*.pdf
+Analysis/*.png

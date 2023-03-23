@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Walter_Hayman> ns1:academicDiscipline <http://dbpedia.org/resource/Complex_analysis> .
+

@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Babasaheb_Bhimrao_Ambedkar_University> ns1:affiliation <http://dbpedia.org/resource/Allegheny_Mountain_Collegiate_Conference>,
+        <http://dbpedia.org/resource/Association_of_Indian_Universities> .
+

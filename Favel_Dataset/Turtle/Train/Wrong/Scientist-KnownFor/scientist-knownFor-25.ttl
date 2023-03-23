@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Joanne_Berger-Sweeney> ns1:knownFor <http://dbpedia.org/resource/Adobe_Inc.>,
+        <http://dbpedia.org/resource/Subharmonic_function> .
+

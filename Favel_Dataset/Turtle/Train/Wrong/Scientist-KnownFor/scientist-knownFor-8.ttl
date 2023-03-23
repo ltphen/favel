@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Norman_Allinger> ns1:knownFor <http://dbpedia.org/resource/Royal_College_of_Paediatrics_and_Child_Health> .
+

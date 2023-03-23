@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Alexander_Ross_Clarke> ns1:deathPlace <http://dbpedia.org/resource/Mauritius> .
+

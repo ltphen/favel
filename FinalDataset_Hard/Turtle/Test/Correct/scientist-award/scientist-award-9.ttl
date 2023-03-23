@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Robert_Bell_(geologist)> ns1:award <http://dbpedia.org/resource/Cullum_Geographical_Medal> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Good_Times_(film)> ns1:productionCompany <http://dbpedia.org/resource/American_Broadcasting_Company> .
+

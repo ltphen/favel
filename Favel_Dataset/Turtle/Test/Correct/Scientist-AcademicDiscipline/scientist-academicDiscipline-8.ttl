@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/William_Michael_Lynn> ns1:academicDiscipline <http://dbpedia.org/resource/Consumer_behaviour>,
+        <http://dbpedia.org/resource/Social_psychology> .
+

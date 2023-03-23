@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/True_Grit_(2010_film)> ns1:starring <http://dbpedia.org/resource/Balthazar_Getty>,
+        <http://dbpedia.org/resource/Kumari_Thankam> .
+

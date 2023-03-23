@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Chip_an'_Dale> ns1:productionCompany <http://dbpedia.org/resource/The_Walt_Disney_Company> .
+

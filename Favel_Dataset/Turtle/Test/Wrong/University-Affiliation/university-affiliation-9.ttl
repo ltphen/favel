@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Jawaharlal_Nehru_Krishi_Vishwa_Vidyalaya> ns1:affiliation <http://dbpedia.org/resource/Association_to_Advance_Collegiate_Schools_of_Business> .
+

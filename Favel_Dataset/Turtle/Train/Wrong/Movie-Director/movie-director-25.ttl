@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Intimate_Confessions_of_a_Chinese_Courtesan> ns1:director <http://dbpedia.org/resource/Lewis_D._Collins> .
+

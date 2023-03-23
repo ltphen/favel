@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/James_Unnever> ns1:knownFor <http://dbpedia.org/resource/Race_and_crime_in_the_United_States> .
+

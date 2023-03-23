@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Jinnah_University_for_Women> ns1:city <http://dbpedia.org/resource/Hyderabad,_Sindh> .
+

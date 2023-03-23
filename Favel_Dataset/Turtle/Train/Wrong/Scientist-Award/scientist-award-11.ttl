@@ -1,0 +1,7 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Vincenzo_Di_Nicola> ns1:award <http://dbpedia.org/resource/De_Morgan_Medal>,
+        <http://dbpedia.org/resource/Lavoisier_Medal>,
+        <http://dbpedia.org/resource/National_Association_of_School_Psychologists>,
+        <http://dbpedia.org/resource/Nobel_Prize_in_Physics> .
+

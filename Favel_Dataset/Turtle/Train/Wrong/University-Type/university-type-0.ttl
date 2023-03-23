@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Pt._Jawahar_Lal_Nehru_Government_Medical_College_And_Hospital_Chamba> ns1:type <http://dbpedia.org/resource/Private_university> .
+

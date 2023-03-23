@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Alvin_and_the_Chipmunks:_Chipwrecked> ns1:productionCompany <http://dbpedia.org/resource/Fox_2000_Pictures> .
+

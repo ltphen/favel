@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Puccini_for_Beginners> ns1:starring <http://dbpedia.org/resource/Blake_Foster>,
+        <http://dbpedia.org/resource/Dylan_Baker> .
+

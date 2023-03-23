@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Rachna_College_of_Engineering_&_Technology> ns1:affiliation <http://dbpedia.org/resource/Pakistan_Engineering_Council>,
+        <http://dbpedia.org/resource/University_of_Engineering_and_Technology,_Lahore> .
+

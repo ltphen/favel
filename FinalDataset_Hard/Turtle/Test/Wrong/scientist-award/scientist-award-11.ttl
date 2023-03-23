@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Harvey_J._Alter> ns1:award <http://dbpedia.org/resource/Virology> .
+

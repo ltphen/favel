@@ -1,0 +1,7 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Babasaheb_Bhimrao_Ambedkar_University> ns1:affiliation <http://dbpedia.org/resource/European_Association_of_Conservatoires>,
+        <http://dbpedia.org/resource/Higher_Education_Commission_(Pakistan)>,
+        <http://dbpedia.org/resource/International_Alliance_of_Research_Universities>,
+        <http://dbpedia.org/resource/United_Nations_Academic_Impact> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Alpine_Antics_(1936_film)> ns1:productionCompany <http://dbpedia.org/resource/Warner_Bros._Cartoons> .
+

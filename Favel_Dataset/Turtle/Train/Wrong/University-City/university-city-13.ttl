@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Rajiv_Gandhi_College_of_Engineering,_Research_and_Technology,_Chandrapur> ns1:city <http://dbpedia.org/resource/Kushtia> .
+

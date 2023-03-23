@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/William_Michael_Lynn> ns1:award <http://dbpedia.org/resource/International_Council_on_Hotel,_Restaurant,_and_Institutional_Education> .
+

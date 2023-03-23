@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Along_Came_Jones_(film)> ns1:productionCompany <http://dbpedia.org/resource/Gaumont-British> .
+

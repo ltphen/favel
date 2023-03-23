@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Islamic_Azad_University,_West_Tehran_Branch> ns1:affiliation <http://dbpedia.org/resource/University_Grants_Commission_(India)> .
+

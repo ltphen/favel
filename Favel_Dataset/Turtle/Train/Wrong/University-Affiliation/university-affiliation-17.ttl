@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/CINVESTAV> ns1:affiliation <http://dbpedia.org/resource/All_India_Council_for_Technical_Education> .
+

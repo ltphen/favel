@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Caroline_and_the_Rebels> ns1:director <http://dbpedia.org/resource/Jean_Devaivre> .
+

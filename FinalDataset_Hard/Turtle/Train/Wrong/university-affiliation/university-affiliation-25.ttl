@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/St._Paul's_University_College> ns1:affiliation <http://dbpedia.org/resource/United_Church_of_Canada> .
+

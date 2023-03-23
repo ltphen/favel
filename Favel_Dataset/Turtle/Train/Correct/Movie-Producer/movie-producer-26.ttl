@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Busting> ns1:producer <http://dbpedia.org/resource/Irwin_Winkler>,
+        <http://dbpedia.org/resource/Robert_Chartoff> .
+

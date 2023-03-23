@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Deep_Blue_Sea_(1999_film)> ns1:starring <http://dbpedia.org/resource/Saffron_Burrows> .
+

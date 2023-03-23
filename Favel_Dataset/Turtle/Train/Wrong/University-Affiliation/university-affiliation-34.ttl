@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Rajasthan_University_of_Health_Sciences> ns1:affiliation <http://dbpedia.org/resource/National_Assessment_and_Accreditation_Council> .
+

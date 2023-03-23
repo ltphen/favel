@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Call_for_Love> ns1:productionCompany <http://dbpedia.org/resource/Orange_Sky_Golden_Harvest> .
+

@@ -1,0 +1,6 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Arnall_Patz> ns1:award <http://dbpedia.org/resource/E._Mead_Johnson_Award>,
+        <http://dbpedia.org/resource/Lasker-DeBakey_Clinical_Medical_Research_Award>,
+        <http://dbpedia.org/resource/Presidential_Medal_of_Freedom> .
+

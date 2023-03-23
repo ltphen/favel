@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/ICFAI_University,_Dehradun> ns1:type <http://dbpedia.org/resource/Private_university> .
+

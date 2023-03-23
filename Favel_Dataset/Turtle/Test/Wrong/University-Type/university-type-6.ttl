@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Adamawa_State_College_of_Education> ns1:type <http://dbpedia.org/resource/Private_university> .
+

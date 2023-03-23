@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Oceanographic_Institute_of_Venezuela> ns1:affiliation <http://dbpedia.org/resource/Association_of_Arab_Universities> .
+

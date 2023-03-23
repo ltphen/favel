@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Metropolitan_University,_Sylhet> ns1:city <http://dbpedia.org/resource/Sylhet> .
+

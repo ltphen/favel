@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Donald_Hopkins> ns1:knownFor <http://dbpedia.org/resource/Neglected_tropical_diseases> .
+

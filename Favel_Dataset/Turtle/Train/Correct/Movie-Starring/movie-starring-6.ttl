@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Torque_(film)> ns1:starring <http://dbpedia.org/resource/Ice_Cube>,
+        <http://dbpedia.org/resource/Martin_Henderson> .
+

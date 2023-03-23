@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/The_Wheel_of_Life_(1942_film)> ns1:starring <http://dbpedia.org/resource/Stanley_Tucci> .
+

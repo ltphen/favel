@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Checking_Out_(1989_film)> ns1:producer <http://dbpedia.org/resource/David_Hoberman>,
+        <http://dbpedia.org/resource/Gary_Lucchesi> .
+

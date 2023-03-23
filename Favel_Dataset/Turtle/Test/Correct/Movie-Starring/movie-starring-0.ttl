@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Kinsey_(film)> ns1:starring <http://dbpedia.org/resource/Laura_Linney>,
+        <http://dbpedia.org/resource/Tim_Curry> .
+

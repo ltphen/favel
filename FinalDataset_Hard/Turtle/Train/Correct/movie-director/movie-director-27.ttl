@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Against_All_Odds_(1924_film)> ns1:director <http://dbpedia.org/resource/Edmund_Mortimer_(actor)> .
+

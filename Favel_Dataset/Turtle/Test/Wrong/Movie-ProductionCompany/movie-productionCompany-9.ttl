@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Kismat_Konnection> ns1:productionCompany <http://dbpedia.org/resource/Warner_Bros.> .
+

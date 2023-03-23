@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Anna_University> ns1:city <http://dbpedia.org/resource/Dindigul> .
+

@@ -1,0 +1,6 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Frank_Wilczek> ns1:award <http://dbpedia.org/resource/Dirac_Medal>,
+        <http://dbpedia.org/resource/MacArthur_Fellows_Program>,
+        <http://dbpedia.org/resource/Sakurai_Prize> .
+

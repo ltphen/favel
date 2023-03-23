@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Kip_Thorne> ns1:academicDiscipline <http://dbpedia.org/resource/Physics>,
+        <http://dbpedia.org/resource/Social_psychology> .
+

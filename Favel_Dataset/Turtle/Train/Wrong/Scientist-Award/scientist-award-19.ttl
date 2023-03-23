@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Jon_Kleinberg> ns1:award <http://dbpedia.org/resource/American_Association_for_the_Advancement_of_Science>,
+        <http://dbpedia.org/resource/Computer_Pioneer_Award> .
+

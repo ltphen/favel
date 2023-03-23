@@ -1,0 +1,6 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Frank_Wilczek> ns1:knownFor <http://dbpedia.org/resource/Asymptotic_freedom>,
+        <http://dbpedia.org/resource/Axion>,
+        <http://dbpedia.org/resource/Particle_statistics> .
+

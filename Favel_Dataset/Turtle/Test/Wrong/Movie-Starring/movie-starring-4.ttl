@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Volcano_(1997_film)> ns1:starring <http://dbpedia.org/resource/Lolita_Davidovich> .
+

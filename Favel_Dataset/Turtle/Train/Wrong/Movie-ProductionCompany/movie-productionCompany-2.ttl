@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Command_Decision_(film)> ns1:productionCompany <http://dbpedia.org/resource/Paramount_Pictures> .
+

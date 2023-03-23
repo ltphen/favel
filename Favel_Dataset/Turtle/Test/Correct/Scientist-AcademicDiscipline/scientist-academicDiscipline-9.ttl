@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Vincenzo_Di_Nicola> ns1:academicDiscipline <http://dbpedia.org/resource/Cross-cultural_psychiatry>,
+        <http://dbpedia.org/resource/Philosophy_of_psychiatry> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Ursula_Bellugi> ns1:deathPlace <http://dbpedia.org/resource/Weimar_Republic> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/William_Edward_Hanford> ns1:deathPlace <http://dbpedia.org/resource/Bristol,_Pennsylvania> .
+

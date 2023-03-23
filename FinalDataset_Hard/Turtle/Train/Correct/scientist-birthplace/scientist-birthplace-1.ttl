@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Simon_Biesheuvel> ns1:birthPlace <http://dbpedia.org/resource/Netherlands> .
+

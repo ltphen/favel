@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Peter_Wells_(medical_physicist)> ns1:award <http://dbpedia.org/resource/Royal_Medal> .
+

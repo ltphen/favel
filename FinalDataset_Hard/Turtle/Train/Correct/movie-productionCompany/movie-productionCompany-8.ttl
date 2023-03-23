@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Amy_(2015_film)> ns1:productionCompany <http://dbpedia.org/resource/Film4_Productions> .
+

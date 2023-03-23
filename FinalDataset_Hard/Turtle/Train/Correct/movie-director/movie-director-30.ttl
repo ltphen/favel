@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Day_Watch_(film)> ns1:director <http://dbpedia.org/resource/Timur_Bekmambetov> .
+

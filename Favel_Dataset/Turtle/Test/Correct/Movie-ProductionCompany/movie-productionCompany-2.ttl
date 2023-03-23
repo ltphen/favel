@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Garfield_Gets_Real> ns1:productionCompany <http://dbpedia.org/resource/Davis_Entertainment>,
+        <http://dbpedia.org/resource/Paws,_Inc.> .
+

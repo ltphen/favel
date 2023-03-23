@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Lala_Lajpat_Rai_University_of_Veterinary_and_Animal_Sciences> ns1:city <http://dbpedia.org/resource/Narnaund> .
+

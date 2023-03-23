@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Meike_Bartels> ns1:academicDiscipline <http://dbpedia.org/resource/Natural_language_processing>,
+        <http://dbpedia.org/resource/Popular_science> .
+

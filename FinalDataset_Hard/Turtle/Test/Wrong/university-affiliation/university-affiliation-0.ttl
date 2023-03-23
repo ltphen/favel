@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Population_Research_Laboratory> ns1:affiliation <http://dbpedia.org/resource/Edmonton> .
+

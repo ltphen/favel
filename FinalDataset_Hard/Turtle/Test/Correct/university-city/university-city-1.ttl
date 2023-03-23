@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Australian_National_University> ns1:city <http://dbpedia.org/resource/Acton,_Australian_Capital_Territory> .
+

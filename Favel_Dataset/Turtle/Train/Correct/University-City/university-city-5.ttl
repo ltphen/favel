@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Swathi_Thirunal_College_of_Music> ns1:city <http://dbpedia.org/resource/Thiruvananthapuram> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Richard_Woodcock> ns1:birthPlace <http://dbpedia.org/resource/San_Diego> .
+

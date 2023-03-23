@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Matthew_O._Howard> ns1:birthPlace <http://dbpedia.org/resource/Chicago> .
+

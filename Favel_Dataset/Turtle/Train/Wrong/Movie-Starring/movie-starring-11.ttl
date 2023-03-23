@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Casper_Meets_Wendy> ns1:starring <http://dbpedia.org/resource/M._N._Nambiar> .
+

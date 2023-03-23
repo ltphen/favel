@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Lawrence_Alexander_Hardie> ns1:birthPlace <http://dbpedia.org/resource/KwaZulu-Natal> .
+

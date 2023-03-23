@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Donald_Hopkins> ns1:academicDiscipline <http://dbpedia.org/resource/Epidemiology>,
+        <http://dbpedia.org/resource/Public_health> .
+

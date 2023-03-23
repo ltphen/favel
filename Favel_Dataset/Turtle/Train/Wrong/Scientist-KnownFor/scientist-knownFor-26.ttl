@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Yves_Meyer> ns1:knownFor <http://dbpedia.org/resource/Intimate_partner_violence> .
+

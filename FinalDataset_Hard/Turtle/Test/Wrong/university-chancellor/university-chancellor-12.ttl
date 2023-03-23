@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/University_of_Dar_es_Salaam> ns1:chancellor <http://dbpedia.org/resource/Walter_Rodney> .
+

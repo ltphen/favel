@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Symbiosis_International_University> ns1:city <http://dbpedia.org/resource/Comilla>,
+        <http://dbpedia.org/resource/Ho_Chi_Minh_City> .
+

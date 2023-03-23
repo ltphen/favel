@@ -1,0 +1,8 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Stephen_R._Bourne> ns1:knownFor <http://dbpedia.org/resource/ACM_Queue>,
+        <http://dbpedia.org/resource/ALGOL_68C>,
+        <http://dbpedia.org/resource/Advanced_Debugger>,
+        <http://dbpedia.org/resource/Bourne_shell>,
+        <http://dbpedia.org/resource/Cambridge_Algebra_System> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Creighton_University_School_of_Medicine> ns1:city <http://dbpedia.org/resource/Omaha,_Nebraska> .
+

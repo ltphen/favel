@@ -1,0 +1,7 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Kip_Thorne> ns1:award <http://dbpedia.org/resource/Gruber_Prize_in_Cosmology>,
+        <http://dbpedia.org/resource/Lewis_Thomas_Prize>,
+        <http://dbpedia.org/resource/Princess_of_Asturias_Awards>,
+        <http://dbpedia.org/resource/Shaw_Prize> .
+

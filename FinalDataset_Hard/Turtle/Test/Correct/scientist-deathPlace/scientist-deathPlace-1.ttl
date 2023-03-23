@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/George_Everest> ns1:deathPlace <http://dbpedia.org/resource/Hyde_Park_Gardens> .
+

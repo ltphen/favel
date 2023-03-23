@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Love_Action_Drama> ns1:starring <http://dbpedia.org/resource/Nivin_Pauly> .
+

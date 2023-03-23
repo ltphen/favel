@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Deep_Impact_(film)> ns1:productionCompany <http://dbpedia.org/resource/David_Brown_(producer)> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Dead_Tired> ns1:productionCompany <http://dbpedia.org/resource/TF1_Group> .
+

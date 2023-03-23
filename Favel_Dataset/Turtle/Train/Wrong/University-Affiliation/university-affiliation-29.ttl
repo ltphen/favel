@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Technological_Institute_of_Textile_&_Sciences> ns1:affiliation <http://dbpedia.org/resource/Canadian_University_Press> .
+

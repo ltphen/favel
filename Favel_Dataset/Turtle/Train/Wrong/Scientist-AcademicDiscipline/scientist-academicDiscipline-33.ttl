@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Dan_Ingalls> ns1:academicDiscipline <http://dbpedia.org/resource/Complex_analysis> .
+

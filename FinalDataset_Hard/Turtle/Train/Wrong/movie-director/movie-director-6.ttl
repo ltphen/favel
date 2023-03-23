@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Almost_Married_(1932_film)> ns1:director <http://dbpedia.org/resource/Violet_Heming> .
+

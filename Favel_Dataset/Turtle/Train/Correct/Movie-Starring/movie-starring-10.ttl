@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Diary_of_a_Wimpy_Kid:_Rodrick_Rules_(2011_film)> ns1:starring <http://dbpedia.org/resource/Zachary_Gordon> .
+

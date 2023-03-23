@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Shah_Abdul_Latif_University> ns1:affiliation <http://dbpedia.org/resource/Macquarie_University_Faculty_of_Human_Sciences> .
+

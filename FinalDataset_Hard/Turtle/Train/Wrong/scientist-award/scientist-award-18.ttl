@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/William_King_Gregory> ns1:award <http://dbpedia.org/resource/Viking_Fund_Medal> .
+

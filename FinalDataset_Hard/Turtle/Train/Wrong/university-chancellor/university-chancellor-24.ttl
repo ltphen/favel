@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Symbiosis_International_University> ns1:chancellor <http://dbpedia.org/resource/Maneka_Gandhi> .
+

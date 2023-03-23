@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Ardeshir_Hosseinpour> ns1:deathPlace <http://dbpedia.org/resource/Tehran> .
+

@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Babasaheb_Bhimrao_Ambedkar_University> ns1:affiliation <http://dbpedia.org/resource/Bar_Council_of_India>,
+        <http://dbpedia.org/resource/Indian_Council_of_Agricultural_Research> .
+

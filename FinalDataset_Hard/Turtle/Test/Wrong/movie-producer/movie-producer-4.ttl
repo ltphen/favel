@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Adventure_in_the_Hopfields> ns1:producer <http://dbpedia.org/resource/Dandy_Nichols> .
+

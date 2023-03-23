@@ -1,0 +1,7 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Xiaowei_Zhuang> ns1:award <http://dbpedia.org/resource/ACS_Award_in_Pure_Chemistry>,
+        <http://dbpedia.org/resource/Breakthrough_Prize_in_Life_Sciences>,
+        <http://dbpedia.org/resource/Max_Delbruck_Prize>,
+        <http://dbpedia.org/resource/Vilcek_Foundation> .
+

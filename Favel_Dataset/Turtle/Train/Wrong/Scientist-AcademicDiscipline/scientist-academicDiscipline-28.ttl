@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Scott_Fahlman> ns1:academicDiscipline <http://dbpedia.org/resource/Psychology>,
+        <http://dbpedia.org/resource/Psychotherapy> .
+

@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Mike_Paterson> ns1:award <http://dbpedia.org/resource/Lewis_Thomas_Prize>,
+        <http://dbpedia.org/resource/Perkin_Medal> .
+

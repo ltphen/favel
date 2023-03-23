@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Vasuvum_Saravananum_Onna_Padichavanga> ns1:director <http://dbpedia.org/resource/Varun_Parandhaman> .
+

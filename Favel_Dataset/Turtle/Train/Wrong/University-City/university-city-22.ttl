@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/University_of_Engineering_and_Technology,_Kala_Shah_Kaku_Campus> ns1:city <http://dbpedia.org/resource/Chitrakoot_district> .
+

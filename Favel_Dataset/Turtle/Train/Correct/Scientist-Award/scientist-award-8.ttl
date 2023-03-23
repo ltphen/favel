@@ -1,0 +1,6 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Ray_Jayawardhana> ns1:award <http://dbpedia.org/resource/Canada_Research_Chair>,
+        <http://dbpedia.org/resource/Rutherford_Memorial_Medal>,
+        <http://dbpedia.org/resource/Steacie_Prize> .
+

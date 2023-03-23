@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Kenneth_G._Wilson> ns1:academicDiscipline <http://dbpedia.org/resource/Mathematics> .
+

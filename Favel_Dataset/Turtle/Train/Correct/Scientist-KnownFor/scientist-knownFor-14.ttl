@@ -1,0 +1,6 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/George_C._Clerk> ns1:knownFor <http://dbpedia.org/resource/Mycology>,
+        <http://dbpedia.org/resource/Plant_pathology>,
+        <http://dbpedia.org/resource/West_Africa> .
+

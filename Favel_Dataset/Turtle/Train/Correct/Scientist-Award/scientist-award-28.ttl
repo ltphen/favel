@@ -1,0 +1,6 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Xiaowei_Zhuang> ns1:award <http://dbpedia.org/resource/MacArthur_Fellows_Program>,
+        <http://dbpedia.org/resource/NAS_Award_in_Molecular_Biology>,
+        <http://dbpedia.org/resource/Sackler_Prize> .
+

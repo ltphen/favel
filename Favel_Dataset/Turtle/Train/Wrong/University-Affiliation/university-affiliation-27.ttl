@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Government_Girls_Polytechnic,_Bilaspur> ns1:affiliation <http://dbpedia.org/resource/Universities_UK> .
+

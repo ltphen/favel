@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Sylhet_Medical_University> ns1:city <http://dbpedia.org/resource/Songkhla_Province> .
+

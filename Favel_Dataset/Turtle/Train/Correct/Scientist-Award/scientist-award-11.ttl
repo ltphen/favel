@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Mona_Lynch> ns1:award <http://dbpedia.org/resource/Law_and_Society_Association> .
+

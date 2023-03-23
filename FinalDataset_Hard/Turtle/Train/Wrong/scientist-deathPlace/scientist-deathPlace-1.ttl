@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Alfred_Merle_Norman> ns1:deathPlace <http://dbpedia.org/resource/Bournmoor> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Margaret_Pericak-Vance> ns1:academicDiscipline <http://dbpedia.org/resource/Consumer_behaviour> .
+

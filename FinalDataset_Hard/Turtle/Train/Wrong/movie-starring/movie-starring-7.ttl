@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Amy_(2015_film)> ns1:starring <http://dbpedia.org/resource/Darcus_Beese> .
+

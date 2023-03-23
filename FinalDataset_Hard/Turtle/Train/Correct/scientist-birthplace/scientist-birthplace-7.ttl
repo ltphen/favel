@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Stephen_Hawking> ns1:birthPlace <http://dbpedia.org/resource/Oxford> .
+

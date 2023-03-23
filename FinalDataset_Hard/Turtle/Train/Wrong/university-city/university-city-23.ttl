@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Texas_A&M_University_at_Qatar> ns1:city <http://dbpedia.org/resource/Qatar> .
+

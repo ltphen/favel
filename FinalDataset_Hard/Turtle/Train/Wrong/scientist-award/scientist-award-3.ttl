@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Avi_Wigderson> ns1:award <http://dbpedia.org/resource/Zig-zag_product> .
+

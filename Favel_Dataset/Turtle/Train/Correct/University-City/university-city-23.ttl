@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Ajloun_National_Private_University> ns1:city <http://dbpedia.org/resource/Ajloun> .
+

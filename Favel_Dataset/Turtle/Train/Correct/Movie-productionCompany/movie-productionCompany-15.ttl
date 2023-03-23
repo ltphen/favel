@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Force_of_Arms> ns1:productionCompany <http://dbpedia.org/resource/Warner_Bros.> .
+

@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Catherine_J._Murphy> ns1:academicDiscipline <http://dbpedia.org/resource/Chemical_biology>,
+        <http://dbpedia.org/resource/Nanotechnology> .
+

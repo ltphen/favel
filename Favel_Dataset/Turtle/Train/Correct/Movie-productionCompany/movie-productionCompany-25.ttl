@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Futurama:_Into_the_Wild_Green_Yonder> ns1:productionCompany <http://dbpedia.org/resource/Rough_Draft_Studios>,
+        <http://dbpedia.org/resource/The_ULULU_Company> .
+

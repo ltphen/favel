@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/20,000_Years_in_Sing_Sing> ns1:productionCompany <http://dbpedia.org/resource/First_National_Pictures> .
+

@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Onnu_Muthal_Poojyam_Vare> ns1:starring <http://dbpedia.org/resource/Mohanlal> .
+

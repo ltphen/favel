@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/University_of_Strasbourg> ns1:affiliation <http://dbpedia.org/resource/European_Society_for_Engineering_Education> .
+

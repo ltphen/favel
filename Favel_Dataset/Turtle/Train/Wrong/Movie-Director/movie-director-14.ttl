@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Mr._Mouse_Takes_a_Trip> ns1:director <http://dbpedia.org/resource/George_Miller_(filmmaker)> .
+

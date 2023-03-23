@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Bert_Rigby,_You're_a_Fool> ns1:productionCompany <http://dbpedia.org/resource/Lorimar_Television> .
+

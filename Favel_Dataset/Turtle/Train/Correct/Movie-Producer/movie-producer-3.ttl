@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Garfield_Gets_Real> ns1:producer <http://dbpedia.org/resource/John_Davis_(producer)> .
+

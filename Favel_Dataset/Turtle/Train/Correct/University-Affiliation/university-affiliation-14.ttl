@@ -1,0 +1,7 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Islamic_University,_Bangladesh> ns1:affiliation <http://dbpedia.org/resource/Association_of_Commonwealth_Universities>,
+        <http://dbpedia.org/resource/International_Association_of_Universities>,
+        <http://dbpedia.org/resource/Islamic_World_Educational,_Scientific_and_Cultural_Organization>,
+        <http://dbpedia.org/resource/University_Grants_Commission_(Bangladesh)> .
+

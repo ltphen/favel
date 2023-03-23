@@ -1,0 +1,5 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/The_Villain_(2018_film)> ns1:starring <http://dbpedia.org/resource/Mithun_Chakraborty>,
+        <http://dbpedia.org/resource/Tilak_Shekar> .
+

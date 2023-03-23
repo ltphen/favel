@@ -1,0 +1,4 @@
+@prefix ns1: <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Hard_Cash_(2002_film)> ns1:producer <http://dbpedia.org/resource/Sidney_Franklin_(director)> .
+
