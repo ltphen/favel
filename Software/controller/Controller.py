@@ -88,8 +88,9 @@ class Controller:
         Repeat training and testing as often as specified in the configuration.
         """
         for i in range(self.iterations):
-            self.train()
-            self.test()
+            # self.train()
+            # self.test()
+            print("This is supposed to train the shit out of the method")
     
     def train(self):
         """
