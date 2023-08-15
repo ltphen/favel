@@ -29,7 +29,7 @@ RUN python2 setup.py build_ext -if
 RUN python2 setup.py install
 
 # Get knowledge graph
-RUN curl --output data.tar.gz https://uni-paderborn.sciebo.de/s/35I2JvTQlwePzes/download
+RUN curl --output data.tar.gz https://uni-paderborn.sciebo.de/s/kGImP2vYnxqdMwL/download
 RUN tar -xf data.tar.gz
 
 # Expose port
