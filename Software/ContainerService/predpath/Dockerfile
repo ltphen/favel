@@ -8,7 +8,7 @@ RUN apt-get install -y build-essential curl python2 python2-dev git
 RUN curl --output get-pip.py https://bootstrap.pypa.io/pip/2.7/get-pip.py
 RUN python2 get-pip.py
 
-RUN python2 -m pip install cython==0.29.36
+RUN python2 -m pip install cython==0.23.1
 RUN python2 -m pip install numpy
 RUN python2 -m pip install scipy
 RUN python2 -m pip install pandas
