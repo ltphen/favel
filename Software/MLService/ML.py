@@ -131,7 +131,7 @@ class ML:
         return best_params
 
 
-    def get_sklearn_model(self, model_name, ml_model_params, train_data):
+    def get_sklearn_model(self, ml_model_params, train_data):
         ''' from model name string specified in conf file, here we get the actual sklearn model obj '''
         return autosklearn.classification.AutoSklearnClassifier()
     
