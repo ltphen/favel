@@ -12,6 +12,7 @@ import pickle
 import sklearn
 import statistics
 if not sys.warnoptions: warnings.simplefilter("ignore")
+import autosklearn.classification
 
 class ML:
     
@@ -132,7 +133,8 @@ class ML:
 
     def get_sklearn_model(self, model_name, ml_model_params, train_data):
         ''' from model name string specified in conf file, here we get the actual sklearn model obj '''
-
+        return autosklearn.classification.AutoSklearnClassifier()
+    
         X=train_data.drop(['subject', 'predicate', 'object', 'truth'], axis=1)
         y=train_data.truth
 
@@ -229,7 +231,8 @@ class ML:
 
             print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
 
-            roc_auc_cv_scores = self.custom_model_train_cv(X, y, ml_model)
+            # roc_auc_cv_scores = self.custom_model_train_cv(X, y, ml_model)
+            roc_auc_cv_scores = 0
 
             trained_model, model_name, roc_auc_overall_score, report_df = self.custom_model_train(X, y, ml_model)
             metrics = {"overall": roc_auc_overall_score, "cv_mean": np.mean(roc_auc_cv_scores), "cv_std": round(statistics.stdev(roc_auc_cv_scores), 2)}

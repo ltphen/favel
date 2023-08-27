@@ -88,8 +88,8 @@ class Controller:
         Repeat training and testing as often as specified in the configuration.
         """
         for i in range(self.iterations):
-            # self.train()
-            # self.test()
+            self.train()
+            self.test()
             print("This is supposed to train the shit out of the method")
     
     def train(self):
@@ -100,8 +100,8 @@ class Controller:
         self.ml = ML(self.writeToDisk)
         training_df = self.ml.createDataFrame(self.trainingData)
 
-        ml_model_name = self.mlAlgorithm
-        ml_model = self.ml.get_sklearn_model(ml_model_name, self.mlParameters, training_df)
+        # ml_model_name = self.mlAlgorithm
+        ml_model = self.ml.get_sklearn_model(self.mlParameters, training_df)
 
         self.model, self.lableEncoder, self.normalizer, trainMetrics = self.ml.train_model(df=training_df, 
                                             ml_model=ml_model, 
