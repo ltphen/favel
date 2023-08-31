@@ -246,8 +246,9 @@ class ML:
             if trained_model==False and model_name==False and roc_auc_overall_score==False: 
                 return False
             elif self.output:
-                report_df.to_excel(f'{output_path}/Classifcation Report.xlsx', index=False)
+                # report_df.to_excel(f'{output_path}/Classifcation Report.xlsx', index=False)
 
+                with open(f'{output_path}/report.pkl','wb') as fp:   pickle.dump(report_df,fp)
                 with open(f'{output_path}/classifier.pkl','wb') as fp:   pickle.dump(trained_model,fp)
                 with open(f'{output_path}/predicate_le.pkl','wb') as fp: pickle.dump(le,   fp)
 
