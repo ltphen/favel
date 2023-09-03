@@ -2,8 +2,6 @@ from sklearn import metrics
 from sklearn import preprocessing
 from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import cross_val_score
-from skopt import BayesSearchCV
-from skopt.space import Real, Categorical, Integer
 import logging
 import numpy as np
 import os, sys, ast, warnings, pdb, random
@@ -110,24 +108,9 @@ class ML:
         With a given range, this function search for the best parameters giving optimal perfomance to the given model. 
         Done using https://scikit-optimize.github.io/stable/modules/generated/skopt.BayesSearchCV.html 
         """
-        params_range_dict={}
-        for x in ml_model_params:
-            if type(x['range'])==tuple:
-                if type(x['range'][0]) == int: 
-                    params_range_dict[x['name']] = Integer(x['range'][0], x['range'][1])
-                elif type(x['range'][0]) == float: 
-                    params_range_dict[x['name']] = Real(x['range'][0], x['range'][1])
-            elif type(x['range']) == list:
-                params_range_dict[x['name']] = Categorical(x['range'])
 
-        opt = BayesSearchCV(
-                    model,
-                    params_range_dict,
-                    n_iter=5,
-                    random_state=0
-                )
-        _ = opt.fit(X, y)
-        best_params=dict(opt.best_params_)
+        
+        best_params=dict()
         return best_params
 
 
@@ -231,6 +214,9 @@ class ML:
 
             print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
 
+            for col in X.columns:
+                print(col)
+
             # roc_auc_cv_scores = self.custom_model_train_cv(X, y, ml_model)
             roc_auc_cv_scores = 0
 
@@ -263,7 +249,7 @@ class ML:
             raise ex
 
 
-    def test_model(self, df, ml_model, le_predicate, normalizer):
+    def test_model(self, df, ml_model, le_predicate, normalizer_name):
         """
         Given a trained model, this function predict scores of the assertions given in the df dataframe
         """
@@ -277,12 +263,16 @@ class ML:
             # pdb.set_trace()
             X['predicate'] = le_predicate.transform(np.array(X['predicate'].astype(str), dtype=object))
             # X = df.drop(['subject','object'], axis=1)
+            print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
 
+            for col in X.columns:
+                print(col)
+                
             if normalizer is None:
                 logging.debug('Using default normalizer')
             else:
                 try: 
-                    X, normalizer = self.normalise_data(df=X, normalizer_name=None, normalizer=normalizer)
+                    X, normalizer = self.normalise_data(df=X, normalizer_name=normalizer_name, normalizer=None)
                 except: 
                     logging.error('No normalizer found')
 
