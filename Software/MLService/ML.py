@@ -262,12 +262,7 @@ class ML:
 
             # pdb.set_trace()
             X['predicate'] = le_predicate.transform(np.array(X['predicate'].astype(str), dtype=object))
-            # X = df.drop(['subject','object'], axis=1)
-            print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
-
-            for col in X.columns:
-                print(col)
-                
+           
             if normalizer is None:
                 logging.debug('Using default normalizer')
             else:
@@ -275,6 +270,13 @@ class ML:
                     X, normalizer = self.normalise_data(df=X, normalizer_name=normalizer_name, normalizer=None)
                 except: 
                     logging.error('No normalizer found')
+            
+             # X = df.drop(['subject','object'], axis=1)
+            print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
+
+            for col in X.columns:
+                print(col)
+                
 
             y_pred=ml_model.predict_proba(X)
             class_1_index = 0 if ml_model.classes_[0]=='1' else 1
