@@ -90,7 +90,6 @@ class Controller:
         for i in range(self.iterations):
             self.train()
             self.test()
-            print("This is supposed to train the shit out of the method")
     
     def train(self):
         """
