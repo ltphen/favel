@@ -249,7 +249,7 @@ class ML:
             raise ex
 
 
-    def test_model(self, df, ml_model, le_predicate, normalizer_name, normalizer=None):
+    def test_model(self, df, ml_model, le_predicate, normalizer=None):
         """
         Given a trained model, this function predict scores of the assertions given in the df dataframe
         """
@@ -267,12 +267,13 @@ class ML:
                 logging.debug('Using default normalizer')
             else:
                 try: 
-                    X, normalizer = self.normalise_data(df=X, normalizer_name=normalizer_name, normalizer=None)
+                    X, normalizer = self.normalise_data(df=X, normalizer=normalizer)
                 except: 
                     logging.error('No normalizer found')
             
              # X = df.drop(['subject','object'], axis=1)
-            X, normalizer = self.normalise_data(df=X, normalizer_name=normalizer_name, normalizer=None)
+            
+            X.columns = range(df.shape[1])
             print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
 
             for col in X.columns:

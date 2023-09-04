@@ -117,7 +117,7 @@ class Controller:
         testing_df = self.ml.createDataFrame(self.testingData)
 
         testing_result = self.ml.test_model(df=testing_df, ml_model=self.model, le_predicate=self.lableEncoder,
-                                                normalizer_name=self.normalizer_name)
+                                                normalizer=self.normalizer)
 
         self.testingResults.append(testing_result)
     
