@@ -275,10 +275,10 @@ class ML:
             
             # X.columns = range(X.shape[1])
             # Remove the header column
-            df = df.iloc[1:]
+            X = X.iloc[1:]
 
             # Reset the index of the dataframe
-            df = df.reset_index(drop=True)
+            X = X.reset_index(drop=True)
 
             print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
 
