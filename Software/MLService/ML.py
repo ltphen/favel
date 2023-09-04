@@ -273,12 +273,12 @@ class ML:
             
              # X = df.drop(['subject','object'], axis=1)
             
-            # X.columns = range(X.shape[1])
+            X.columns = range(X.shape[1])
             # Remove the header column
-            X = X.iloc[1:]
+            #X = X.iloc[1:]
 
             # Reset the index of the dataframe
-            X = X.reset_index(drop=True)
+            #X = X.reset_index(drop=True)
 
             print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
 
