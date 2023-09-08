@@ -16,7 +16,7 @@ class Output():
         Writes results to file.
         """
         for i in range(len(mlResults)):
-            print("AUC is : ", auc_roc)
+            # ("AUC is : ", auc_roc)
             df, auc_roc = mlResults[i]
             df.to_csv(path.join(self.paths['SubExperimentPath'], f"Output_it{i}.csv"), index=False)
         
