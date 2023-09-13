@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk-alpine as alpine
 RUN apk add --no-cache curl tar bash procps
 RUN apk update && apk add git && apk add maven
-RUN git clone "https://github.com/palaniappan1/COPAAL"
+RUN git clone "https://github.com/ltphen/COPAAL"
 
 FROM maven:3.6.0-jdk-11-slim AS maven
 RUN mkdir copaal
