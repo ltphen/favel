@@ -262,7 +262,9 @@ class ML:
 
             # pdb.set_trace()
             X['predicate'] = le_predicate.transform(np.array(X['predicate'].astype(str), dtype=object))
-           
+
+            normalizer = preprocessing.MinMaxScaler()
+
             if normalizer is None:
                 logging.debug('Using default normalizer')
             else:
@@ -270,7 +272,6 @@ class ML:
                     X, normalizer = self.normalise_data(df=X, normalizer=normalizer)
                 except: 
                     logging.error('No normalizer found')
-            
              # X = df.drop(['subject','object'], axis=1)
             
             X.columns = range(X.shape[1])
