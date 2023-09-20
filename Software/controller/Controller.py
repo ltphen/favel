@@ -19,6 +19,7 @@ class Controller:
     def __init__(self, approaches:dict, mlAlgorithm:str, mlParameters:str, normalizer_name:str, paths:dict, iterations:int, writeToDisk:bool, useCache:bool, handleContainers:bool):
         self.approaches = approaches
         self.mlAlgorithm = mlAlgorithm
+        self.selector = None
         self.mlParameters = mlParameters
         self.normalizer_name = normalizer_name
         self.paths = paths
@@ -102,7 +103,7 @@ class Controller:
         # ml_model_name = self.mlAlgorithm
         ml_model = self.ml.get_sklearn_model(self.mlParameters, training_df)
 
-        self.model, self.lableEncoder, self.normalizer, trainMetrics = self.ml.train_model(df=training_df, 
+        self.model, self.lableEncoder, self.normalizer, trainMetrics, self.selector = self.ml.train_model(df=training_df, 
                                             ml_model=ml_model, 
                                             normalizer_name=self.normalizer_name,
                                             output_path=self.paths['SubExperimentPath'])
@@ -116,7 +117,7 @@ class Controller:
         testing_df = self.ml.createDataFrame(self.testingData)
 
         testing_result = self.ml.test_model(df=testing_df, ml_model=self.model, le_predicate=self.lableEncoder,
-                                                normalizer=self.normalizer)
+                                                normalizer=self.normalizer, selector = self.selector)
 
         self.testingResults.append(testing_result)
     

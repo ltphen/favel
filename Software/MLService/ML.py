@@ -11,6 +11,8 @@ import sklearn
 import statistics
 if not sys.warnoptions: warnings.simplefilter("ignore")
 import autosklearn.classification
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import f_classif
 
 class ML:
     
@@ -207,10 +209,16 @@ class ML:
             X=df.drop(['truth', 'subject', 'object'], axis=1)
             y=df.truth
 
+            
+
             X, normalizer = self.normalise_data(df=X, normalizer_name=normalizer_name, normalizer=None)
             if normalizer and self.output:
                 with open(f'{output_path}/normalizer.pkl','wb') as fp:   pickle.dump(normalizer,fp)
 
+            # Adding feature selection criterias
+
+            selector = SelectKBest(k=25)
+            X = selector.fit_transform(X,y)
 
             print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
 
@@ -240,7 +248,7 @@ class ML:
 
                 logging.debug('ML model and labelencoder saved in output path')
 
-            return trained_model, le, normalizer, metrics
+            return trained_model, le, normalizer, metrics, selector
         except Exception as ex:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
@@ -249,7 +257,7 @@ class ML:
             raise ex
 
 
-    def test_model(self, df, ml_model, le_predicate, normalizer=None):
+    def test_model(self, df, ml_model, le_predicate, normalizer=None, selector=None):
         """
         Given a trained model, this function predict scores of the assertions given in the df dataframe
         """
@@ -285,7 +293,11 @@ class ML:
 
             for col in X.columns:
                 print(col)
-                
+            
+            # feature engineering with the previous feature selector
+            
+            if selector:
+                X = selector.transform(X)
 
             y_pred=ml_model.predict_proba(X)
             class_1_index = 0 if ml_model.classes_[0]=='1' else 1
