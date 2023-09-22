@@ -222,14 +222,14 @@ class ML:
                 with open(f'{output_path}/normalizer.pkl','wb') as fp:   pickle.dump(normalizer,fp)
 
             # Adding feature selection criterias
+            
             print("Started the selection process")
             selector = SelectKBest(k=7)
             X = selector.fit_transform(X,y)
 
+
             print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
 
-            for col in X.columns:
-                print(col)
 
             # roc_auc_cv_scores = self.custom_model_train_cv(X, y, ml_model)
             roc_auc_cv_scores = 0
