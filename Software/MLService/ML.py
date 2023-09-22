@@ -219,8 +219,6 @@ class ML:
 
             print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
 
-            for col in X.columns:
-                print(col)
 
             # roc_auc_cv_scores = self.custom_model_train_cv(X, y, ml_model)
             roc_auc_cv_scores = 0
@@ -232,7 +230,7 @@ class ML:
             logging.info('ML model trained')
 
             report_df = trained_model.leaderboard(detailed=True)
-
+            print (report_df)
 
             if trained_model==False and model_name==False and roc_auc_overall_score==False: 
                 return False
@@ -286,11 +284,7 @@ class ML:
             # Reset the index of the dataframe
             #X = X.reset_index(drop=True)
 
-            print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
-
-            for col in X.columns:
-                print(col)
-                
+            print('Test: ', X.shape, y.shape, ml_model, y.dtypes)
 
             y_pred=ml_model.predict_proba(X)
             class_1_index = 0 if ml_model.classes_[0]=='1' else 1
