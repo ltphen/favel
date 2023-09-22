@@ -118,9 +118,6 @@ class ML:
         ''' from model name string specified in conf file, here we get the actual sklearn model obj '''
         return autosklearn.classification.AutoSklearnClassifier(
             metric=[autosklearn.metrics.roc_auc],
-            include = {
-                'classifier': ["random_forest", "gradient_boosting", "decision_tree", "extra_trees", "k_nearest_neighbors", "random_forest", "adaboost"],
-            }
         )
     
         X=train_data.drop(['subject', 'predicate', 'object', 'truth'], axis=1)
