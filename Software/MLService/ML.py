@@ -118,7 +118,13 @@ class ML:
 
     def get_sklearn_model(self, ml_model_params, train_data):
         ''' from model name string specified in conf file, here we get the actual sklearn model obj '''
-        return autosklearn.classification.AutoSklearnClassifier()
+        return autosklearn.classification.AutoSklearnClassifier(
+            metric=[autosklearn.metrics.roc_auc],
+            include = {
+                'classifier': ["random_forest", "gradient_boosting", "decision_tree", "extra_trees", "k_nearest_neighbors", "random_forest", "adaboost"],
+                'feature_preprocessor': ["no_preprocessing"]
+            }
+        )
     
         X=train_data.drop(['subject', 'predicate', 'object', 'truth'], axis=1)
         y=train_data.truth
@@ -216,8 +222,8 @@ class ML:
                 with open(f'{output_path}/normalizer.pkl','wb') as fp:   pickle.dump(normalizer,fp)
 
             # Adding feature selection criterias
-
-            selector = SelectKBest(k=25)
+            print("Started the selection process")
+            selector = SelectKBest(k=7)
             X = selector.fit_transform(X,y)
 
             print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
