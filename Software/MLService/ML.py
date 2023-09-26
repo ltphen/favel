@@ -218,13 +218,13 @@ class ML:
             roc_auc_cv_scores = 0
 
             trained_model, model_name, roc_auc_overall_score, report_df = self.custom_model_train(X, y, ml_model)
-            #metrics = {"overall": roc_auc_overall_score, "cv_mean": np.mean(roc_auc_cv_scores), "cv_std": round(statistics.stdev(roc_auc_cv_scores), 2)}
-            metrics = {"overall": roc_auc_overall_score}
+            metrics = {"overall": roc_auc_overall_score, "cv_mean": np.mean(roc_auc_cv_scores), "cv_std": round(statistics.stdev(roc_auc_cv_scores), 2)}
+            #metrics = {"overall": roc_auc_overall_score}
 
             logging.info('ML model trained')
 
-            report_df = trained_model.leaderboard(detailed=True)
-            print (report_df)
+            #report_df = trained_model.leaderboard(detailed=True)
+            #print (report_df)
 
             if trained_model==False and model_name==False and roc_auc_overall_score==False: 
                 return False
