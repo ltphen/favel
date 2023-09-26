@@ -99,8 +99,8 @@ class Controller:
         self.ml = ML(self.writeToDisk)
         training_df = self.ml.createDataFrame(self.trainingData)
 
-        # ml_model_name = self.mlAlgorithm
-        ml_model = self.ml.get_sklearn_model(self.mlParameters, training_df)
+        ml_model_name = self.mlAlgorithm
+        ml_model = self.ml.get_sklearn_model(ml_model_name, self.mlParameters, training_df)
 
         self.model, self.lableEncoder, self.normalizer, trainMetrics = self.ml.train_model(df=training_df, 
                                             ml_model=ml_model, 
