@@ -45,17 +45,24 @@ class ReadFiles:
         return list(set(ids))
     
     def getFactbench(self, path):
-        graph = Graph()
+        graph_test = Graph()
+        graph_train = Graph()
         
         for root, dirs, files in os.walk(path):
             for name in files:
-                graph.parse(os.path.join(path, name), format="nt")
+                if name.find("train")  != -1:
+                    graph_train.parse(os.path.join(path, name), format="nt")
+                else:
+                    graph_test.parse(os.path.join(path, name), format="nt")
                 
-        ids = self.extract_ids(graph)
+        ids_train = self.extract_ids(graph_train)
+        ids_test = self.extract_ids(graph_test)
         
         data = []
-        for id in ids:
-            for _,p,o in graph.triples((id, None, None)):
+        train_data = []
+        test_data = []
+        for id in ids_train:
+            for _,p,o in graph_train.triples((id, None, None)):
                 if str(p) == "http://swc2017.aksw.org/hasTruthValue":
                     if(str(o)=='1.0'):
                         truth = 1
@@ -67,11 +74,26 @@ class ReadFiles:
                     predicate=str(o)
                 if str(p).find("subject") != -1:
                     subject=str(o)
-            data.append((subject, predicate, object_elt, truth))
+            train_data.append((subject, predicate, object_elt, truth))
+        for id in ids_test:
+            for _,p,o in graph_test.triples((id, None, None)):
+                if str(p) == "http://swc2017.aksw.org/hasTruthValue":
+                    if(str(o)=='1.0'):
+                        truth = 1
+                    else:
+                        truth = 0
+                if str(p).find("object") != -1:
+                    object_elt=str(o)
+                if str(p).find("predicate") != -1:
+                    predicate=str(o)
+                if str(p).find("subject") != -1:
+                    subject=str(o)
+            test_data.append((subject, predicate, object_elt, truth))
         
-        triples = pd.DataFrame(data=data, columns=['subject','predicate','object','truth'])
+        train = pd.DataFrame(data=train_data, columns=['subject','predicate','object','truth'])
+        test = pd.DataFrame(data=test_data, columns=['subject','predicate','object','truth'])
 
-        return triples.iloc[:int(len(triples)*0.7)], triples.iloc[int(len(triples)*0.7):]
+        return train, test
     
     def extract_bpdp_triples(self, file):
         subject = ""
