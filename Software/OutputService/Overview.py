@@ -116,6 +116,7 @@ class Overview:
         tmp = []
         for df, auc_roc in testingResults:
             tmp.append(auc_roc)
+            # print("AUC in stats is: ", auc_roc)
         return self._statistics(tmp)
     
     def _statistics(self, values:list):

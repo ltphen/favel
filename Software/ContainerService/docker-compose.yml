@@ -57,7 +57,7 @@ services:
     ports:
       - 4010:4010
 
-  # copaal: 
-  #   build: ./copaal
-  #   ports: 
-  #     - 3333:3333
+  copaal: 
+    build: ./copaal
+    ports: 
+      - 3333:3333

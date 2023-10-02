@@ -2,8 +2,6 @@ from sklearn import metrics
 from sklearn import preprocessing
 from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import cross_val_score
-from skopt import BayesSearchCV
-from skopt.space import Real, Categorical, Integer
 import logging
 import numpy as np
 import os, sys, ast, warnings, pdb, random
@@ -12,6 +10,7 @@ import pickle
 import sklearn
 import statistics
 if not sys.warnoptions: warnings.simplefilter("ignore")
+import autosklearn.classification
 
 class ML:
     
@@ -109,30 +108,18 @@ class ML:
         With a given range, this function search for the best parameters giving optimal perfomance to the given model. 
         Done using https://scikit-optimize.github.io/stable/modules/generated/skopt.BayesSearchCV.html 
         """
-        params_range_dict={}
-        for x in ml_model_params:
-            if type(x['range'])==tuple:
-                if type(x['range'][0]) == int: 
-                    params_range_dict[x['name']] = Integer(x['range'][0], x['range'][1])
-                elif type(x['range'][0]) == float: 
-                    params_range_dict[x['name']] = Real(x['range'][0], x['range'][1])
-            elif type(x['range']) == list:
-                params_range_dict[x['name']] = Categorical(x['range'])
 
-        opt = BayesSearchCV(
-                    model,
-                    params_range_dict,
-                    n_iter=5,
-                    random_state=0
-                )
-        _ = opt.fit(X, y)
-        best_params=dict(opt.best_params_)
+        
+        best_params=dict()
         return best_params
 
 
-    def get_sklearn_model(self, model_name, ml_model_params, train_data):
+    def get_sklearn_model(self, ml_model_params, train_data):
         ''' from model name string specified in conf file, here we get the actual sklearn model obj '''
-
+        return autosklearn.classification.AutoSklearnClassifier(
+            metric=[autosklearn.metrics.roc_auc],
+        )
+    
         X=train_data.drop(['subject', 'predicate', 'object', 'truth'], axis=1)
         y=train_data.truth
 
@@ -229,19 +216,25 @@ class ML:
 
             print('TRAIN: ', X.shape, y.shape, ml_model, y.dtypes)
 
-            roc_auc_cv_scores = self.custom_model_train_cv(X, y, ml_model)
+
+            # roc_auc_cv_scores = self.custom_model_train_cv(X, y, ml_model)
+            roc_auc_cv_scores = 0
 
             trained_model, model_name, roc_auc_overall_score, report_df = self.custom_model_train(X, y, ml_model)
-            metrics = {"overall": roc_auc_overall_score, "cv_mean": np.mean(roc_auc_cv_scores), "cv_std": round(statistics.stdev(roc_auc_cv_scores), 2)}
+            #metrics = {"overall": roc_auc_overall_score, "cv_mean": np.mean(roc_auc_cv_scores), "cv_std": round(statistics.stdev(roc_auc_cv_scores), 2)}
+            metrics = {"overall": roc_auc_overall_score}
 
             logging.info('ML model trained')
 
+            report_df = trained_model.leaderboard(detailed=True)
+            print (report_df)
 
             if trained_model==False and model_name==False and roc_auc_overall_score==False: 
                 return False
             elif self.output:
-                report_df.to_excel(f'{output_path}/Classifcation Report.xlsx', index=False)
+                # report_df.to_excel(f'{output_path}/Classifcation Report.xlsx', index=False)
 
+                with open(f'{output_path}/report.pkl','wb') as fp:   pickle.dump(report_df,fp)
                 with open(f'{output_path}/classifier.pkl','wb') as fp:   pickle.dump(trained_model,fp)
                 with open(f'{output_path}/predicate_le.pkl','wb') as fp: pickle.dump(le,   fp)
 
@@ -256,7 +249,7 @@ class ML:
             raise ex
 
 
-    def test_model(self, df, ml_model, le_predicate, normalizer):
+    def test_model(self, df, ml_model, le_predicate, normalizer=None):
         """
         Given a trained model, this function predict scores of the assertions given in the df dataframe
         """
@@ -269,15 +262,26 @@ class ML:
 
             # pdb.set_trace()
             X['predicate'] = le_predicate.transform(np.array(X['predicate'].astype(str), dtype=object))
-            # X = df.drop(['subject','object'], axis=1)
+
+            normalizer = preprocessing.MinMaxScaler()
 
             if normalizer is None:
                 logging.debug('Using default normalizer')
             else:
                 try: 
-                    X, normalizer = self.normalise_data(df=X, normalizer_name=None, normalizer=normalizer)
+                    X, normalizer = self.normalise_data(df=X, normalizer=normalizer)
                 except: 
                     logging.error('No normalizer found')
+             # X = df.drop(['subject','object'], axis=1)
+            
+            X.columns = range(X.shape[1])
+            # Remove the header column
+            #X = X.iloc[1:]
+
+            # Reset the index of the dataframe
+            #X = X.reset_index(drop=True)
+
+            print('Test: ', X.shape, y.shape, ml_model, y.dtypes)
 
             y_pred=ml_model.predict_proba(X)
             class_1_index = 0 if ml_model.classes_[0]=='1' else 1

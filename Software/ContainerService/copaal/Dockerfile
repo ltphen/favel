@@ -3,6 +3,7 @@
 # RUN apk update && apk add git && apk add maven
 # RUN git clone "https://github.com/ltphen/COPAAL"
 
+
 # FROM maven:3.6.0-jdk-11-slim AS maven
 # RUN mkdir copaal
 # COPY --from=alpine . /copaal
