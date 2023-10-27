@@ -104,7 +104,7 @@ class Controller:
         training_df = self.ml.createDataFrame(self.trainingData)
 
         # ml_model_name = self.mlAlgorithm
-        self.mlAlgorithm = self.mlAlgorithm + self.trainingTime
+        self.mlAlgorithm = self.mlAlgorithm + str(self.trainingTime)
         ml_model = self.ml.get_sklearn_model(self.mlParameters, training_df, self.trainingTime)
 
         self.model, self.lableEncoder, self.normalizer, trainMetrics = self.ml.train_model(df=training_df, 
