@@ -114,10 +114,11 @@ class ML:
         return best_params
 
 
-    def get_sklearn_model(self, ml_model_params, train_data):
+    def get_sklearn_model(self, ml_model_params, train_data, time=3600):
         ''' from model name string specified in conf file, here we get the actual sklearn model obj '''
         return autosklearn.classification.AutoSklearnClassifier(
             metric=[autosklearn.metrics.roc_auc],
+            time_left_for_this_task=time
         )
     
         X=train_data.drop(['subject', 'predicate', 'object', 'truth'], axis=1)

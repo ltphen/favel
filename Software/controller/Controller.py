@@ -27,6 +27,7 @@ class Controller:
         self.useCache = useCache
         self.handleContainers = handleContainers
         self.testingData = None
+        self.trainingTime = 3600
         self.testingResults = []
         self.trainingData = None
         self.trainingMetrics = []
@@ -88,8 +89,11 @@ class Controller:
         Repeat training and testing as often as specified in the configuration.
         """
         for i in range(self.iterations):
-            self.train()
-            self.test()
+            # Working with multiple times
+            for time in range(300, 3900, 300):
+                self.trainingTime = time
+                self.train()
+                self.test()
     
     def train(self):
         """
@@ -100,7 +104,8 @@ class Controller:
         training_df = self.ml.createDataFrame(self.trainingData)
 
         # ml_model_name = self.mlAlgorithm
-        ml_model = self.ml.get_sklearn_model(self.mlParameters, training_df)
+        self.mlAlgorithm = self.mlAlgorithm + self.trainingTime
+        ml_model = self.ml.get_sklearn_model(self.mlParameters, training_df, self.trainingTime)
 
         self.model, self.lableEncoder, self.normalizer, trainMetrics = self.ml.train_model(df=training_df, 
                                             ml_model=ml_model, 
