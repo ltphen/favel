@@ -11,16 +11,22 @@ def main():
 
     # Conduct a single experiment (-e flag)
     if not args.experiment is None:
-        logging.info("Experiment started")
-        controller = Controller(approaches=dict(config['Approaches']), mlAlgorithm=config['MLAlgorithm']['method'], mlParameters=config['MLAlgorithm']['parameters'],
-                                normalizer_name=config['MLAlgorithm']['normalizer'], paths=paths, iterations=int(config['General']['iterations']),
-                                writeToDisk=args.write, useCache=eval(config['General']['useCache']), handleContainers=args.containers)
-        controller.input()
-        controller.validate()
-        controller.ensemble()
-        controller.output()
-        logging.info("Experiment finished")
-        
+
+        # Working with multiple times
+        for time in range(300, 3900, 300):
+            logging.info("Experiment started")
+            controller = Controller(approaches=dict(config['Approaches']), mlAlgorithm=config['MLAlgorithm']['method'], mlParameters=config['MLAlgorithm']['parameters'],
+                                    normalizer_name=config['MLAlgorithm']['normalizer'], paths=paths, iterations=int(config['General']['iterations']),
+                                    writeToDisk=args.write, useCache=eval(config['General']['useCache']), 
+                                    handleContainers=args.containers,
+                                    trainingTime=time
+                                    )
+            controller.input()
+            controller.validate()
+            controller.ensemble()
+            controller.output()
+            logging.info("Experiment finished")
+            
     # Conduct experiments in batch mode (-b flag)
     elif not args.batch is None:
         subsetGen = powerset(list(dict(config['Approaches']).items()))

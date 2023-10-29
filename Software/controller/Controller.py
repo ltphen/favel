@@ -16,7 +16,7 @@ class Controller:
         - controller.output()
     """
 
-    def __init__(self, approaches:dict, mlAlgorithm:str, mlParameters:str, normalizer_name:str, paths:dict, iterations:int, writeToDisk:bool, useCache:bool, handleContainers:bool):
+    def __init__(self, approaches:dict, mlAlgorithm:str, mlParameters:str, normalizer_name:str, paths:dict, iterations:int, writeToDisk:bool, useCache:bool, handleContainers:bool, trainingTime: int):
         self.approaches = approaches
         self.mlAlgorithm = mlAlgorithm
         self.mlParameters = mlParameters
@@ -27,7 +27,7 @@ class Controller:
         self.useCache = useCache
         self.handleContainers = handleContainers
         self.testingData = None
-        self.trainingTime = 3600
+        self.trainingTime = trainingTime
         self.testingResults = []
         self.trainingData = None
         self.trainingMetrics = []
@@ -89,9 +89,6 @@ class Controller:
         Repeat training and testing as often as specified in the configuration.
         """
         for i in range(self.iterations):
-            # Working with multiple times
-            for time in range(300, 3900, 300):
-                self.trainingTime = time
                 self.train()
                 self.test()
     
