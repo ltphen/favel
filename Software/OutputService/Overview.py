@@ -61,20 +61,20 @@ class Overview:
             
         
         # See if there already is a row for the current experiment and dataset
-        intersection = self.findRow(overviewFrame)
-        if len(intersection) > 0:
-            # Update existing row
-            self.update(overviewFrame, intersection)
-            logging.debug(f"Updated row in evaluation overview")
+        # intersection = self.findRow(overviewFrame)
+        # if len(intersection) > 0:
+        #     # Update existing row
+        #     self.update(overviewFrame, intersection)
+        #     logging.debug(f"Updated row in evaluation overview")
 
-        else:
+        # else:
             # Add new row
-            data = [self.keyData[key] for key in self.primaryKey]
-            data.extend([self.dependentData[key] for key in self.dependentProperties])
-            row = pd.Series(data, index=overviewFrame.columns)
+        data = [self.keyData[key] for key in self.primaryKey]
+        data.extend([self.dependentData[key] for key in self.dependentProperties])
+        row = pd.Series(data, index=overviewFrame.columns)
 
-            overviewFrame = overviewFrame.append(row, ignore_index=True)
-            logging.debug(f"Added row to evaluation overview \n{row}")
+        overviewFrame = overviewFrame.append(row, ignore_index=True)
+        logging.debug(f"Added row to evaluation overview \n{row}")
 
             
         overviewFrame.to_excel(path.join(self.evaluation, "Overview.xlsx"), index=False)

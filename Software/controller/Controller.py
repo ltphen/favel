@@ -104,7 +104,7 @@ class Controller:
         training_df = self.ml.createDataFrame(self.trainingData)
 
         # ml_model_name = self.mlAlgorithm
-        self.mlAlgorithm = self.mlAlgorithm + str(self.trainingTime)
+        # self.mlAlgorithm = self.mlAlgorithm
         ml_model = self.ml.get_sklearn_model(self.mlParameters, training_df, self.trainingTime)
 
         self.model, self.lableEncoder, self.normalizer, trainMetrics = self.ml.train_model(df=training_df, 
@@ -131,7 +131,7 @@ class Controller:
         Write the results to disk.
         """
         op = Output(self.paths)
-        op.writeOverview(self.testingResults, self.approaches.keys(), self.mlAlgorithm, self.mlParameters, self.trainingMetrics, self.normalizer_name)
+        op.writeOverview(self.testingResults, self.approaches.keys(), self.mlAlgorithm+ str(self.trainingTime), self.mlParameters, self.trainingMetrics, self.normalizer_name)
         if self.writeToDisk:
             op.writeOutput(self.testingResults)
             #op.gerbilFormat(self.testingData)
