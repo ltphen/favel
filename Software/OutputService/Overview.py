@@ -41,6 +41,10 @@ class Overview:
         self.dependentData["#Approaches"] = len(approaches)
         self.dependentData["Improvement"] = self.dependentData["Testing AUC-ROC Mean"] - self.dependentData["Best Single Score"]
         
+
+        print("RESULT ==================================================================")
+        print(self.dependentData["Testing AUC-ROC Min."], self.dependentData["Testing AUC-ROC Max."], self.dependentData["Testing AUC-ROC Mean"], self.dependentData["Testing AUC-ROC Std. Dev."])
+
         for key in self.primaryKey:
             assert(key in self.keyData.keys())
                 
