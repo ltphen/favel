@@ -42,9 +42,10 @@ class Overview:
         self.dependentData["Improvement"] = self.dependentData["Testing AUC-ROC Mean"] - self.dependentData["Best Single Score"]
         
 
-        print("RESULT ==================================================================")
-        print(self.dependentData["Testing AUC-ROC Min."], self.dependentData["Testing AUC-ROC Max."], self.dependentData["Testing AUC-ROC Mean"], self.dependentData["Testing AUC-ROC Std. Dev."])
-
+        print("RESULT (ML, Best single) ==================================================================")
+        print(self.dependentData["Testing AUC-ROC Mean"],self.dependentData["Best Single Approach"])
+        print("Approaches scores", self.dependentData["Approaches Scores"])
+        
         for key in self.primaryKey:
             assert(key in self.keyData.keys())
                 
