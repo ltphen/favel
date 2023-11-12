@@ -132,6 +132,6 @@ class ReadFiles:
     
     def getCsv(self, path):
         triples = pd.DataFrame(data=[], columns=['subject', 'predicate', 'object', 'truth'])
-        inputData = pd.read_csv(path)
+        inputData = pd.read_csv(path, index_col=0)
         return inputData
         
