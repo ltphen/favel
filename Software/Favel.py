@@ -9,7 +9,7 @@ def main():
     config = _loadConfig(configPath)
     _configureLogging(config)
 
-    automl = False if args.automl is None else True
+    automl = False if not args.automl or args.automl is None  else True
 
     # Conduct a single experiment (-e flag)
     if not args.experiment is None:

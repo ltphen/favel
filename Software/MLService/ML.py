@@ -230,8 +230,8 @@ class ML:
             metrics = {"overall": roc_auc_overall_score}
 
             logging.info('ML model trained')
-
-            report_df = trained_model.leaderboard()
+            if self.automl:
+                report_df = trained_model.leaderboard()
             #print (report_df)
 
             if trained_model==False and model_name==False and roc_auc_overall_score==False: 
