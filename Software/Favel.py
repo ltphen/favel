@@ -9,6 +9,8 @@ def main():
     config = _loadConfig(configPath)
     _configureLogging(config)
 
+    automl = False if args.automl is None else True
+
     # Conduct a single experiment (-e flag)
     if not args.experiment is None:
 
@@ -19,7 +21,8 @@ def main():
                                 normalizer_name=config['MLAlgorithm']['normalizer'], paths=paths, iterations=int(config['General']['iterations']),
                                 writeToDisk=args.write, useCache=eval(config['General']['useCache']), 
                                 handleContainers=args.containers,
-                                trainingTime=1200
+                                trainingTime=1200,
+                                automl=automl
                                 )
         controller.input()
         controller.validate()
@@ -67,6 +70,7 @@ def _parseArguments(argv=None):
     argumentParser.add_argument("-d", "--data", required=True, help="Path to input data")
     argumentParser.add_argument("-w", "--write", action="store_true", help="Write all possible outputs to disk. This includes all models and all result data frames. Without this option only the overview file is written to disk.")
     argumentParser.add_argument("-c", "--containers", action="store_true", help="To Start/Stop containers, if not already running")
+    argumentParser.add_argument("-a", "--automl", action="store_true", help="To use the autoML system instead of the manual algorithm selection")
 
     group = argumentParser.add_mutually_exclusive_group(required=True)
     group.add_argument("-e", "--experiment", help="Name of the experiment to execute. The name must correspond to one directory in the Evaluation directory which contains a configuration file")

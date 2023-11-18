@@ -14,9 +14,10 @@ import autosklearn.classification
 
 class ML:
     
-    def __init__(self, output:bool):
+    def __init__(self, output:bool, automl: bool):
         np.random.seed(random.randint(0, 10000))
         self.output = output
+        self.automl = automl
 
 
     def get_normalizer_object(self, normalizer_name):
@@ -114,40 +115,41 @@ class ML:
         return best_params
 
 
-    def get_sklearn_model(self, ml_model_params, train_data, time=3600):
+    def get_sklearn_model(self, ml_model_params, train_data, time=3600, model_name=""):
         ''' from model name string specified in conf file, here we get the actual sklearn model obj '''
-        return autosklearn.classification.AutoSklearnClassifier(
-            metric=[autosklearn.metrics.roc_auc],
-            time_left_for_this_task=time,
-            ensemble_size=1,
-            ensemble_class=None
-        )
-    
-        X=train_data.drop(['subject', 'predicate', 'object', 'truth'], axis=1)
-        y=train_data.truth
+        if self.automl:
+            return autosklearn.classification.AutoSklearnClassifier(
+                metric=[autosklearn.metrics.roc_auc],
+                time_left_for_this_task=time,
+                ensemble_size=1,
+                ensemble_class=None
+            )
+        else:
+            X=train_data.drop(['subject', 'predicate', 'object', 'truth'], axis=1)
+            y=train_data.truth
 
-        xdf=pd.DataFrame(sklearn.utils.all_estimators())
-        try:
-            model = xdf[xdf[0]==model_name][1].item()
-        except ValueError as ex:
-            logging.error(f"Model '{model_name}' is unknown.")
-            raise ex
+            xdf=pd.DataFrame(sklearn.utils.all_estimators())
+            try:
+                model = xdf[xdf[0]==model_name][1].item()
+            except ValueError as ex:
+                logging.error(f"Model '{model_name}' is unknown.")
+                raise ex
 
-        if ml_model_params == 'default':
-            model=model()
+            if ml_model_params == 'default':
+                model=model()
 
-        elif type(ast.literal_eval(ml_model_params)) == dict:
-            model=model()
-            ml_model_params=ast.literal_eval(ml_model_params)
-            model.set_params(**ml_model_params)
+            elif type(ast.literal_eval(ml_model_params)) == dict:
+                model=model()
+                ml_model_params=ast.literal_eval(ml_model_params)
+                model.set_params(**ml_model_params)
 
-        elif type(ast.literal_eval(ml_model_params)) == list:
-            ml_model_params=ast.literal_eval(ml_model_params)
-            model=model()
-            best_params=self.search_best_params(model, ml_model_params, X, y) # skopt
-            model.set_params(**best_params)
+            elif type(ast.literal_eval(ml_model_params)) == list:
+                ml_model_params=ast.literal_eval(ml_model_params)
+                model=model()
+                best_params=self.search_best_params(model, ml_model_params, X, y) # skopt
+                model.set_params(**best_params)
 
-        return model
+            return model
 
 
     def custom_model_train(self,X, y, model):
@@ -230,7 +232,7 @@ class ML:
             logging.info('ML model trained')
 
             report_df = trained_model.leaderboard()
-            print (report_df)
+            #print (report_df)
 
             if trained_model==False and model_name==False and roc_auc_overall_score==False: 
                 return False
