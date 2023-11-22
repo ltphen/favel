@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Isabella_II_of_Spain>
+        rdfs:label     "Isabelle II"@fr , "Isabella II. (Spanien)"@de , "Isabel II of Spain"@en ;
+        dbo:death      <http://dbpedia.org/resource/Isabella_II_of_Spain__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Isabelle_II> , <http://de.dbpedia.org/resource/Isabella_II._(Spanien)> ;
+        skos:altLabel  "Isabelle II"@fr , "Isabella II. (Spanien)"@de , "Isabel II of Spain"@en .
+
+<http://dbpedia.org/resource/Isabella_II_of_Spain__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Paris> ;
+        dbo:from        "1830-10-10"^^xsd:date ;
+        dbo:to          "1830-10-10"^^xsd:date .
+
+<http://dbpedia.org/resource/Paris>
+        rdfs:label     "Paris"@fr , "Paris"@de , "Paris"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Paris> , <http://de.dbpedia.org/resource/Paris> ;
+        skos:altLabel  "Paris"@fr , "Paris"@de , "Paris"@en .

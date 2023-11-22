@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Henryk_Sienkiewicz>
+        rdfs:label     "Henryk Sienkiewicz"@fr , "Henryk Sienkiewicz"@de , "Henryk Sienkiewicz"@en ;
+        dbo:death      <http://dbpedia.org/resource/Henryk_Sienkiewicz__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Henryk_Sienkiewicz> , <http://de.dbpedia.org/resource/Henryk_Sienkiewicz> ;
+        skos:altLabel  "Henryk Sienkiewicz"@fr , "Henryk Sienkiewicz"@de , "Henryk Sienkiewicz"@en .
+
+<http://dbpedia.org/resource/Wola_Okrzejska>
+        rdfs:label     "Wola Okrzejska"@fr , "Wola Okrzejska"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Wola_Okrzejska> ;
+        skos:altLabel  "Wola Okrzejska"@fr , "Wola Okrzejska"@en .
+
+<http://dbpedia.org/resource/Henryk_Sienkiewicz__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Wola_Okrzejska> ;
+        dbo:from        "1846-5-5"^^xsd:date ;
+        dbo:to          "1846-5-5"^^xsd:date .

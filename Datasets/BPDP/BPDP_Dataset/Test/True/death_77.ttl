@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Bournemouth>
+        rdfs:label     "Bournemouth"@fr , "Bournemouth"@de , "Bournemouth"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Bournemouth> , <http://de.dbpedia.org/resource/Bournemouth> ;
+        skos:altLabel  "Bournemouth"@fr , "Bournemouth"@de , "Bournemouth"@en .
+
+<http://dbpedia.org/resource/J._R._R._Tolkien__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Bournemouth> ;
+        dbo:from        "1892-1-3"^^xsd:date ;
+        dbo:to          "1892-1-3"^^xsd:date .
+
+<http://dbpedia.org/resource/J._R._R._Tolkien>
+        rdfs:label     "J. R. R. Tolkien"@fr , "J. R. R. Tolkien"@de , "J. R. R. Tolkien"@en ;
+        dbo:death      <http://dbpedia.org/resource/J._R._R._Tolkien__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/J._R._R._Tolkien> , <http://de.dbpedia.org/resource/J._R._R._Tolkien> ;
+        skos:altLabel  "J. R. R. Tolkien"@fr , "J. R. R. Tolkien"@de , "J. R. R. Tolkien"@en .

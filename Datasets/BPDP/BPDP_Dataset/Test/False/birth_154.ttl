@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Ambrose>
+        rdfs:label     "Ambroise de Milan"@fr , "Ambrosius von Mailand"@de , "Ambrose"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Ambrose__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Ambroise_de_Milan> , <http://de.dbpedia.org/resource/Ambrosius_von_Mailand> ;
+        skos:altLabel  "Ambroise de Milan"@fr , "Ambrosius von Mailand"@de , "Ambrose"@en .
+
+<http://dbpedia.org/resource/Milan>
+        rdfs:label     "Milan"@fr , "Mailand"@de , "Milan"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Milan> , <http://de.dbpedia.org/resource/Mailand> ;
+        skos:altLabel  "Milan"@fr , "Mailand"@de , "Milan"@en .
+
+<http://dbpedia.org/resource/Ambrose__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Milan> ;
+        dbo:from        "339-1-1"^^xsd:date ;
+        dbo:to          "339-1-1"^^xsd:date .

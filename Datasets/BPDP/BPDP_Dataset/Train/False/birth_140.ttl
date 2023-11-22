@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Christian_I_of_Denmark__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Copenhagen> ;
+        dbo:from        "1426-1-1"^^xsd:date ;
+        dbo:to          "1426-1-1"^^xsd:date .
+
+<http://dbpedia.org/resource/Copenhagen>
+        rdfs:label     "Copenhague"@fr , "Kopenhagen"@de , "Copenhagen"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Copenhague> , <http://de.dbpedia.org/resource/Kopenhagen> ;
+        skos:altLabel  "Copenhague"@fr , "Kopenhagen"@de , "Copenhagen"@en .
+
+<http://dbpedia.org/resource/Christian_I_of_Denmark>
+        rdfs:label     "Christian Ier de Danemark"@fr , "Christian I. (Dänemark, Norwegen und Schweden)"@de , "Christian I of Denmark"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Christian_I_of_Denmark__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Christian_Ier_de_Danemark> , <http://de.dbpedia.org/resource/Christian_I._(Dänemark,_Norwegen_und_Schweden)> ;
+        skos:altLabel  "Christian Ier de Danemark"@fr , "Christian I. (Dänemark, Norwegen und Schweden)"@de , "Christian I of Denmark"@en .

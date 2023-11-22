@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Christopher_Columbus__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Valladolid> ;
+        dbo:from        "1451-11-9"^^xsd:date ;
+        dbo:to          "1451-11-9"^^xsd:date .
+
+<http://dbpedia.org/resource/Christopher_Columbus>
+        rdfs:label     "Christophe Colomb"@fr , "Christoph Kolumbus"@de , "Christopher Columbus"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Christopher_Columbus__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Christophe_Colomb> , <http://de.dbpedia.org/resource/Christoph_Kolumbus> ;
+        skos:altLabel  "Christophe Colomb"@fr , "Christoph Kolumbus"@de , "Christopher Columbus"@en .
+
+<http://dbpedia.org/resource/Valladolid>
+        rdfs:label     "Valladolid"@fr , "Valladolid"@de , "Valladolid"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Valladolid> , <http://de.dbpedia.org/resource/Valladolid> ;
+        skos:altLabel  "Valladolid"@fr , "Valladolid"@de , "Valladolid"@en .

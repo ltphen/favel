@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Vienna>
+        rdfs:label     "Vienne (Autriche)"@fr , "Wien"@de , "Vienna"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Vienne_(Autriche)> , <http://de.dbpedia.org/resource/Wien> ;
+        skos:altLabel  "Vienne (Autriche)"@fr , "Wien"@de , "Vienna"@en .
+
+<http://dbpedia.org/resource/Ferdinand_II_of_Portugal__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Vienna> ;
+        dbo:from        "1816-10-29"^^xsd:date ;
+        dbo:to          "1816-10-29"^^xsd:date .
+
+<http://dbpedia.org/resource/Ferdinand_II_of_Portugal>
+        rdfs:label     "Ferdinand II (roi de Portugal)"@fr , "Ferdinand II. (Portugal)"@de , "Ferdinand II of Portugal"@en ;
+        dbo:death      <http://dbpedia.org/resource/Ferdinand_II_of_Portugal__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Ferdinand_II_(roi_de_Portugal)> , <http://de.dbpedia.org/resource/Ferdinand_II._(Portugal)> ;
+        skos:altLabel  "Ferdinand II (roi de Portugal)"@fr , "Ferdinand II. (Portugal)"@de , "Ferdinand II of Portugal"@en .

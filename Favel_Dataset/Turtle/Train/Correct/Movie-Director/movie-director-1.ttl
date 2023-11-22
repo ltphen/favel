@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Yolki_3> ns1:director <http://dbpedia.org/resource/Levan_Gabriadze> .
-

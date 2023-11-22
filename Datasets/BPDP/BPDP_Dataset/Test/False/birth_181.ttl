@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Arthur_de_Gobineau>
+        rdfs:label     "Joseph Arthur de Gobineau"@fr , "Arthur de Gobineau"@de , "Arthur de Gobineau"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Arthur_de_Gobineau__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Joseph_Arthur_de_Gobineau> , <http://de.dbpedia.org/resource/Arthur_de_Gobineau> ;
+        skos:altLabel  "Joseph Arthur de Gobineau"@fr , "Arthur de Gobineau"@de , "Arthur de Gobineau"@en .
+
+<http://dbpedia.org/resource/Arthur_de_Gobineau__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Turin> ;
+        dbo:from        "1816-7-14"^^xsd:date ;
+        dbo:to          "1816-7-14"^^xsd:date .
+
+<http://dbpedia.org/resource/Turin>
+        rdfs:label     "Turin"@fr , "Turin"@de , "Turin"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Turin> , <http://de.dbpedia.org/resource/Turin> ;
+        skos:altLabel  "Turin"@fr , "Turin"@de , "Turin"@en .

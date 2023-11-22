@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Bremen>
+        rdfs:label     "Brême"@fr , "Bremen"@de , "Bremen"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Brême> , <http://de.dbpedia.org/resource/Bremen> ;
+        skos:altLabel  "Brême"@fr , "Bremen"@de , "Bremen"@en .
+
+<http://dbpedia.org/resource/Ansgar__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Bremen> ;
+        dbo:from        "801-9-8"^^xsd:date ;
+        dbo:to          "801-9-8"^^xsd:date .
+
+<http://dbpedia.org/resource/Ansgar>
+        rdfs:label     "Anschaire de Brême"@fr , "Ansgar (Erzbischof von Hamburg-Bremen)"@de , "Ansgar"@en ;
+        dbo:death      <http://dbpedia.org/resource/Ansgar__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Anschaire_de_Brême> , <http://de.dbpedia.org/resource/Ansgar_(Erzbischof_von_Hamburg-Bremen)> ;
+        skos:altLabel  "Anschaire de Brême"@fr , "Ansgar (Erzbischof von Hamburg-Bremen)"@de , "Ansgar"@en .

@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Aga_Khan_III__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Bombay_Presidency> ;
+        dbo:from        "1877-11-2"^^xsd:date ;
+        dbo:to          "1877-11-2"^^xsd:date .
+
+<http://dbpedia.org/resource/Bombay_Presidency>
+        rdfs:label     "Présidence de Bombay"@fr , "Bombay (Präsidentschaft)"@de , "Bombay Presidency"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Présidence_de_Bombay> , <http://de.dbpedia.org/resource/Bombay_(Präsidentschaft)> ;
+        skos:altLabel  "Présidence de Bombay"@fr , "Bombay (Präsidentschaft)"@de , "Bombay Presidency"@en .
+
+<http://dbpedia.org/resource/Aga_Khan_III>
+        rdfs:label     "Aga Khan III"@fr , "Aga Khan III."@de , "Aga Khan III"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Aga_Khan_III__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Aga_Khan_III> , <http://de.dbpedia.org/resource/Aga_Khan_III.> ;
+        skos:altLabel  "Aga Khan III"@fr , "Aga Khan III."@de , "Aga Khan III"@en .

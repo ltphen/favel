@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/La_Quinta,_California>
+        rdfs:label     "La Quinta"@fr , "La Quinta"@de , "La Quinta, California"@en ;
+        owl:sameAs     <http://de.dbpedia.org/resource/La_Quinta> , <http://fr.dbpedia.org/resource/La_Quinta> ;
+        skos:altLabel  "La Quinta"@fr , "La Quinta"@de , "La Quinta, California"@en .
+
+<http://dbpedia.org/resource/Frank_Capra>
+        rdfs:label     "Frank Capra"@fr , "Frank Capra"@de , "Frank Capra"@en ;
+        dbo:death      <http://dbpedia.org/resource/Frank_Capra__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Frank_Capra> , <http://de.dbpedia.org/resource/Frank_Capra> ;
+        skos:altLabel  "Frank Capra"@fr , "Frank Capra"@de , "Frank Capra"@en .
+
+<http://dbpedia.org/resource/Frank_Capra__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/La_Quinta,_California> ;
+        dbo:from        "1897-5-18"^^xsd:date ;
+        dbo:to          "1897-5-18"^^xsd:date .

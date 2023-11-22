@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Mexico_City>
+        rdfs:label     "Mexico"@fr , "Mexiko-Stadt"@de , "Mexico City"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Mexico> , <http://de.dbpedia.org/resource/Mexiko-Stadt> ;
+        skos:altLabel  "Mexico"@fr , "Mexiko-Stadt"@de , "Mexico City"@en .
+
+<http://dbpedia.org/resource/James_Wilkinson>
+        rdfs:label     "James Wilkinson"@fr , "James Wilkinson"@de , "James Wilkinson"@en ;
+        dbo:death      <http://dbpedia.org/resource/James_Wilkinson__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/James_Wilkinson> , <http://de.dbpedia.org/resource/James_Wilkinson> ;
+        skos:altLabel  "James Wilkinson"@fr , "James Wilkinson"@de , "James Wilkinson"@en .
+
+<http://dbpedia.org/resource/James_Wilkinson__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Mexico_City> ;
+        dbo:from        "1757-3-24"^^xsd:date ;
+        dbo:to          "1757-3-24"^^xsd:date .

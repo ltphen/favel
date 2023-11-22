@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Abd_al-Rahman_I>
+        rdfs:label     "Abd al-Rahman Ier"@fr , "Abd ar-Rahman I."@de , "Abd al-Rahman I"@en ;
+        dbo:death      <http://dbpedia.org/resource/Abd_al-Rahman_I__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Abd_al-Rahman_Ier> , <http://de.dbpedia.org/resource/Abd_ar-Rahman_I.> ;
+        skos:altLabel  "Abd al-Rahman Ier"@fr , "Abd ar-Rahman I."@de , "Abd al-Rahman I"@en .
+
+<http://dbpedia.org/resource/Damascus>
+        rdfs:label     "Damas"@fr , "Damaskus"@de , "Damascus"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Damas> , <http://de.dbpedia.org/resource/Damaskus> ;
+        skos:altLabel  "Damas"@fr , "Damaskus"@de , "Damascus"@en .
+
+<http://dbpedia.org/resource/Abd_al-Rahman_I__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Damascus> ;
+        dbo:from        "731-0-0"^^xsd:date ;
+        dbo:to          "731-0-0"^^xsd:date .

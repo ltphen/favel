@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/John_James_Audubon__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/New_York_City> ;
+        dbo:from        "1785-4-26"^^xsd:date ;
+        dbo:to          "1785-4-26"^^xsd:date .
+
+<http://dbpedia.org/resource/John_James_Audubon>
+        rdfs:label     "Jean-Jacques Audubon"@fr , "John James Audubon"@de , "John James Audubon"@en ;
+        dbo:birth      <http://dbpedia.org/resource/John_James_Audubon__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Jean-Jacques_Audubon> , <http://de.dbpedia.org/resource/John_James_Audubon> ;
+        skos:altLabel  "Jean-Jacques Audubon"@fr , "John James Audubon"@de , "John James Audubon"@en .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label     "New York"@fr , "New York City"@de , "New York City"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/New_York> , <http://de.dbpedia.org/resource/New_York_City> ;
+        skos:altLabel  "New York"@fr , "New York City"@de , "New York City"@en .

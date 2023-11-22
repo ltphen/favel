@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Paris>
+        rdfs:label     "Paris"@fr , "Paris"@de , "Paris"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Paris> , <http://de.dbpedia.org/resource/Paris> ;
+        skos:altLabel  "Paris"@fr , "Paris"@de , "Paris"@en .
+
+<http://dbpedia.org/resource/Eugène_Viollet-le-Duc__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Paris> ;
+        dbo:from        "1814-1-1"^^xsd:date ;
+        dbo:to          "1814-1-1"^^xsd:date .
+
+<http://dbpedia.org/resource/Eugène_Viollet-le-Duc>
+        rdfs:label     "Eugène Viollet-le-Duc"@fr , "Eugène Viollet-le-Duc"@de , "Eugène Viollet-le-Duc"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Eugène_Viollet-le-Duc__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Eugène_Viollet-le-Duc> , <http://de.dbpedia.org/resource/Eugène_Viollet-le-Duc> ;
+        skos:altLabel  "Eugène Viollet-le-Duc"@fr , "Eugène Viollet-le-Duc"@de , "Eugène Viollet-le-Duc"@en .

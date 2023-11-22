@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Austen_Henry_Layard__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/London> ;
+        dbo:from        "1817-3-5"^^xsd:date ;
+        dbo:to          "1817-3-5"^^xsd:date .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label     "Londres"@fr , "London"@de , "London"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Londres> , <http://de.dbpedia.org/resource/London> ;
+        skos:altLabel  "Londres"@fr , "London"@de , "London"@en .
+
+<http://dbpedia.org/resource/Austen_Henry_Layard>
+        rdfs:label     "Austen Henry Layard"@fr , "Austen Henry Layard"@de , "Austen Henry Layard"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Austen_Henry_Layard__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Austen_Henry_Layard> , <http://de.dbpedia.org/resource/Austen_Henry_Layard> ;
+        skos:altLabel  "Austen Henry Layard"@fr , "Austen Henry Layard"@de , "Austen Henry Layard"@en .

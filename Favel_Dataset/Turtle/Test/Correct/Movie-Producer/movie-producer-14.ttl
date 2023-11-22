@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Checking_Out_(1989_film)> ns1:producer <http://dbpedia.org/resource/Denis_O'Brien_(producer)> .
-

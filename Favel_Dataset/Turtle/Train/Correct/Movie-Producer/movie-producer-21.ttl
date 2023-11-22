@@ -1,5 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Command_Decision_(film)> ns1:producer <http://dbpedia.org/resource/Gottfried_Reinhardt>,
-        <http://dbpedia.org/resource/Sidney_Franklin_(director)> .
-

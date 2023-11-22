@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Henry_Fielding>
+        rdfs:label     "Henry Fielding"@fr , "Henry Fielding"@de , "Henry Fielding"@en ;
+        dbo:death      <http://dbpedia.org/resource/Henry_Fielding__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Henry_Fielding> , <http://de.dbpedia.org/resource/Henry_Fielding> ;
+        skos:altLabel  "Henry Fielding"@fr , "Henry Fielding"@de , "Henry Fielding"@en .
+
+<http://dbpedia.org/resource/Lisbon>
+        rdfs:label     "Lisbonne"@fr , "Lissabon"@de , "Lisbon"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Lisbonne> , <http://de.dbpedia.org/resource/Lissabon> ;
+        skos:altLabel  "Lisbonne"@fr , "Lissabon"@de , "Lisbon"@en .
+
+<http://dbpedia.org/resource/Henry_Fielding__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Lisbon> ;
+        dbo:from        "1707-4-22"^^xsd:date ;
+        dbo:to          "1707-4-22"^^xsd:date .

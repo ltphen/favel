@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Douglas_Adams>
+        rdfs:label     "Douglas Adams"@fr , "Douglas Adams"@de , "Douglas Adams"@en ;
+        dbo:death      <http://dbpedia.org/resource/Douglas_Adams__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Douglas_Adams> , <http://de.dbpedia.org/resource/Douglas_Adams> ;
+        skos:altLabel  "Douglas Adams"@fr , "Douglas Adams"@de , "Douglas Adams"@en .
+
+<http://dbpedia.org/resource/Douglas_Adams__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Santa_Barbara,_California> ;
+        dbo:from        "1952-3-11"^^xsd:date ;
+        dbo:to          "1952-3-11"^^xsd:date .
+
+<http://dbpedia.org/resource/Santa_Barbara,_California>
+        rdfs:label     "Santa Barbara (Californie)"@fr , "Santa Barbara (Kalifornien)"@de , "Santa Barbara, California"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Santa_Barbara_(Californie)> , <http://de.dbpedia.org/resource/Santa_Barbara_(Kalifornien)> ;
+        skos:altLabel  "Santa Barbara (Californie)"@fr , "Santa Barbara (Kalifornien)"@de , "Santa Barbara, California"@en .

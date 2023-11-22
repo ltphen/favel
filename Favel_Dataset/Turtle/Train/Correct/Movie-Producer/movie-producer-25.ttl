@@ -1,6 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Eastern_Condors> ns1:producer <http://dbpedia.org/resource/Jeffrey_Lau>,
-        <http://dbpedia.org/resource/Leonard_Ho>,
-        <http://dbpedia.org/resource/Wu_Ma> .
-

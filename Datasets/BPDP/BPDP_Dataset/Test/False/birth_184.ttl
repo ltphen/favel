@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Albert_VII,_Archduke_of_Austria>
+        rdfs:label     "Albert d'Autriche (1559-1621)"@fr , "Albrecht VII. von Habsburg"@de , "Albert VII, Archduke of Austria"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Albert_VII,_Archduke_of_Austria__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Albert_d'Autriche_(1559-1621)> , <http://de.dbpedia.org/resource/Albrecht_VII._von_Habsburg> ;
+        skos:altLabel  "Albert d'Autriche (1559-1621)"@fr , "Albrecht VII. von Habsburg"@de , "Albert VII, Archduke of Austria"@en .
+
+<http://dbpedia.org/resource/Brussels>
+        rdfs:label     "Région de Bruxelles-Capitale"@fr , "Region Brüssel-Hauptstadt"@de , "Brussels"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Région_de_Bruxelles-Capitale> , <http://de.dbpedia.org/resource/Region_Brüssel-Hauptstadt> ;
+        skos:altLabel  "Région de Bruxelles-Capitale"@fr , "Region Brüssel-Hauptstadt"@de , "Brussels"@en .
+
+<http://dbpedia.org/resource/Albert_VII,_Archduke_of_Austria__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Brussels> ;
+        dbo:from        "1559-11-13"^^xsd:date ;
+        dbo:to          "1559-11-13"^^xsd:date .

@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Affectionately_Yours> ns1:director <http://dbpedia.org/resource/Peter_Stebbings> .
-

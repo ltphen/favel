@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Jorge_Luis_Borges__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Geneva> ;
+        dbo:from        "1899-8-24"^^xsd:date ;
+        dbo:to          "1899-8-24"^^xsd:date .
+
+<http://dbpedia.org/resource/Geneva>
+        rdfs:label     "Genève"@fr , "Genf"@de , "Geneva"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Genève> , <http://de.dbpedia.org/resource/Genf> ;
+        skos:altLabel  "Genève"@fr , "Genf"@de , "Geneva"@en .
+
+<http://dbpedia.org/resource/Jorge_Luis_Borges>
+        rdfs:label     "Jorge Luis Borges"@fr , "Jorge Luis Borges"@de , "Jorge Luis Borges"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Jorge_Luis_Borges__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Jorge_Luis_Borges> , <http://de.dbpedia.org/resource/Jorge_Luis_Borges> ;
+        skos:altLabel  "Jorge Luis Borges"@fr , "Jorge Luis Borges"@de , "Jorge Luis Borges"@en .

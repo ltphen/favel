@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/John_James_Audubon__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Les_Cayes> ;
+        dbo:from        "1785-4-26"^^xsd:date ;
+        dbo:to          "1785-4-26"^^xsd:date .
+
+<http://dbpedia.org/resource/John_James_Audubon>
+        rdfs:label     "Jean-Jacques Audubon"@fr , "John James Audubon"@de , "John James Audubon"@en ;
+        dbo:death      <http://dbpedia.org/resource/John_James_Audubon__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Jean-Jacques_Audubon> , <http://de.dbpedia.org/resource/John_James_Audubon> ;
+        skos:altLabel  "Jean-Jacques Audubon"@fr , "John James Audubon"@de , "John James Audubon"@en .
+
+<http://dbpedia.org/resource/Les_Cayes>
+        rdfs:label     "Les Cayes (ville)"@fr , "Les Cayes"@de , "Les Cayes"@en ;
+        owl:sameAs     <http://de.dbpedia.org/resource/Les_Cayes> , <http://fr.dbpedia.org/resource/Les_Cayes_(ville)> ;
+        skos:altLabel  "Les Cayes (ville)"@fr , "Les Cayes"@de , "Les Cayes"@en .

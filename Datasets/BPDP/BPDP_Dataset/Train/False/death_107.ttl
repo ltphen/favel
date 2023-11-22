@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Isaac_Bashevis_Singer__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Leoncin> ;
+        dbo:from        "1902-11-21"^^xsd:date ;
+        dbo:to          "1902-11-21"^^xsd:date .
+
+<http://dbpedia.org/resource/Leoncin>
+        rdfs:label     "Leoncin (village)"@fr , "Leoncin"@de , "Leoncin"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Leoncin_(village)> , <http://de.dbpedia.org/resource/Leoncin> ;
+        skos:altLabel  "Leoncin (village)"@fr , "Leoncin"@de , "Leoncin"@en .
+
+<http://dbpedia.org/resource/Isaac_Bashevis_Singer>
+        rdfs:label     "Isaac Bashevis Singer"@fr , "Isaac Bashevis Singer"@de , "Isaac Bashevis Singer"@en ;
+        dbo:death      <http://dbpedia.org/resource/Isaac_Bashevis_Singer__1> ;
+        owl:sameAs     <http://de.dbpedia.org/resource/Isaac_Bashevis_Singer> , <http://fr.dbpedia.org/resource/Isaac_Bashevis_Singer> ;
+        skos:altLabel  "Isaac Bashevis Singer"@fr , "Isaac Bashevis Singer"@de , "Isaac Bashevis Singer"@en .

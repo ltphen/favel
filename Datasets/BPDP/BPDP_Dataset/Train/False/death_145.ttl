@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Harlem>
+        rdfs:label     "Harlem"@fr , "Harlem"@de , "Harlem"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Harlem> , <http://de.dbpedia.org/resource/Harlem> ;
+        skos:altLabel  "Harlem"@fr , "Harlem"@de , "Harlem"@en .
+
+<http://dbpedia.org/resource/Elliott_Kastner>
+        rdfs:label     "Elliott Kastner"@fr , "Elliott Kastner"@de , "Elliott Kastner"@en ;
+        dbo:death      <http://dbpedia.org/resource/Elliott_Kastner__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Elliott_Kastner> , <http://de.dbpedia.org/resource/Elliott_Kastner> ;
+        skos:altLabel  "Elliott Kastner"@fr , "Elliott Kastner"@de , "Elliott Kastner"@en .
+
+<http://dbpedia.org/resource/Elliott_Kastner__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Harlem> ;
+        dbo:from        "1930-1-7"^^xsd:date ;
+        dbo:to          "1930-1-7"^^xsd:date .

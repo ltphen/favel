@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Carlo_Goldoni__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Venice> ;
+        dbo:from        "1707-2-25"^^xsd:date ;
+        dbo:to          "1707-2-25"^^xsd:date .
+
+<http://dbpedia.org/resource/Carlo_Goldoni>
+        rdfs:label     "Carlo Goldoni"@fr , "Carlo Goldoni"@de , "Carlo Goldoni"@en ;
+        dbo:death      <http://dbpedia.org/resource/Carlo_Goldoni__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Carlo_Goldoni> , <http://de.dbpedia.org/resource/Carlo_Goldoni> ;
+        skos:altLabel  "Carlo Goldoni"@fr , "Carlo Goldoni"@de , "Carlo Goldoni"@en .
+
+<http://dbpedia.org/resource/Venice>
+        rdfs:label     "Venise"@fr , "Venedig"@de , "Venice"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Venise> , <http://de.dbpedia.org/resource/Venedig> ;
+        skos:altLabel  "Venise"@fr , "Venedig"@de , "Venice"@en .

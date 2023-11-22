@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Comte_de_Lautréamont__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Montevideo> ;
+        dbo:from        "1846-4-4"^^xsd:date ;
+        dbo:to          "1846-4-4"^^xsd:date .
+
+<http://dbpedia.org/resource/Comte_de_Lautréamont>
+        rdfs:label     "Comte de Lautréamont"@fr , "Comte de Lautréamont"@de , "Comte de Lautréamont"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Comte_de_Lautréamont__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Comte_de_Lautréamont> , <http://de.dbpedia.org/resource/Comte_de_Lautréamont> ;
+        skos:altLabel  "Comte de Lautréamont"@fr , "Comte de Lautréamont"@de , "Comte de Lautréamont"@en .
+
+<http://dbpedia.org/resource/Montevideo>
+        rdfs:label     "Montevideo"@fr , "Montevideo"@de , "Montevideo"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Montevideo> , <http://de.dbpedia.org/resource/Montevideo> ;
+        skos:altLabel  "Montevideo"@fr , "Montevideo"@de , "Montevideo"@en .

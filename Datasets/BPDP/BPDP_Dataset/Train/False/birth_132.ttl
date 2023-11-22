@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Desi_Arnaz__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Del_Mar,_California> ;
+        dbo:from        "1917-3-2"^^xsd:date ;
+        dbo:to          "1917-3-2"^^xsd:date .
+
+<http://dbpedia.org/resource/Del_Mar,_California>
+        rdfs:label     "Del Mar (Californie)"@fr , "Del Mar (Kalifornien)"@de , "Del Mar, California"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Del_Mar_(Californie)> , <http://de.dbpedia.org/resource/Del_Mar_(Kalifornien)> ;
+        skos:altLabel  "Del Mar (Californie)"@fr , "Del Mar (Kalifornien)"@de , "Del Mar, California"@en .
+
+<http://dbpedia.org/resource/Desi_Arnaz>
+        rdfs:label     "Desi Arnaz"@fr , "Desi Arnaz"@de , "Desi Arnaz"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Desi_Arnaz__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Desi_Arnaz> , <http://de.dbpedia.org/resource/Desi_Arnaz> ;
+        skos:altLabel  "Desi Arnaz"@fr , "Desi Arnaz"@de , "Desi Arnaz"@en .

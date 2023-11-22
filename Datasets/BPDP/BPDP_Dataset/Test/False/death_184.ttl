@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Wiener_Neustadt>
+        rdfs:label     "Wiener Neustadt"@fr , "Wiener Neustadt"@de , "Wiener Neustadt"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Wiener_Neustadt> , <http://de.dbpedia.org/resource/Wiener_Neustadt> ;
+        skos:altLabel  "Wiener Neustadt"@fr , "Wiener Neustadt"@de , "Wiener Neustadt"@en .
+
+<http://dbpedia.org/resource/Albert_VII,_Archduke_of_Austria>
+        rdfs:label     "Albert d'Autriche (1559-1621)"@fr , "Albrecht VII. von Habsburg"@de , "Albert VII, Archduke of Austria"@en ;
+        dbo:death      <http://dbpedia.org/resource/Albert_VII,_Archduke_of_Austria__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Albert_d'Autriche_(1559-1621)> , <http://de.dbpedia.org/resource/Albrecht_VII._von_Habsburg> ;
+        skos:altLabel  "Albert d'Autriche (1559-1621)"@fr , "Albrecht VII. von Habsburg"@de , "Albert VII, Archduke of Austria"@en .
+
+<http://dbpedia.org/resource/Albert_VII,_Archduke_of_Austria__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Wiener_Neustadt> ;
+        dbo:from        "1559-11-13"^^xsd:date ;
+        dbo:to          "1559-11-13"^^xsd:date .

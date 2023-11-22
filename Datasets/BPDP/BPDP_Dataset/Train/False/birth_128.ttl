@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Albert_Speer__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/London> ;
+        dbo:from        "1905-3-19"^^xsd:date ;
+        dbo:to          "1905-3-19"^^xsd:date .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label     "Londres"@fr , "London"@de , "London"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Londres> , <http://de.dbpedia.org/resource/London> ;
+        skos:altLabel  "Londres"@fr , "London"@de , "London"@en .
+
+<http://dbpedia.org/resource/Albert_Speer>
+        rdfs:label     "Albert Speer"@fr , "Albert Speer"@de , "Albert Speer"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Albert_Speer__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Albert_Speer> , <http://de.dbpedia.org/resource/Albert_Speer> ;
+        skos:altLabel  "Albert Speer"@fr , "Albert Speer"@de , "Albert Speer"@en .

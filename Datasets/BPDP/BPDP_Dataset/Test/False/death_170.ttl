@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Henry_Moseley>
+        rdfs:label     "Henry Moseley"@fr , "Henry Moseley"@de , "Henry Moseley"@en ;
+        dbo:death      <http://dbpedia.org/resource/Henry_Moseley__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Henry_Moseley> , <http://de.dbpedia.org/resource/Henry_Moseley> ;
+        skos:altLabel  "Henry Moseley"@fr , "Henry Moseley"@de , "Henry Moseley"@en .
+
+<http://dbpedia.org/resource/Weymouth,_Dorset>
+        rdfs:label     "Weymouth (Angleterre)"@fr , "Weymouth (Dorset)"@de , "Weymouth, Dorset"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Weymouth_(Angleterre)> , <http://de.dbpedia.org/resource/Weymouth_(Dorset)> ;
+        skos:altLabel  "Weymouth (Angleterre)"@fr , "Weymouth (Dorset)"@de , "Weymouth, Dorset"@en .
+
+<http://dbpedia.org/resource/Henry_Moseley__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Weymouth,_Dorset> ;
+        dbo:from        "1887-11-23"^^xsd:date ;
+        dbo:to          "1887-11-23"^^xsd:date .

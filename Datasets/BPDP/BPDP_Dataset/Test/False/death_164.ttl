@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Aaliyah>
+        rdfs:label     "Aaliyah"@fr , "Aaliyah"@de , "Aaliyah"@en ;
+        dbo:death      <http://dbpedia.org/resource/Aaliyah__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Aaliyah> , <http://de.dbpedia.org/resource/Aaliyah> ;
+        skos:altLabel  "Aaliyah"@fr , "Aaliyah"@de , "Aaliyah"@en .
+
+<http://dbpedia.org/resource/Aaliyah__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Brooklyn> ;
+        dbo:from        "1979-1-16"^^xsd:date ;
+        dbo:to          "1979-1-16"^^xsd:date .
+
+<http://dbpedia.org/resource/Brooklyn>
+        rdfs:label     "Brooklyn"@fr , "Brooklyn"@de , "Brooklyn"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Brooklyn> , <http://de.dbpedia.org/resource/Brooklyn> ;
+        skos:altLabel  "Brooklyn"@fr , "Brooklyn"@de , "Brooklyn"@en .
