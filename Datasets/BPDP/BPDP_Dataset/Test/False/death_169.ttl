@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Chillán>
+        rdfs:label     "Chillán"@fr , "Chillán"@de , "Chillán"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Chillán> , <http://de.dbpedia.org/resource/Chillán> ;
+        skos:altLabel  "Chillán"@fr , "Chillán"@de , "Chillán"@en .
+
+<http://dbpedia.org/resource/Bernardo_O'Higgins>
+        rdfs:label     "Bernardo O'Higgins"@fr , "Bernardo O’Higgins"@de , "Bernardo O'Higgins"@en ;
+        dbo:death      <http://dbpedia.org/resource/Bernardo_O'Higgins__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Bernardo_O'Higgins> , <http://de.dbpedia.org/resource/Bernardo_O’Higgins> ;
+        skos:altLabel  "Bernardo O'Higgins"@fr , "Bernardo O’Higgins"@de , "Bernardo O'Higgins"@en .
+
+<http://dbpedia.org/resource/Bernardo_O'Higgins__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Chillán> ;
+        dbo:from        "1778-8-20"^^xsd:date ;
+        dbo:to          "1778-8-20"^^xsd:date .

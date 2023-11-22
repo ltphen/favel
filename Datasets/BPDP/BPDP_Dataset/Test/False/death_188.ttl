@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label     "Londres"@fr , "London"@de , "London"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Londres> , <http://de.dbpedia.org/resource/London> ;
+        skos:altLabel  "Londres"@fr , "London"@de , "London"@en .
+
+<http://dbpedia.org/resource/Cornelius_Johnson_(artist)__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/London> ;
+        dbo:from        "1593-10-14"^^xsd:date ;
+        dbo:to          "1593-10-14"^^xsd:date .
+
+<http://dbpedia.org/resource/Cornelius_Johnson_(artist)>
+        rdfs:label     "Cornelis Janssens van Ceulen"@fr , "Cornelis Janssens van Ceulen"@en ;
+        dbo:death      <http://dbpedia.org/resource/Cornelius_Johnson_(artist)__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Cornelius_Johnson_(artist)> ;
+        skos:altLabel  "Cornelis Janssens van Ceulen"@fr , "Cornelis Janssens van Ceulen"@en .

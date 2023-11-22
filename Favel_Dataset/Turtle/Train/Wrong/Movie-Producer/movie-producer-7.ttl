@@ -1,6 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Eastern_Condors> ns1:producer <http://dbpedia.org/resource/Denis_O'Brien_(producer)>,
-        <http://dbpedia.org/resource/Edwin_H._Knopf>,
-        <http://dbpedia.org/resource/George_Shapiro> .
-

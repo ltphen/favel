@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/The_Life_of_Larry_and_Larry_&_Steve> ns1:director <http://dbpedia.org/resource/Frank_McDonald_(director)> .
-

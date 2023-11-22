@@ -1,0 +1,20 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Joe_Strummer__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Broomfield,_Somerset> ;
+        dbo:from        "1952-8-21"^^xsd:date ;
+        dbo:to          "1952-8-21"^^xsd:date .
+
+<http://dbpedia.org/resource/Broomfield,_Somerset>
+        rdfs:label     "Broomfield, Somerset"@en ;
+        skos:altLabel  "Broomfield, Somerset"@en .
+
+<http://dbpedia.org/resource/Joe_Strummer>
+        rdfs:label     "Joe Strummer"@fr , "Joe Strummer"@de , "Joe Strummer"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Joe_Strummer__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Joe_Strummer> , <http://de.dbpedia.org/resource/Joe_Strummer> ;
+        skos:altLabel  "Joe Strummer"@fr , "Joe Strummer"@de , "Joe Strummer"@en .

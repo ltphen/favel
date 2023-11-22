@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Ernest_Rutherford>
+        rdfs:label     "Ernest Rutherford"@fr , "Ernest Rutherford"@de , "Ernest Rutherford"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Ernest_Rutherford__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Ernest_Rutherford> , <http://de.dbpedia.org/resource/Ernest_Rutherford> ;
+        skos:altLabel  "Ernest Rutherford"@fr , "Ernest Rutherford"@de , "Ernest Rutherford"@en .
+
+<http://dbpedia.org/resource/Ernest_Rutherford__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Nelson,_New_Zealand> ;
+        dbo:from        "1871-8-30"^^xsd:date ;
+        dbo:to          "1871-8-30"^^xsd:date .
+
+<http://dbpedia.org/resource/Nelson,_New_Zealand>
+        rdfs:label     "Nelson (Nouvelle-Zélande)"@fr , "Nelson (Neuseeland)"@de , "Nelson, New Zealand"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Nelson_(Nouvelle-Zélande)> , <http://de.dbpedia.org/resource/Nelson_(Neuseeland)> ;
+        skos:altLabel  "Nelson (Nouvelle-Zélande)"@fr , "Nelson (Neuseeland)"@de , "Nelson, New Zealand"@en .

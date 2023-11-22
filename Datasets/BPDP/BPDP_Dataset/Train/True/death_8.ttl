@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Woodland_Hills,_Los_Angeles>
+        rdfs:label     "Woodland Hills"@fr , "Woodland Hills (Los Angeles)"@de , "Woodland Hills, Los Angeles"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Woodland_Hills> , <http://de.dbpedia.org/resource/Woodland_Hills_(Los_Angeles)> ;
+        skos:altLabel  "Woodland Hills"@fr , "Woodland Hills (Los Angeles)"@de , "Woodland Hills, Los Angeles"@en .
+
+<http://dbpedia.org/resource/Douglass_Dumbrille>
+        rdfs:label     "Douglass Dumbrille"@fr , "Douglass Dumbrille"@de , "Douglass Dumbrille"@en ;
+        dbo:death      <http://dbpedia.org/resource/Douglass_Dumbrille__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Douglass_Dumbrille> , <http://de.dbpedia.org/resource/Douglass_Dumbrille> ;
+        skos:altLabel  "Douglass Dumbrille"@fr , "Douglass Dumbrille"@de , "Douglass Dumbrille"@en .
+
+<http://dbpedia.org/resource/Douglass_Dumbrille__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Woodland_Hills,_Los_Angeles> ;
+        dbo:from        "1889-10-13"^^xsd:date ;
+        dbo:to          "1889-10-13"^^xsd:date .

@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Paris>
+        rdfs:label     "Paris"@fr , "Paris"@de , "Paris"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Paris> , <http://de.dbpedia.org/resource/Paris> ;
+        skos:altLabel  "Paris"@fr , "Paris"@de , "Paris"@en .
+
+<http://dbpedia.org/resource/Constantin_Brâncuși__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Paris> ;
+        dbo:from        "1876-2-19"^^xsd:date ;
+        dbo:to          "1876-2-19"^^xsd:date .
+
+<http://dbpedia.org/resource/Constantin_Brâncuși>
+        rdfs:label     "Constantin Brâncuși"@fr , "Constantin Brâncuși"@de , "Constantin Brâncuși"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Constantin_Brâncuși__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Constantin_Brâncuși> , <http://de.dbpedia.org/resource/Constantin_Brâncuși> ;
+        skos:altLabel  "Constantin Brâncuși"@fr , "Constantin Brâncuși"@de , "Constantin Brâncuși"@en .

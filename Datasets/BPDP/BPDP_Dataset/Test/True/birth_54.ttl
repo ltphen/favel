@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/John_Stuart_Mill>
+        rdfs:label     "John Stuart Mill"@fr , "John Stuart Mill"@de , "John Stuart Mill"@en ;
+        dbo:birth      <http://dbpedia.org/resource/John_Stuart_Mill__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/John_Stuart_Mill> , <http://de.dbpedia.org/resource/John_Stuart_Mill> ;
+        skos:altLabel  "John Stuart Mill"@fr , "John Stuart Mill"@de , "John Stuart Mill"@en .
+
+<http://dbpedia.org/resource/John_Stuart_Mill__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/London_Borough_of_Islington> ;
+        dbo:from        "1806-5-20"^^xsd:date ;
+        dbo:to          "1806-5-20"^^xsd:date .
+
+<http://dbpedia.org/resource/London_Borough_of_Islington>
+        rdfs:label     "Borough londonien d'Islington"@fr , "London Borough of Islington"@de , "London Borough of Islington"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Borough_londonien_d'Islington> , <http://de.dbpedia.org/resource/London_Borough_of_Islington> ;
+        skos:altLabel  "Borough londonien d'Islington"@fr , "London Borough of Islington"@de , "London Borough of Islington"@en .

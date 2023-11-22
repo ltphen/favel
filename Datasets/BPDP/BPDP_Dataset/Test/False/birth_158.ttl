@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Cambridge,_Massachusetts>
+        rdfs:label     "Cambridge (Massachusetts)"@fr , "Cambridge (Massachusetts)"@de , "Cambridge, Massachusetts"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Cambridge_(Massachusetts)> , <http://de.dbpedia.org/resource/Cambridge_(Massachusetts)> ;
+        skos:altLabel  "Cambridge (Massachusetts)"@fr , "Cambridge (Massachusetts)"@de , "Cambridge, Massachusetts"@en .
+
+<http://dbpedia.org/resource/Benoit_Mandelbrot>
+        rdfs:label     "Benoît Mandelbrot"@fr , "Benoît Mandelbrot"@de , "Benoit Mandelbrot"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Benoit_Mandelbrot__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Benoît_Mandelbrot> , <http://de.dbpedia.org/resource/Benoît_Mandelbrot> ;
+        skos:altLabel  "Benoît Mandelbrot"@fr , "Benoît Mandelbrot"@de , "Benoit Mandelbrot"@en .
+
+<http://dbpedia.org/resource/Benoit_Mandelbrot__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Cambridge,_Massachusetts> ;
+        dbo:from        "1924-11-20"^^xsd:date ;
+        dbo:to          "1924-11-20"^^xsd:date .

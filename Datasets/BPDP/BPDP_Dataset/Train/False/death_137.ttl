@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label     "Londres"@fr , "London"@de , "London"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Londres> , <http://de.dbpedia.org/resource/London> ;
+        skos:altLabel  "Londres"@fr , "London"@de , "London"@en .
+
+<http://dbpedia.org/resource/Charlie_Chaplin__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/London> ;
+        dbo:from        "1889-4-16"^^xsd:date ;
+        dbo:to          "1889-4-16"^^xsd:date .
+
+<http://dbpedia.org/resource/Charlie_Chaplin>
+        rdfs:label     "Charlie Chaplin"@fr , "Charlie Chaplin"@de , "Charlie Chaplin"@en ;
+        dbo:death      <http://dbpedia.org/resource/Charlie_Chaplin__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Charlie_Chaplin> , <http://de.dbpedia.org/resource/Charlie_Chaplin> ;
+        skos:altLabel  "Charlie Chaplin"@fr , "Charlie Chaplin"@de , "Charlie Chaplin"@en .

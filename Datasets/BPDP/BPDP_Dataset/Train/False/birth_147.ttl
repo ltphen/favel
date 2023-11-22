@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Babrak_Karmal__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Moscow> ;
+        dbo:from        "1929-1-6"^^xsd:date ;
+        dbo:to          "1929-1-6"^^xsd:date .
+
+<http://dbpedia.org/resource/Moscow>
+        rdfs:label     "Moscou"@fr , "Moskau"@de , "Moscow"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Moscou> , <http://de.dbpedia.org/resource/Moskau> ;
+        skos:altLabel  "Moscou"@fr , "Moskau"@de , "Moscow"@en .
+
+<http://dbpedia.org/resource/Babrak_Karmal>
+        rdfs:label     "Babrak Karmal"@fr , "Babrak Karmal"@de , "Babrak Karmal"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Babrak_Karmal__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Babrak_Karmal> , <http://de.dbpedia.org/resource/Babrak_Karmal> ;
+        skos:altLabel  "Babrak Karmal"@fr , "Babrak Karmal"@de , "Babrak Karmal"@en .

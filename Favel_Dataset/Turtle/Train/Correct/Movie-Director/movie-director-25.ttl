@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Yeto_Vellipoyindhi_Manasu> ns1:director <http://dbpedia.org/resource/Gautham_Vasudev_Menon> .
-

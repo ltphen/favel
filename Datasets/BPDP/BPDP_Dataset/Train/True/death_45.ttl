@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Istanbul>
+        rdfs:label     "Istanbul"@fr , "Istanbul"@de , "Istanbul"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Istanbul> , <http://de.dbpedia.org/resource/Istanbul> ;
+        skos:altLabel  "Istanbul"@fr , "Istanbul"@de , "Istanbul"@en .
+
+<http://dbpedia.org/resource/Adam_Mickiewicz>
+        rdfs:label     "Adam Mickiewicz"@fr , "Adam Mickiewicz"@de , "Adam Mickiewicz"@en ;
+        dbo:death      <http://dbpedia.org/resource/Adam_Mickiewicz__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Adam_Mickiewicz> , <http://de.dbpedia.org/resource/Adam_Mickiewicz> ;
+        skos:altLabel  "Adam Mickiewicz"@fr , "Adam Mickiewicz"@de , "Adam Mickiewicz"@en .
+
+<http://dbpedia.org/resource/Adam_Mickiewicz__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Istanbul> ;
+        dbo:from        "1798-12-24"^^xsd:date ;
+        dbo:to          "1798-12-24"^^xsd:date .

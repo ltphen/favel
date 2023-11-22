@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Paris>
+        rdfs:label     "Paris"@fr , "Paris"@de , "Paris"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Paris> , <http://de.dbpedia.org/resource/Paris> ;
+        skos:altLabel  "Paris"@fr , "Paris"@de , "Paris"@en .
+
+<http://dbpedia.org/resource/André_Weil__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Paris> ;
+        dbo:from        "1906-5-6"^^xsd:date ;
+        dbo:to          "1906-5-6"^^xsd:date .
+
+<http://dbpedia.org/resource/André_Weil>
+        rdfs:label     "André Weil"@fr , "André Weil"@de , "André Weil"@en ;
+        dbo:death      <http://dbpedia.org/resource/André_Weil__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/André_Weil> , <http://de.dbpedia.org/resource/André_Weil> ;
+        skos:altLabel  "André Weil"@fr , "André Weil"@de , "André Weil"@en .

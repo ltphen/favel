@@ -16,9 +16,9 @@ class Controller:
         - controller.output()
     """
 
-    def __init__(self, approaches:dict, mlAlgorithm:str, mlParameters:str, normalizer_name:str, paths:dict, iterations:int, writeToDisk:bool, useCache:bool, handleContainers:bool):
+    def __init__(self, approaches:dict, mlAlgorithm:str, mlParameters:str, normalizer_name:str, paths:dict, iterations:int, writeToDisk:bool, useCache:bool, handleContainers:bool, trainingTime: int, automl: bool):
         self.approaches = approaches
-        self.mlAlgorithm = mlAlgorithm
+        self.mlAlgorithm = mlAlgorithm if not automl else "AutoML"
         self.mlParameters = mlParameters
         self.normalizer_name = normalizer_name
         self.paths = paths
@@ -27,9 +27,11 @@ class Controller:
         self.useCache = useCache
         self.handleContainers = handleContainers
         self.testingData = None
+        self.trainingTime = trainingTime
         self.testingResults = []
         self.trainingData = None
         self.trainingMetrics = []
+        self.automl = automl
 
         self.createDirectories()
         
@@ -88,19 +90,20 @@ class Controller:
         Repeat training and testing as often as specified in the configuration.
         """
         for i in range(self.iterations):
-            self.train()
-            self.test()
+                self.train()
+                self.test()
     
     def train(self):
         """
         Train the ML model.
         Has to be called before self.test()
         """
-        self.ml = ML(self.writeToDisk)
+        self.ml = ML(self.writeToDisk, self.automl)
         training_df = self.ml.createDataFrame(self.trainingData)
 
         ml_model_name = self.mlAlgorithm
-        ml_model = self.ml.get_sklearn_model(ml_model_name, self.mlParameters, training_df)
+        # self.mlAlgorithm = self.mlAlgorithm
+        ml_model = self.ml.get_sklearn_model(self.mlParameters, training_df, self.trainingTime, ml_model_name)
 
         self.model, self.lableEncoder, self.normalizer, trainMetrics = self.ml.train_model(df=training_df, 
                                             ml_model=ml_model, 
@@ -126,7 +129,7 @@ class Controller:
         Write the results to disk.
         """
         op = Output(self.paths)
-        op.writeOverview(self.testingResults, self.approaches.keys(), self.mlAlgorithm, self.mlParameters, self.trainingMetrics, self.normalizer_name)
+        op.writeOverview(self.testingResults, self.approaches.keys(), self.mlAlgorithm+ str(self.trainingTime), self.mlParameters, self.trainingMetrics, self.normalizer_name)
         if self.writeToDisk:
             op.writeOutput(self.testingResults)
             #op.gerbilFormat(self.testingData)

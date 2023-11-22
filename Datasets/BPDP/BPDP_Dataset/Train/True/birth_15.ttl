@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Alfonso_XIII__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Madrid> ;
+        dbo:from        "1886-5-17"^^xsd:date ;
+        dbo:to          "1886-5-17"^^xsd:date .
+
+<http://dbpedia.org/resource/Alfonso_XIII>
+        rdfs:label     "Alphonse XIII"@fr , "Alfons XIII. (Spanien)"@de , "Alfonso XIII of Spain"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Alfonso_XIII__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Alphonse_XIII> , <http://de.dbpedia.org/resource/Alfons_XIII._(Spanien)> ;
+        skos:altLabel  "Alphonse XIII"@fr , "Alfons XIII. (Spanien)"@de , "Alfonso XIII of Spain"@en .
+
+<http://dbpedia.org/resource/Madrid>
+        rdfs:label     "Madrid"@fr , "Madrid"@de , "Madrid"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Madrid> , <http://de.dbpedia.org/resource/Madrid> ;
+        skos:altLabel  "Madrid"@fr , "Madrid"@de , "Madrid"@en .

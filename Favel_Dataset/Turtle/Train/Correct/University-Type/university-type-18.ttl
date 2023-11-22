@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Jawaharlal_Nehru_Krishi_Vishwa_Vidyalaya> ns1:type <http://dbpedia.org/resource/Public_university> .
-

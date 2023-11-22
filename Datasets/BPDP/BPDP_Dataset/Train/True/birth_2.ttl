@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Ferdinand_I,_Holy_Roman_Emperor__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Alcalá_de_Henares> ;
+        dbo:from        "1503-3-10"^^xsd:date ;
+        dbo:to          "1503-3-10"^^xsd:date .
+
+<http://dbpedia.org/resource/Ferdinand_I,_Holy_Roman_Emperor>
+        rdfs:label     "Ferdinand Ier (empereur des Romains)"@fr , "Ferdinand I. (HRR)"@de , "Ferdinand I, Holy Roman Emperor"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Ferdinand_I,_Holy_Roman_Emperor__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Ferdinand_Ier_(empereur_des_Romains)> , <http://de.dbpedia.org/resource/Ferdinand_I._(HRR)> ;
+        skos:altLabel  "Ferdinand Ier (empereur des Romains)"@fr , "Ferdinand I. (HRR)"@de , "Ferdinand I, Holy Roman Emperor"@en .
+
+<http://dbpedia.org/resource/Alcalá_de_Henares>
+        rdfs:label     "Alcalá de Henares"@fr , "Alcalá de Henares"@de , "Alcalá de Henares"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Alcalá_de_Henares> , <http://de.dbpedia.org/resource/Alcalá_de_Henares> ;
+        skos:altLabel  "Alcalá de Henares"@fr , "Alcalá de Henares"@de , "Alcalá de Henares"@en .

@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Eugene_Wigner>
+        rdfs:label     "Eugene Wigner"@fr , "Eugene Paul Wigner"@de , "Eugene Wigner"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Eugene_Wigner__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Eugene_Wigner> , <http://de.dbpedia.org/resource/Eugene_Paul_Wigner> ;
+        skos:altLabel  "Eugene Wigner"@fr , "Eugene Paul Wigner"@de , "Eugene Wigner"@en .
+
+<http://dbpedia.org/resource/Princeton,_New_Jersey>
+        rdfs:label     "Princeton (New Jersey)"@fr , "Princeton (New Jersey)"@de , "Princeton, New Jersey"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Princeton_(New_Jersey)> , <http://de.dbpedia.org/resource/Princeton_(New_Jersey)> ;
+        skos:altLabel  "Princeton (New Jersey)"@fr , "Princeton (New Jersey)"@de , "Princeton, New Jersey"@en .
+
+<http://dbpedia.org/resource/Eugene_Wigner__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Princeton,_New_Jersey> ;
+        dbo:from        "1902-11-17"^^xsd:date ;
+        dbo:to          "1902-11-17"^^xsd:date .

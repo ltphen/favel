@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/The_Sign_of_Four_(1932_film)> ns1:director <http://dbpedia.org/resource/Paul_Wendkos> .
-

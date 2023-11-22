@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Christian_V_of_Denmark>
+        rdfs:label     "Christian V de Danemark"@fr , "Christian V. (Dänemark und Norwegen)"@de , "Christian V of Denmark"@en ;
+        dbo:death      <http://dbpedia.org/resource/Christian_V_of_Denmark__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Christian_V_de_Danemark> , <http://de.dbpedia.org/resource/Christian_V._(Dänemark_und_Norwegen)> ;
+        skos:altLabel  "Christian V de Danemark"@fr , "Christian V. (Dänemark und Norwegen)"@de , "Christian V of Denmark"@en .
+
+<http://dbpedia.org/resource/Flensburg>
+        rdfs:label     "Flensbourg"@fr , "Flensburg"@de , "Flensburg"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Flensbourg> , <http://de.dbpedia.org/resource/Flensburg> ;
+        skos:altLabel  "Flensbourg"@fr , "Flensburg"@de , "Flensburg"@en .
+
+<http://dbpedia.org/resource/Christian_V_of_Denmark__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Flensburg> ;
+        dbo:from        "1646-4-15"^^xsd:date ;
+        dbo:to          "1646-4-15"^^xsd:date .

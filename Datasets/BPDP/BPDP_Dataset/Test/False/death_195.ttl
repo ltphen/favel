@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/F._F._E._Yeo-Thomas>
+        rdfs:label     "Forest Yeo-Thomas"@fr , "Edward Yeo-Thomas"@de , "F. F. E. Yeo-Thomas"@en ;
+        dbo:death      <http://dbpedia.org/resource/F._F._E._Yeo-Thomas__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Forest_Yeo-Thomas> , <http://de.dbpedia.org/resource/Edward_Yeo-Thomas> ;
+        skos:altLabel  "Forest Yeo-Thomas"@fr , "Edward Yeo-Thomas"@de , "F. F. E. Yeo-Thomas"@en .
+
+<http://dbpedia.org/resource/F._F._E._Yeo-Thomas__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/London> ;
+        dbo:from        "1902-6-17"^^xsd:date ;
+        dbo:to          "1902-6-17"^^xsd:date .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label     "Londres"@fr , "London"@de , "London"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Londres> , <http://de.dbpedia.org/resource/London> ;
+        skos:altLabel  "Londres"@fr , "London"@de , "London"@en .

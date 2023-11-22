@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Budapest>
+        rdfs:label     "Budapest"@fr , "Budapest"@de , "Budapest"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Budapest> , <http://de.dbpedia.org/resource/Budapest> ;
+        skos:altLabel  "Budapest"@fr , "Budapest"@de , "Budapest"@en .
+
+<http://dbpedia.org/resource/John_von_Neumann>
+        rdfs:label     "John von Neumann"@fr , "John von Neumann"@de , "John von Neumann"@en ;
+        dbo:birth      <http://dbpedia.org/resource/John_von_Neumann__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/John_von_Neumann> , <http://de.dbpedia.org/resource/John_von_Neumann> ;
+        skos:altLabel  "John von Neumann"@fr , "John von Neumann"@de , "John von Neumann"@en .
+
+<http://dbpedia.org/resource/John_von_Neumann__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Budapest> ;
+        dbo:from        "1903-12-28"^^xsd:date ;
+        dbo:to          "1903-12-28"^^xsd:date .

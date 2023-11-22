@@ -141,3 +141,7 @@ dmypy.json
 # Plots
 Analysis/*.pdf
 Analysis/*.png
+
+# Data
+datasets
+exported

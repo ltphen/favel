@@ -1,6 +1,7 @@
 from rdflib import Graph
 import os
 import pandas as pd
+import re
 
 class ReadFiles:
     """
@@ -15,13 +16,13 @@ class ReadFiles:
         
     
     def getFavel(self, path):
-        triples_test = pd.DataFrame(data=[], columns=['subject','predicate','object','truth'])
-        triples_train = pd.DataFrame(data=[], columns=['subject','predicate','object','truth'])
         paths = [os.path.join(path,'Turtle/Test/Correct/'), 
                  os.path.join(path,'Turtle/Test/Wrong/'), 
                  os.path.join(path,'Turtle/Train/Correct/'), 
                  os.path.join(path,'Turtle/Train/Wrong/')]
 
+        train_data = []
+        test_data = []
         for p in paths:
             for root, dirs, files in os.walk(p):
                 for name in files:
@@ -31,11 +32,11 @@ class ReadFiles:
                     else:
                         triple=triple+(str(0),)
                     if p.find("Train") != -1:
-                        triples_train = triples_train.append({'subject':triple[0], 'predicate':triple[1], 'object':triple[2], 'truth':triple[3]}, ignore_index=True)
+                        train_data.append((triple[0], triple[1], triple[2], triple[3]))
                     else:
-                        triples_test = triples_test.append({'subject':triple[0], 'predicate':triple[1], 'object':triple[2], 'truth':triple[3]}, ignore_index=True)
+                        test_data.append((triple[0], triple[1], triple[2], triple[3]))
 
-        return triples_train, triples_test
+        return pd.DataFrame(data=train_data, columns=['subject','predicate','object','truth']), pd.DataFrame(data=test_data, columns=['subject','predicate','object','truth'])
         
 
     def extract_ids(self, graph):
@@ -45,31 +46,47 @@ class ReadFiles:
         return list(set(ids))
     
     def getFactbench(self, path):
-        graph = Graph()
-        
+        train_data = []
+        test_data = []
         for root, dirs, files in os.walk(path):
             for name in files:
-                graph.parse(os.path.join(path, name), format="nt")
-                
-        ids = self.extract_ids(graph)
-        
-        triples = pd.DataFrame(data=[], columns=['subject','predicate','object','truth'])
-        for id in ids:
-            for _,p,o in graph.triples((id, None, None)):
-                if str(p) == "http://swc2017.aksw.org/hasTruthValue":
-                    if(str(o)=='1.0'):
-                        truth = 1
-                    else:
-                        truth = 0
-                if str(p).find("object") != -1:
-                    object_elt=str(o)
-                if str(p).find("predicate") != -1:
-                    predicate=str(o)
-                if str(p).find("subject") != -1:
-                    subject=str(o)
-            triples = triples.append({'subject':subject, 'predicate':predicate, 'object':object_elt, 'truth':truth}, ignore_index=True)
+                # Open the input, unchanged and changed output files
+                with open(os.path.join(path, name), "r") as f_in:
+                    # Define a dictionary to hold the triple
+                    triple = {}
+                    statement_lines = []
+                    # Iterate over each line in the file
+                    for line in f_in:
+                        # Add the line to the current statement lines
+                        statement_lines.append(line)
 
-        return triples.iloc[:int(len(triples)*0.7)], triples.iloc[int(len(triples)*0.7):]
+                        # Find the parts of the triple
+                        parts = re.findall(r"<(http://[^>]+)>", line)
+                        if parts:
+                            # Identify the parts of the triple based on their position in the quad
+                            if "rdf-syntax-ns#subject" in parts[1]:
+                                triple["subject"] = parts[2]
+                            elif "rdf-syntax-ns#predicate" in parts[1]:
+                                triple["predicate"] = parts[2]
+                            elif "rdf-syntax-ns#object" in parts[1]:
+                                triple["object"] = parts[2]
+
+                        # If we have a complete triple
+                        if len(triple) == 3 and len(statement_lines) == 5:
+                            # URL encode the parts of the triple
+                            subject = triple["subject"]
+                            predicate = triple["predicate"]
+                            object = triple["object"]
+                            if(name.find("train") != -1):
+                                train_data.append([subject, predicate, object, 0 if '"0.0"' in statement_lines[-1] else 1 ])
+                            else:
+                                test_data.append([subject, predicate, object, 0 if '"0.0"' in statement_lines[-1] else 1 ])
+                        # Clear the triple and truth value line
+                            triple.clear()
+                            statement_lines.clear()
+        train = pd.DataFrame(data=train_data, columns=['subject','predicate','object','truth'])
+        test = pd.DataFrame(data=test_data, columns=['subject','predicate','object','truth'])
+        return train, test
     
     def extract_bpdp_triples(self, file):
         subject = ""
@@ -90,14 +107,13 @@ class ReadFiles:
         return subject, predicate2, object_g
 
     def getBPDP(self, path):
-        
-        triples_train = pd.DataFrame(data=[], columns=['subject','predicate','object','truth'])
-        triples_test = pd.DataFrame(data=[], columns=['subject','predicate','object','truth'])
         paths = [os.path.join(path,'Test/True/'), 
                  os.path.join(path,'Test/False/'), 
                  os.path.join(path,'Train/True/'), 
                  os.path.join(path,'Train/False/')]
 
+        train_data = []
+        test_data = []
         for p in paths:
             for root, dirs, files in os.walk(p):
                 for name in files:
@@ -108,14 +124,14 @@ class ReadFiles:
                     else:
                         triple=triple+(str(0),)
                     if p.find("Train") != -1:
-                        triples_train = triples_train.append({'subject':triple[0], 'predicate':triple[1], 'object':triple[2], 'truth':triple[3]}, ignore_index=True)
+                        train_data.append((triple[0], triple[1], triple[2], triple[3]))
                     else:
-                        triples_test = triples_test.append({'subject':triple[0], 'predicate':triple[1], 'object':triple[2], 'truth':triple[3]}, ignore_index=True)
+                        test_data.append((triple[0], triple[1], triple[2], triple[3]))
                         
-        return triples_train, triples_test
+        return pd.DataFrame(data=train_data, columns=['subject','predicate','object','truth']), pd.DataFrame(data=test_data, columns=['subject','predicate','object','truth'])
     
     def getCsv(self, path):
         triples = pd.DataFrame(data=[], columns=['subject', 'predicate', 'object', 'truth'])
-        inputData = pd.read_csv(path)
+        inputData = pd.read_csv(path, index_col=0)
         return inputData
         

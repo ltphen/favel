@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Murder_Without_Crime> ns1:director <http://dbpedia.org/resource/Orson_Welles> .
-

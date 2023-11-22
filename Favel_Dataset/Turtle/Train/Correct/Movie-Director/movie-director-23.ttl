@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/The_Adventures_of_Hajji_Baba> ns1:director <http://dbpedia.org/resource/Don_Weis> .
-

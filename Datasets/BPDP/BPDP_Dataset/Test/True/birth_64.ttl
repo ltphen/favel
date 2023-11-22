@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Fay_Wray__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Alberta> ;
+        dbo:from        "1907-9-15"^^xsd:date ;
+        dbo:to          "1907-9-15"^^xsd:date .
+
+<http://dbpedia.org/resource/Fay_Wray>
+        rdfs:label     "Fay Wray"@fr , "Fay Wray"@de , "Fay Wray"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Fay_Wray__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Fay_Wray> , <http://de.dbpedia.org/resource/Fay_Wray> ;
+        skos:altLabel  "Fay Wray"@fr , "Fay Wray"@de , "Fay Wray"@en .
+
+<http://dbpedia.org/resource/Alberta>
+        rdfs:label     "Alberta"@fr , "Alberta"@de , "Alberta"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Alberta> , <http://de.dbpedia.org/resource/Alberta> ;
+        skos:altLabel  "Alberta"@fr , "Alberta"@de , "Alberta"@en .

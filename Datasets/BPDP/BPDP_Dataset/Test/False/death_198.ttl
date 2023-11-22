@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Ernst_Mayr>
+        rdfs:label     "Ernst Mayr"@fr , "Ernst Mayr"@de , "Ernst Mayr"@en ;
+        dbo:death      <http://dbpedia.org/resource/Ernst_Mayr__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Ernst_Mayr> , <http://de.dbpedia.org/resource/Ernst_Mayr> ;
+        skos:altLabel  "Ernst Mayr"@fr , "Ernst Mayr"@de , "Ernst Mayr"@en .
+
+<http://dbpedia.org/resource/Ernst_Mayr__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Kempten> ;
+        dbo:from        "1904-7-5"^^xsd:date ;
+        dbo:to          "1904-7-5"^^xsd:date .
+
+<http://dbpedia.org/resource/Kempten>
+        rdfs:label     "Kempten (Allgäu)"@fr , "Kempten (Allgäu)"@de , "Kempten"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Kempten_(Allgäu)> , <http://de.dbpedia.org/resource/Kempten_(Allgäu)> ;
+        skos:altLabel  "Kempten (Allgäu)"@fr , "Kempten (Allgäu)"@de , "Kempten"@en .

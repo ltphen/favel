@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Montpellier>
+        rdfs:label     "Montpellier"@fr , "Montpellier"@de , "Montpellier"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Montpellier> , <http://de.dbpedia.org/resource/Montpellier> ;
+        skos:altLabel  "Montpellier"@fr , "Montpellier"@de , "Montpellier"@en .
+
+<http://dbpedia.org/resource/Enrique_O'Donnell,_Conde_de_La_Bisbal__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Montpellier> ;
+        dbo:from        "1769-1-1"^^xsd:date ;
+        dbo:to          "1769-1-1"^^xsd:date .
+
+<http://dbpedia.org/resource/Enrique_O'Donnell,_Conde_de_La_Bisbal>
+        rdfs:label     "Enrique José O'Donnell"@fr , "Enrique José O’Donnell"@de , "Enrique O'Donnell, Conde del Abisbal"@en ;
+        dbo:death      <http://dbpedia.org/resource/Enrique_O'Donnell,_Conde_de_La_Bisbal__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Enrique_José_O'Donnell> , <http://de.dbpedia.org/resource/Enrique_José_O’Donnell> ;
+        skos:altLabel  "Enrique José O'Donnell"@fr , "Enrique José O’Donnell"@de , "Enrique O'Donnell, Conde del Abisbal"@en .

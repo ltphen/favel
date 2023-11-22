@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Utrecht>
+        rdfs:label     "Utrecht"@fr , "Utrecht"@de , "Utrecht"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Utrecht> , <http://de.dbpedia.org/resource/Utrecht> ;
+        skos:altLabel  "Utrecht"@fr , "Utrecht"@de , "Utrecht"@en .
+
+<http://dbpedia.org/resource/Cornelius_Johnson_(artist)__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Utrecht> ;
+        dbo:from        "1593-10-14"^^xsd:date ;
+        dbo:to          "1593-10-14"^^xsd:date .
+
+<http://dbpedia.org/resource/Cornelius_Johnson_(artist)>
+        rdfs:label     "Cornelis Janssens van Ceulen"@fr , "Cornelis Janssens van Ceulen"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Cornelius_Johnson_(artist)__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Cornelius_Johnson_(artist)> ;
+        skos:altLabel  "Cornelis Janssens van Ceulen"@fr , "Cornelis Janssens van Ceulen"@en .

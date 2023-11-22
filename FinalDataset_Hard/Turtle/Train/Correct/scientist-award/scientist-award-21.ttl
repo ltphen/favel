@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Melvin_Cohn> ns1:award <http://dbpedia.org/resource/Novartis_Prizes_for_Immunology> .
-

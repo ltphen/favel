@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Humphry_Davy__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Geneva> ;
+        dbo:from        "1778-12-17"^^xsd:date ;
+        dbo:to          "1778-12-17"^^xsd:date .
+
+<http://dbpedia.org/resource/Humphry_Davy>
+        rdfs:label     "Humphry Davy"@fr , "Humphry Davy"@de , "Humphry Davy"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Humphry_Davy__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Humphry_Davy> , <http://de.dbpedia.org/resource/Humphry_Davy> ;
+        skos:altLabel  "Humphry Davy"@fr , "Humphry Davy"@de , "Humphry Davy"@en .
+
+<http://dbpedia.org/resource/Geneva>
+        rdfs:label     "Genève"@fr , "Genf"@de , "Geneva"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Genève> , <http://de.dbpedia.org/resource/Genf> ;
+        skos:altLabel  "Genève"@fr , "Genf"@de , "Geneva"@en .

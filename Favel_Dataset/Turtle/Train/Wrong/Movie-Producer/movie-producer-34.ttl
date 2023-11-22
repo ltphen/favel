@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/All_the_Fine_Young_Cannibals> ns1:producer <http://dbpedia.org/resource/Raymond_Griffith> .
-

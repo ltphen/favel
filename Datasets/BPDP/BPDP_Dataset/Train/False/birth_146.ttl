@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Delhi>
+        rdfs:label     "Delhi"@fr , "Delhi"@de , "Delhi"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Delhi> , <http://de.dbpedia.org/resource/Delhi> ;
+        skos:altLabel  "Delhi"@fr , "Delhi"@de , "Delhi"@en .
+
+<http://dbpedia.org/resource/Humayun__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Delhi> ;
+        dbo:from        "1508-3-7"^^xsd:date ;
+        dbo:to          "1508-3-7"^^xsd:date .
+
+<http://dbpedia.org/resource/Humayun>
+        rdfs:label     "Humâyûn"@fr , "Humayun"@de , "Humayun"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Humayun__1> ;
+        owl:sameAs     <http://de.dbpedia.org/resource/Humayun> , <http://fr.dbpedia.org/resource/Humâyûn> ;
+        skos:altLabel  "Humâyûn"@fr , "Humayun"@de , "Humayun"@en .

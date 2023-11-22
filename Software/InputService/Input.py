@@ -38,6 +38,10 @@ class Input:
             df_train, df_test = rf.getFactbench(filePath)
         elif(str(filePath).lower().find("bpdp") != -1):
             df_train, df_test = rf.getBPDP(filePath)
+        else:
+            df_train = rf.getCsv(filePath+"/train.csv")
+            df_test = rf.getCsv(filePath+"/test.csv")
+        
         result_train = self.parseTriples(df_train)
         result_test = self.parseTriples(df_test)
         if len(result_train) == 0 or len(result_test) == 0:

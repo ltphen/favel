@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Two_Sisters_from_Boston> ns1:director <http://dbpedia.org/resource/Maurice_Elvey> .
-

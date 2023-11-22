@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Alexandria>
+        rdfs:label     "Alexandrie"@fr , "Alexandria"@de , "Alexandria"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Alexandrie> , <http://de.dbpedia.org/resource/Alexandria> ;
+        skos:altLabel  "Alexandrie"@fr , "Alexandria"@de , "Alexandria"@en .
+
+<http://dbpedia.org/resource/Abbas_II_of_Egypt__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Alexandria> ;
+        dbo:from        "1874-7-14"^^xsd:date ;
+        dbo:to          "1874-7-14"^^xsd:date .
+
+<http://dbpedia.org/resource/Abbas_II_of_Egypt>
+        rdfs:label     "Abbas II Hilmi"@fr , "Abbas II. (Ägypten)"@de , "Abbas II of Egypt"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Abbas_II_of_Egypt__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Abbas_II_Hilmi> , <http://de.dbpedia.org/resource/Abbas_II._(Ägypten)> ;
+        skos:altLabel  "Abbas II Hilmi"@fr , "Abbas II. (Ägypten)"@de , "Abbas II of Egypt"@en .

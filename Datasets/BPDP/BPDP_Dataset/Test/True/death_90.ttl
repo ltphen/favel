@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Eduard_von_Böhm-Ermolli>
+        rdfs:label     "Eduard von Böhm-Ermolli"@fr , "Eduard von Böhm-Ermolli"@de , "Eduard von Böhm-Ermolli"@en ;
+        dbo:death      <http://dbpedia.org/resource/Eduard_von_Böhm-Ermolli__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Eduard_von_Böhm-Ermolli> , <http://de.dbpedia.org/resource/Eduard_von_Böhm-Ermolli> ;
+        skos:altLabel  "Eduard von Böhm-Ermolli"@fr , "Eduard von Böhm-Ermolli"@de , "Eduard von Böhm-Ermolli"@en .
+
+<http://dbpedia.org/resource/Opava>
+        rdfs:label     "Opava (République tchèque)"@fr , "Opava"@de , "Opava"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Opava_(République_tchèque)> , <http://de.dbpedia.org/resource/Opava> ;
+        skos:altLabel  "Opava (République tchèque)"@fr , "Opava"@de , "Opava"@en .
+
+<http://dbpedia.org/resource/Eduard_von_Böhm-Ermolli__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Opava> ;
+        dbo:from        "1856-2-12"^^xsd:date ;
+        dbo:to          "1856-2-12"^^xsd:date .

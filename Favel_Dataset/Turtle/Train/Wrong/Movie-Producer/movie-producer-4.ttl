@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/God's_Gun> ns1:producer <http://dbpedia.org/resource/Wu_Ma> .
-

@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Little_Tokyo,_U.S.A.> ns1:director <http://dbpedia.org/resource/Otto_Brower> .
-

@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/A._E._van_Vogt__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Winnipeg> ;
+        dbo:from        "1912-4-26"^^xsd:date ;
+        dbo:to          "1912-4-26"^^xsd:date .
+
+<http://dbpedia.org/resource/Winnipeg>
+        rdfs:label     "Winnipeg"@fr , "Winnipeg"@de , "Winnipeg"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Winnipeg> , <http://de.dbpedia.org/resource/Winnipeg> ;
+        skos:altLabel  "Winnipeg"@fr , "Winnipeg"@de , "Winnipeg"@en .
+
+<http://dbpedia.org/resource/A._E._van_Vogt>
+        rdfs:label     "A. E. van Vogt"@fr , "Alfred Elton van Vogt"@de , "A. E. van Vogt"@en ;
+        dbo:death      <http://dbpedia.org/resource/A._E._van_Vogt__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/A._E._van_Vogt> , <http://de.dbpedia.org/resource/Alfred_Elton_van_Vogt> ;
+        skos:altLabel  "A. E. van Vogt"@fr , "Alfred Elton van Vogt"@de , "A. E. van Vogt"@en .

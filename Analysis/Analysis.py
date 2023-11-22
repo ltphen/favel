@@ -273,13 +273,13 @@ def analyzeUniversalGoodConfig(df):
             result["Dataset"].append(i)
             result["Testing AUC-ROC Mean"].append(row["Testing AUC-ROC Mean"])
             result["Improvement"].append(row["Improvement"])
-            print(f"Universally good configuration {row['Experiment']}")
+            #print(f"Universally good configuration {row['Experiment']}")
 
             for key in datasetKeys:
                 result["Dataset"].append(key)
                 result["Testing AUC-ROC Mean"].append(rows[key]["Testing AUC-ROC Mean"])
                 result["Improvement"].append(rows[key]["Improvement"])
-                print(f"Universally good configuration {rows[key]['Experiment']}")
+                #print(f"Universally good configuration {rows[key]['Experiment']}")
     
     plt.figure()
     result = pd.DataFrame(result)

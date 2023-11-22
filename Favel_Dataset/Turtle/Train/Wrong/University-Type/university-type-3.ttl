@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Abubakar_Tafawa_Balewa_University> ns1:type <http://dbpedia.org/resource/Research_university> .
-

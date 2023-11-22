@@ -14,12 +14,10 @@ To achieve this vision this project offers:
 # Structure of the Repository
 
 - [**Analysis**](Analysis): Simple script to plot diagrams based on the data in [**Evaluation/Overview**](Evaluation/Overview.xlsx)
-- [**Evaluation**](Evaluation): The software saves results to this directory
-- [**Favel_Dataset**](Favel_Dataset): Dataset with simple example.  You can find the documentation [**here**](Favel_Dataset/README.md).
-  
-- [**FinalDataset_Hard**](FinalDataset_Hard) : Dataset with harder examples.  You can find the documentation [**here**](Favel_Dataset/README.md).
-  
+- [**Evaluation**](Evaluation): The software saves results to this directory. It also contains preliminaries results of our experiments.
+- [**Datasets**](Datasets): Dataset with simple example.  You can find the documentation [**here**](Datasets/README.md).  
 - [**Software**](Software): Software for exploring the vision
+
 # Installation
 ```
 git clone https://github.com/saschaTrippel/favel
@@ -34,7 +32,7 @@ cd favel/Software
     2. Create a configuration file ```favel.conf``` inside the experiment directory. \
         The configuration file defines the set of fact validation approaches and the machine learning algorithm. \
         A basic configuration file is can be found [**here**](Evaluation/example/favel.conf). \
-        For more advaced configuration options look [**here**](Software/MLService/README.md). \
+        For more advanced configuration options look [**here**](Software/MLService/README.md). \
         Example: ```favel/Evaluation/experiment42/favel.conf```
     3. Execute the software. \
         For the software to be able to use fact validation approaches, these approaches might have to be started manually. \
@@ -55,7 +53,8 @@ Experiment will be run in batch mode, meaning that an experiment will be execute
 * ```-d DATA, --data DATA``` path to the dataset to validate
 * ```-w, --write``` write everything to disk. If this flag is set, all possible outputs are written to disk. This includes models, normalizers, predicate encoders, and dataframes.
 If the flag is not set, only the overview is written to disk.
-* ```-c, --containers``` automatically Start/Stop containers which encapsulate the fact validation approaches
+* ```-c, --containers``` automatically Start/Stop containers which encapsulate the fact validation approaches.
+* ```-a, --automl``` To use the autoML system instead of the manual algorithm selection.
 
 ## How to test
 
@@ -66,11 +65,13 @@ python3 -m unittest
 # Additional Resources
 
 ## Datasets
-* [FactBench](https://github.com/saschaTrippel/FactBench-Dataset_2022)
+
+More informations about included datasets [here](Datasets)
+<!-- * [FactBench](https://github.com/saschaTrippel/FactBench-Dataset_2022)
 * [BPDP](https://github.com/saschaTrippel/BPDP-Dataset_2022)
 * [Favel](https://github.com/saschaTrippel/favel/tree/main/Favel_Dataset)
-* [Favel-hard](https://github.com/saschaTrippel/favel/tree/main/FinalDataset_Hard)
+* [Favel-hard](https://github.com/saschaTrippel/favel/tree/main/FinalDataset_Hard) -->
 
 ## Fact Validation Approaches
 * <https://github.com/saschaTrippel/knowledgestream> offers multiple algorithms
-* <https://github.com/palaniappan1/COPAAL> offers COPAAL
+<!-- * <https://github.com/palaniappan1/COPAAL> offers COPAAL -->

@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/İzmir>
+        rdfs:label     "Izmir"@fr , "Izmir"@de , "İzmir"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Izmir> , <http://de.dbpedia.org/resource/Izmir> ;
+        skos:altLabel  "Izmir"@fr , "Izmir"@de , "İzmir"@en .
+
+<http://dbpedia.org/resource/Irenaeus>
+        rdfs:label     "Irénée de Lyon"@fr , "Irenäus von Lyon"@de , "Irenaeus"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Irenaeus__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Irénée_de_Lyon> , <http://de.dbpedia.org/resource/Irenäus_von_Lyon> ;
+        skos:altLabel  "Irénée de Lyon"@fr , "Irenäus von Lyon"@de , "Irenaeus"@en .
+
+<http://dbpedia.org/resource/Irenaeus__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/İzmir> ;
+        dbo:from        "130-1-1"^^xsd:date ;
+        dbo:to          "130-1-1"^^xsd:date .

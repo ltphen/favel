@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Dresden>
+        rdfs:label     "Dresde"@fr , "Dresden"@de , "Dresden"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Dresde> , <http://de.dbpedia.org/resource/Dresden> ;
+        skos:altLabel  "Dresde"@fr , "Dresden"@de , "Dresden"@en .
+
+<http://dbpedia.org/resource/Augustus_II_the_Strong__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Dresden> ;
+        dbo:from        "1670-5-12"^^xsd:date ;
+        dbo:to          "1670-5-12"^^xsd:date .
+
+<http://dbpedia.org/resource/Augustus_II_the_Strong>
+        rdfs:label     "Auguste II"@fr , "August II. (Polen)"@de , "Augustus II the Strong"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Augustus_II_the_Strong__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Auguste_II> , <http://de.dbpedia.org/resource/August_II._(Polen)> ;
+        skos:altLabel  "Auguste II"@fr , "August II. (Polen)"@de , "Augustus II the Strong"@en .

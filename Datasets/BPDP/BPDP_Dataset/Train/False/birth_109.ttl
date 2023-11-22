@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Claude_Auchinleck__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Marrakesh> ;
+        dbo:from        "1884-6-21"^^xsd:date ;
+        dbo:to          "1884-6-21"^^xsd:date .
+
+<http://dbpedia.org/resource/Claude_Auchinleck>
+        rdfs:label     "Claude Auchinleck"@fr , "Claude Auchinleck"@de , "Claude Auchinleck"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Claude_Auchinleck__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Claude_Auchinleck> , <http://de.dbpedia.org/resource/Claude_Auchinleck> ;
+        skos:altLabel  "Claude Auchinleck"@fr , "Claude Auchinleck"@de , "Claude Auchinleck"@en .
+
+<http://dbpedia.org/resource/Marrakesh>
+        rdfs:label     "Marrakech"@fr , "Marrakesch"@de , "Marrakesh"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Marrakech> , <http://de.dbpedia.org/resource/Marrakesch> ;
+        skos:altLabel  "Marrakech"@fr , "Marrakesch"@de , "Marrakesh"@en .
