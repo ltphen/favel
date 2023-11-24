@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Joseph_Conrad>
+        rdfs:label     "Joseph Conrad"@fr , "Joseph Conrad"@de , "Joseph Conrad"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Joseph_Conrad__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Joseph_Conrad> , <http://de.dbpedia.org/resource/Joseph_Conrad> ;
+        skos:altLabel  "Joseph Conrad"@fr , "Joseph Conrad"@de , "Joseph Conrad"@en .
+
+<http://dbpedia.org/resource/Joseph_Conrad__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Bishopsbourne> ;
+        dbo:from        "1857-12-3"^^xsd:date ;
+        dbo:to          "1857-12-3"^^xsd:date .
+
+<http://dbpedia.org/resource/Bishopsbourne>
+        rdfs:label     "Bishopsbourne"@fr , "Bishopsbourne"@de , "Bishopsbourne"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Bishopsbourne> , <http://de.dbpedia.org/resource/Bishopsbourne> ;
+        skos:altLabel  "Bishopsbourne"@fr , "Bishopsbourne"@de , "Bishopsbourne"@en .

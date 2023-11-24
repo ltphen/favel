@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Futurama:_Bender's_Game> ns1:producer <http://dbpedia.org/resource/Claudia_Katz> .
-

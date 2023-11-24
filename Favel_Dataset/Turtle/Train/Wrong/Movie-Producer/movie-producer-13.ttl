@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Double_or_Nothing_(1937_film)> ns1:producer <http://dbpedia.org/resource/David_Permut> .
-

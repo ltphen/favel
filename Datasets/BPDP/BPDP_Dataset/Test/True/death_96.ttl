@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Alfred_Hitchcock>
+        rdfs:label     "Alfred Hitchcock"@fr , "Alfred Hitchcock"@de , "Alfred Hitchcock"@en ;
+        dbo:death      <http://dbpedia.org/resource/Alfred_Hitchcock__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Alfred_Hitchcock> , <http://de.dbpedia.org/resource/Alfred_Hitchcock> ;
+        skos:altLabel  "Alfred Hitchcock"@fr , "Alfred Hitchcock"@de , "Alfred Hitchcock"@en .
+
+<http://dbpedia.org/resource/Bel_Air,_Los_Angeles>
+        rdfs:label     "Bel Air (Los Angeles)"@fr , "Bel Air (Los Angeles)"@de , "Bel Air, Los Angeles"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Bel_Air_(Los_Angeles)> , <http://de.dbpedia.org/resource/Bel_Air_(Los_Angeles)> ;
+        skos:altLabel  "Bel Air (Los Angeles)"@fr , "Bel Air (Los Angeles)"@de , "Bel Air, Los Angeles"@en .
+
+<http://dbpedia.org/resource/Alfred_Hitchcock__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Bel_Air,_Los_Angeles> ;
+        dbo:from        "1899-8-13"^^xsd:date ;
+        dbo:to          "1899-8-13"^^xsd:date .

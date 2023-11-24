@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Hawley_Harvey_Crippen__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/London> ;
+        dbo:from        "1862-9-11"^^xsd:date ;
+        dbo:to          "1862-9-11"^^xsd:date .
+
+<http://dbpedia.org/resource/Hawley_Harvey_Crippen>
+        rdfs:label     "Hawley Harvey Crippen"@fr , "Hawley Crippen"@de , "Hawley Harvey Crippen"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Hawley_Harvey_Crippen__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Hawley_Harvey_Crippen> , <http://de.dbpedia.org/resource/Hawley_Crippen> ;
+        skos:altLabel  "Hawley Harvey Crippen"@fr , "Hawley Crippen"@de , "Hawley Harvey Crippen"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label     "Londres"@fr , "London"@de , "London"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Londres> , <http://de.dbpedia.org/resource/London> ;
+        skos:altLabel  "Londres"@fr , "London"@de , "London"@en .

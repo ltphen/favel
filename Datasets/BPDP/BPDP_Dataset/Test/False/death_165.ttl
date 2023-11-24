@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Glasgow>
+        rdfs:label     "Glasgow"@fr , "Glasgow"@de , "Glasgow"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Glasgow> , <http://de.dbpedia.org/resource/Glasgow> ;
+        skos:altLabel  "Glasgow"@fr , "Glasgow"@de , "Glasgow"@en .
+
+<http://dbpedia.org/resource/John_A._Macdonald__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Glasgow> ;
+        dbo:from        "1815-1-11"^^xsd:date ;
+        dbo:to          "1815-1-11"^^xsd:date .
+
+<http://dbpedia.org/resource/John_A._Macdonald>
+        rdfs:label     "John A. Macdonald"@fr , "John Macdonald"@de , "John A. Macdonald"@en ;
+        dbo:death      <http://dbpedia.org/resource/John_A._Macdonald__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/John_A._Macdonald> , <http://de.dbpedia.org/resource/John_Macdonald> ;
+        skos:altLabel  "John A. Macdonald"@fr , "John Macdonald"@de , "John A. Macdonald"@en .

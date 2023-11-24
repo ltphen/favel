@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Action_Jackson_(1988_film)> ns1:director <http://dbpedia.org/resource/Craig_R._Baxley> .
-

@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Sally_in_Our_Alley_(1927_film)> ns1:director <http://dbpedia.org/resource/Walter_Lang> .
-

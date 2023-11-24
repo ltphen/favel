@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Christina,_Queen_of_Sweden>
+        rdfs:label     "Christine de Suède"@fr , "Christina (Schweden)"@de , "Christina, Queen of Sweden"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Christina,_Queen_of_Sweden__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Christine_de_Suède> , <http://de.dbpedia.org/resource/Christina_(Schweden)> ;
+        skos:altLabel  "Christine de Suède"@fr , "Christina (Schweden)"@de , "Christina, Queen of Sweden"@en .
+
+<http://dbpedia.org/resource/Christina,_Queen_of_Sweden__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Rome> ;
+        dbo:from        "1626-12-18"^^xsd:date ;
+        dbo:to          "1626-12-18"^^xsd:date .
+
+<http://dbpedia.org/resource/Rome>
+        rdfs:label     "Rome"@fr , "Rom"@de , "Rome"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Rome> , <http://de.dbpedia.org/resource/Rom> ;
+        skos:altLabel  "Rome"@fr , "Rom"@de , "Rome"@en .

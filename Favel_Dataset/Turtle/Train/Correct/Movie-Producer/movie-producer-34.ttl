@@ -1,6 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Charlie_Bartlett> ns1:producer <http://dbpedia.org/resource/David_Permut>,
-        <http://dbpedia.org/resource/Jay_Roach>,
-        <http://dbpedia.org/resource/Sidney_Kimmel> .
-

@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Ermenonville>
+        rdfs:label     "Ermenonville"@fr , "Ermenonville (Oise)"@de , "Ermenonville"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Ermenonville> , <http://de.dbpedia.org/resource/Ermenonville_(Oise)> ;
+        skos:altLabel  "Ermenonville"@fr , "Ermenonville (Oise)"@de , "Ermenonville"@en .
+
+<http://dbpedia.org/resource/Jean-Jacques_Rousseau>
+        rdfs:label     "Jean-Jacques Rousseau"@fr , "Jean-Jacques Rousseau"@de , "Jean-Jacques Rousseau"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Jean-Jacques_Rousseau__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Jean-Jacques_Rousseau> , <http://de.dbpedia.org/resource/Jean-Jacques_Rousseau> ;
+        skos:altLabel  "Jean-Jacques Rousseau"@fr , "Jean-Jacques Rousseau"@de , "Jean-Jacques Rousseau"@en .
+
+<http://dbpedia.org/resource/Jean-Jacques_Rousseau__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Ermenonville> ;
+        dbo:from        "1712-6-28"^^xsd:date ;
+        dbo:to          "1712-6-28"^^xsd:date .

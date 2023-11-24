@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/University_of_South_Africa> ns1:type <http://dbpedia.org/resource/Public_university> .
-

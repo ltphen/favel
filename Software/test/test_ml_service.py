@@ -21,7 +21,7 @@ class TestMLService(unittest.TestCase):
 
     def setUp(self):
         self.path = "./../Favel_Dataset/"
-        self.ml = ML(self.path + "log.txt")
+        self.ml = ML(self.path + "log.txt", False)
 
     def getFakeDataForML(self):
         data, approaches = createMockForTriples()

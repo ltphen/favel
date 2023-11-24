@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Archduke_Charles,_Duke_of_Teschen>
+        rdfs:label     "Charles-Louis d'Autriche-Teschen"@fr , "Karl von Österreich-Teschen"@de , "Archduke Charles, Duke of Teschen"@en ;
+        dbo:death      <http://dbpedia.org/resource/Archduke_Charles,_Duke_of_Teschen__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Charles-Louis_d'Autriche-Teschen> , <http://de.dbpedia.org/resource/Karl_von_Österreich-Teschen> ;
+        skos:altLabel  "Charles-Louis d'Autriche-Teschen"@fr , "Karl von Österreich-Teschen"@de , "Archduke Charles, Duke of Teschen"@en .
+
+<http://dbpedia.org/resource/Florence>
+        rdfs:label     "Florence"@fr , "Florenz"@de , "Florence"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Florence> , <http://de.dbpedia.org/resource/Florenz> ;
+        skos:altLabel  "Florence"@fr , "Florenz"@de , "Florence"@en .
+
+<http://dbpedia.org/resource/Archduke_Charles,_Duke_of_Teschen__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Florence> ;
+        dbo:from        "1771-9-5"^^xsd:date ;
+        dbo:to          "1771-9-5"^^xsd:date .

@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Honolulu>
+        rdfs:label     "Honolulu"@fr , "Honolulu"@de , "Honolulu"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Honolulu> , <http://de.dbpedia.org/resource/Honolulu> ;
+        skos:altLabel  "Honolulu"@fr , "Honolulu"@de , "Honolulu"@en .
+
+<http://dbpedia.org/resource/Allan_Riverstone_McCulloch__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Honolulu> ;
+        dbo:from        "1885-6-20"^^xsd:date ;
+        dbo:to          "1885-6-20"^^xsd:date .
+
+<http://dbpedia.org/resource/Allan_Riverstone_McCulloch>
+        rdfs:label     "Alan Riverstone McCulloch"@fr , "Allan Riverstone McCulloch"@de , "Allan Riverstone McCulloch"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Allan_Riverstone_McCulloch__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Alan_Riverstone_McCulloch> , <http://de.dbpedia.org/resource/Allan_Riverstone_McCulloch> ;
+        skos:altLabel  "Alan Riverstone McCulloch"@fr , "Allan Riverstone McCulloch"@de , "Allan Riverstone McCulloch"@en .

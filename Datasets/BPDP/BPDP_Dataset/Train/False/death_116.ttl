@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Vienna>
+        rdfs:label     "Vienne (Autriche)"@fr , "Wien"@de , "Vienna"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Vienne_(Autriche)> , <http://de.dbpedia.org/resource/Wien> ;
+        skos:altLabel  "Vienne (Autriche)"@fr , "Wien"@de , "Vienna"@en .
+
+<http://dbpedia.org/resource/Edward_Bernays>
+        rdfs:label     "Edward Bernays"@fr , "Edward Bernays"@de , "Edward Bernays"@en ;
+        dbo:death      <http://dbpedia.org/resource/Edward_Bernays__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Edward_Bernays> , <http://de.dbpedia.org/resource/Edward_Bernays> ;
+        skos:altLabel  "Edward Bernays"@fr , "Edward Bernays"@de , "Edward Bernays"@en .
+
+<http://dbpedia.org/resource/Edward_Bernays__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Vienna> ;
+        dbo:from        "1891-11-22"^^xsd:date ;
+        dbo:to          "1891-11-22"^^xsd:date .

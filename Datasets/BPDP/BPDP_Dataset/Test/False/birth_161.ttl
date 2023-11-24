@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Alsace>
+        rdfs:label     "Alsace"@fr , "Elsass"@de , "Alsace"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Alsace> , <http://de.dbpedia.org/resource/Elsass> ;
+        skos:altLabel  "Alsace"@fr , "Elsass"@de , "Alsace"@en .
+
+<http://dbpedia.org/resource/Adelaide_of_Italy>
+        rdfs:label     "Adélaïde de Bourgogne"@fr , "Adelheid von Burgund"@de , "Adelaide of Italy"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Adelaide_of_Italy__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Adélaïde_de_Bourgogne> , <http://de.dbpedia.org/resource/Adelheid_von_Burgund> ;
+        skos:altLabel  "Adélaïde de Bourgogne"@fr , "Adelheid von Burgund"@de , "Adelaide of Italy"@en .
+
+<http://dbpedia.org/resource/Adelaide_of_Italy__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Alsace> ;
+        dbo:from        "931-1-1"^^xsd:date ;
+        dbo:to          "931-1-1"^^xsd:date .

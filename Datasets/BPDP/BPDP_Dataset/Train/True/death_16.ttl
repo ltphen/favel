@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Bath,_Somerset>
+        rdfs:label     "Bath"@fr , "Bath"@de , "Bath, Somerset"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Bath> , <http://de.dbpedia.org/resource/Bath> ;
+        skos:altLabel  "Bath"@fr , "Bath"@de , "Bath, Somerset"@en .
+
+<http://dbpedia.org/resource/Eddie_Cochran__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Bath,_Somerset> ;
+        dbo:from        "1938-10-3"^^xsd:date ;
+        dbo:to          "1938-10-3"^^xsd:date .
+
+<http://dbpedia.org/resource/Eddie_Cochran>
+        rdfs:label     "Eddie Cochran"@fr , "Eddie Cochran"@de , "Eddie Cochran"@en ;
+        dbo:death      <http://dbpedia.org/resource/Eddie_Cochran__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Eddie_Cochran> , <http://de.dbpedia.org/resource/Eddie_Cochran> ;
+        skos:altLabel  "Eddie Cochran"@fr , "Eddie Cochran"@de , "Eddie Cochran"@en .

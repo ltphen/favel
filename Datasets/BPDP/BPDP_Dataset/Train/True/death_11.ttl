@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Gela>
+        rdfs:label     "Gela"@fr , "Gela"@de , "Gela"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Gela> , <http://de.dbpedia.org/resource/Gela> ;
+        skos:altLabel  "Gela"@fr , "Gela"@de , "Gela"@en .
+
+<http://dbpedia.org/resource/Aeschylus>
+        rdfs:label     "Eschyle"@fr , "Aischylos"@de , "Aeschylus"@en ;
+        dbo:death      <http://dbpedia.org/resource/Aeschylus__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Eschyle> , <http://de.dbpedia.org/resource/Aischylos> ;
+        skos:altLabel  "Eschyle"@fr , "Aischylos"@de , "Aeschylus"@en .
+
+<http://dbpedia.org/resource/Aeschylus__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Gela> ;
+        dbo:from        "-525-0-0"^^xsd:date ;
+        dbo:to          "-525-0-0"^^xsd:date .

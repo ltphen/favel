@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Elie_Wiesel__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Sighetu_Marmației> ;
+        dbo:from        "1928-9-30"^^xsd:date ;
+        dbo:to          "1928-9-30"^^xsd:date .
+
+<http://dbpedia.org/resource/Sighetu_Marmației>
+        rdfs:label     "Sighetu Marmației"@fr , "Sighetu Marmației"@de , "Sighetu Marmației"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Sighetu_Marmației> , <http://de.dbpedia.org/resource/Sighetu_Marmației> ;
+        skos:altLabel  "Sighetu Marmației"@fr , "Sighetu Marmației"@de , "Sighetu Marmației"@en .
+
+<http://dbpedia.org/resource/Elie_Wiesel>
+        rdfs:label     "Elie Wiesel"@fr , "Elie Wiesel"@de , "Elie Wiesel"@en ;
+        dbo:death      <http://dbpedia.org/resource/Elie_Wiesel__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Elie_Wiesel> , <http://de.dbpedia.org/resource/Elie_Wiesel> ;
+        skos:altLabel  "Elie Wiesel"@fr , "Elie Wiesel"@de , "Elie Wiesel"@en .

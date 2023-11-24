@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Versoix>
+        rdfs:label     "Versoix"@fr , "Versoix"@de , "Versoix"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Versoix> , <http://de.dbpedia.org/resource/Versoix> ;
+        skos:altLabel  "Versoix"@fr , "Versoix"@de , "Versoix"@en .
+
+<http://dbpedia.org/resource/Aga_Khan_III__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Versoix> ;
+        dbo:from        "1877-11-2"^^xsd:date ;
+        dbo:to          "1877-11-2"^^xsd:date .
+
+<http://dbpedia.org/resource/Aga_Khan_III>
+        rdfs:label     "Aga Khan III"@fr , "Aga Khan III."@de , "Aga Khan III"@en ;
+        dbo:death      <http://dbpedia.org/resource/Aga_Khan_III__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Aga_Khan_III> , <http://de.dbpedia.org/resource/Aga_Khan_III.> ;
+        skos:altLabel  "Aga Khan III"@fr , "Aga Khan III."@de , "Aga Khan III"@en .

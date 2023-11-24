@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Queluz,_Portugal>
+        rdfs:label     "Queluz (Sintra)"@fr , "Queluz, Portugal"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Queluz_(Sintra)> ;
+        skos:altLabel  "Queluz (Sintra)"@fr , "Queluz, Portugal"@en .
+
+<http://dbpedia.org/resource/Carlota_Joaquina_of_Spain__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Queluz,_Portugal> ;
+        dbo:from        "1775-4-25"^^xsd:date ;
+        dbo:to          "1775-4-25"^^xsd:date .
+
+<http://dbpedia.org/resource/Carlota_Joaquina_of_Spain>
+        rdfs:label     "Charlotte-Joachime d'Espagne"@fr , "Charlotte Joachime von Spanien"@de , "Carlota Joaquina of Spain"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Carlota_Joaquina_of_Spain__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Charlotte-Joachime_d'Espagne> , <http://de.dbpedia.org/resource/Charlotte_Joachime_von_Spanien> ;
+        skos:altLabel  "Charlotte-Joachime d'Espagne"@fr , "Charlotte Joachime von Spanien"@de , "Carlota Joaquina of Spain"@en .

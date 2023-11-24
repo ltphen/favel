@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Nameless_Men> ns1:director <http://dbpedia.org/resource/Renny_Harlin> .
-

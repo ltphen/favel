@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Philadelphia>
+        rdfs:label     "Philadelphie"@fr , "Philadelphia"@de , "Philadelphia"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Philadelphie> , <http://de.dbpedia.org/resource/Philadelphia> ;
+        skos:altLabel  "Philadelphie"@fr , "Philadelphia"@de , "Philadelphia"@en .
+
+<http://dbpedia.org/resource/George_Meade__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Philadelphia> ;
+        dbo:from        "1815-12-31"^^xsd:date ;
+        dbo:to          "1815-12-31"^^xsd:date .
+
+<http://dbpedia.org/resource/George_Meade>
+        rdfs:label     "George Meade"@fr , "George Gordon Meade"@de , "George Meade"@en ;
+        dbo:birth      <http://dbpedia.org/resource/George_Meade__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/George_Meade> , <http://de.dbpedia.org/resource/George_Gordon_Meade> ;
+        skos:altLabel  "George Meade"@fr , "George Gordon Meade"@de , "George Meade"@en .

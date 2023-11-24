@@ -1,5 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/Busting> ns1:producer <http://dbpedia.org/resource/Claudia_Katz>,
-        <http://dbpedia.org/resource/Todd_Lieberman> .
-

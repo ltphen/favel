@@ -1,4 +1,0 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-
-<http://dbpedia.org/resource/A_Tremendously_Rich_Man> ns1:director <http://dbpedia.org/resource/Steve_Sekely> .
-

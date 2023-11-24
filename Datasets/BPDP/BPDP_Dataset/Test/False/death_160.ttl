@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Frédéric_Bastiat>
+        rdfs:label     "Frédéric Bastiat"@fr , "Frédéric Bastiat"@de , "Frédéric Bastiat"@en ;
+        dbo:death      <http://dbpedia.org/resource/Frédéric_Bastiat__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Frédéric_Bastiat> , <http://de.dbpedia.org/resource/Frédéric_Bastiat> ;
+        skos:altLabel  "Frédéric Bastiat"@fr , "Frédéric Bastiat"@de , "Frédéric Bastiat"@en .
+
+<http://dbpedia.org/resource/Bayonne>
+        rdfs:label     "Bayonne"@fr , "Bayonne"@de , "Bayonne"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Bayonne> , <http://de.dbpedia.org/resource/Bayonne> ;
+        skos:altLabel  "Bayonne"@fr , "Bayonne"@de , "Bayonne"@en .
+
+<http://dbpedia.org/resource/Frédéric_Bastiat__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Bayonne> ;
+        dbo:from        "1801-6-29"^^xsd:date ;
+        dbo:to          "1801-6-29"^^xsd:date .

@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Irenaeus>
+        rdfs:label     "Irénée de Lyon"@fr , "Irenäus von Lyon"@de , "Irenaeus"@en ;
+        dbo:death      <http://dbpedia.org/resource/Irenaeus__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Irénée_de_Lyon> , <http://de.dbpedia.org/resource/Irenäus_von_Lyon> ;
+        skos:altLabel  "Irénée de Lyon"@fr , "Irenäus von Lyon"@de , "Irenaeus"@en .
+
+<http://dbpedia.org/resource/Irenaeus__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Lyon> ;
+        dbo:from        "130-1-1"^^xsd:date ;
+        dbo:to          "130-1-1"^^xsd:date .
+
+<http://dbpedia.org/resource/Lyon>
+        rdfs:label     "Lyon"@fr , "Lyon"@de , "Lyon"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Lyon> , <http://de.dbpedia.org/resource/Lyon> ;
+        skos:altLabel  "Lyon"@fr , "Lyon"@de , "Lyon"@en .

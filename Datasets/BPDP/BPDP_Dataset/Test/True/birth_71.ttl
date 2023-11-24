@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Alexander_Kerensky__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Ulyanovsk> ;
+        dbo:from        "1881-4-22"^^xsd:date ;
+        dbo:to          "1881-4-22"^^xsd:date .
+
+<http://dbpedia.org/resource/Alexander_Kerensky>
+        rdfs:label     "Alexandre Kerenski"@fr , "Alexander Fjodorowitsch Kerenski"@de , "Alexander Kerensky"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Alexander_Kerensky__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Alexandre_Kerenski> , <http://de.dbpedia.org/resource/Alexander_Fjodorowitsch_Kerenski> ;
+        skos:altLabel  "Alexandre Kerenski"@fr , "Alexander Fjodorowitsch Kerenski"@de , "Alexander Kerensky"@en .
+
+<http://dbpedia.org/resource/Ulyanovsk>
+        rdfs:label     "Oulianovsk"@fr , "Uljanowsk"@de , "Ulyanovsk"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Oulianovsk> , <http://de.dbpedia.org/resource/Uljanowsk> ;
+        skos:altLabel  "Oulianovsk"@fr , "Uljanowsk"@de , "Ulyanovsk"@en .

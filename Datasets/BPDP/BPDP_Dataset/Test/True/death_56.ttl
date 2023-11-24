@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Barcelona>
+        rdfs:label     "Barcelone"@fr , "Barcelona"@de , "Barcelona"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Barcelone> , <http://de.dbpedia.org/resource/Barcelona> ;
+        skos:altLabel  "Barcelone"@fr , "Barcelona"@de , "Barcelona"@en .
+
+<http://dbpedia.org/resource/Alfonso_IV_of_Aragon>
+        rdfs:label     "Alphonse IV d'Aragon"@fr , "Alfons IV. (Aragón)"@de , "Alfonso IV of Aragon"@en ;
+        dbo:death      <http://dbpedia.org/resource/Alfonso_IV_of_Aragon__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Alphonse_IV_d'Aragon> , <http://de.dbpedia.org/resource/Alfons_IV._(Aragón)> ;
+        skos:altLabel  "Alphonse IV d'Aragon"@fr , "Alfons IV. (Aragón)"@de , "Alfonso IV of Aragon"@en .
+
+<http://dbpedia.org/resource/Alfonso_IV_of_Aragon__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Barcelona> ;
+        dbo:from        "1299-1-1"^^xsd:date ;
+        dbo:to          "1299-1-1"^^xsd:date .

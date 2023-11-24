@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/James_Clavell__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Sydney> ;
+        dbo:from        "1924-10-10"^^xsd:date ;
+        dbo:to          "1924-10-10"^^xsd:date .
+
+<http://dbpedia.org/resource/James_Clavell>
+        rdfs:label     "James Clavell"@fr , "James Clavell"@de , "James Clavell"@en ;
+        dbo:death      <http://dbpedia.org/resource/James_Clavell__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/James_Clavell> , <http://de.dbpedia.org/resource/James_Clavell> ;
+        skos:altLabel  "James Clavell"@fr , "James Clavell"@de , "James Clavell"@en .
+
+<http://dbpedia.org/resource/Sydney>
+        rdfs:label     "Sydney"@fr , "Sydney"@de , "Sydney"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Sydney> , <http://de.dbpedia.org/resource/Sydney> ;
+        skos:altLabel  "Sydney"@fr , "Sydney"@de , "Sydney"@en .

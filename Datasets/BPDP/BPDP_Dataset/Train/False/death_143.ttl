@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/James_Blish__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/East_Orange,_New_Jersey> ;
+        dbo:from        "1921-5-23"^^xsd:date ;
+        dbo:to          "1921-5-23"^^xsd:date .
+
+<http://dbpedia.org/resource/East_Orange,_New_Jersey>
+        rdfs:label     "East Orange"@fr , "East Orange"@de , "East Orange, New Jersey"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/East_Orange> , <http://de.dbpedia.org/resource/East_Orange> ;
+        skos:altLabel  "East Orange"@fr , "East Orange"@de , "East Orange, New Jersey"@en .
+
+<http://dbpedia.org/resource/James_Blish>
+        rdfs:label     "James Blish"@fr , "James Blish"@de , "James Blish"@en ;
+        dbo:death      <http://dbpedia.org/resource/James_Blish__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/James_Blish> , <http://de.dbpedia.org/resource/James_Blish> ;
+        skos:altLabel  "James Blish"@fr , "James Blish"@de , "James Blish"@en .

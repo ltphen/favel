@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Anton_Chekhov>
+        rdfs:label     "Anton Tchekhov"@fr , "Anton Pawlowitsch Tschechow"@de , "Anton Chekhov"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Anton_Chekhov__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Anton_Tchekhov> , <http://de.dbpedia.org/resource/Anton_Pawlowitsch_Tschechow> ;
+        skos:altLabel  "Anton Tchekhov"@fr , "Anton Pawlowitsch Tschechow"@de , "Anton Chekhov"@en .
+
+<http://dbpedia.org/resource/Anton_Chekhov__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Taganrog> ;
+        dbo:from        "1860-1-17"^^xsd:date ;
+        dbo:to          "1860-1-17"^^xsd:date .
+
+<http://dbpedia.org/resource/Taganrog>
+        rdfs:label     "Taganrog"@fr , "Taganrog"@de , "Taganrog"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Taganrog> , <http://de.dbpedia.org/resource/Taganrog> ;
+        skos:altLabel  "Taganrog"@fr , "Taganrog"@de , "Taganrog"@en .

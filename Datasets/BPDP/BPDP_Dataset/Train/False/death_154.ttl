@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Ambrose>
+        rdfs:label     "Ambroise de Milan"@fr , "Ambrosius von Mailand"@de , "Ambrose"@en ;
+        dbo:death      <http://dbpedia.org/resource/Ambrose__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Ambroise_de_Milan> , <http://de.dbpedia.org/resource/Ambrosius_von_Mailand> ;
+        skos:altLabel  "Ambroise de Milan"@fr , "Ambrosius von Mailand"@de , "Ambrose"@en .
+
+<http://dbpedia.org/resource/Trier>
+        rdfs:label     "Trèves (Allemagne)"@fr , "Trier"@de , "Trier"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Trèves_(Allemagne)> , <http://de.dbpedia.org/resource/Trier> ;
+        skos:altLabel  "Trèves (Allemagne)"@fr , "Trier"@de , "Trier"@en .
+
+<http://dbpedia.org/resource/Ambrose__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Trier> ;
+        dbo:from        "339-1-1"^^xsd:date ;
+        dbo:to          "339-1-1"^^xsd:date .

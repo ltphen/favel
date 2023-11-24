@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Lyons-la-Forêt>
+        rdfs:label     "Lyons-la-Forêt"@fr , "Lyons-la-Forêt"@de , "Lyons-la-Forêt"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Lyons-la-Forêt> , <http://de.dbpedia.org/resource/Lyons-la-Forêt> ;
+        skos:altLabel  "Lyons-la-Forêt"@fr , "Lyons-la-Forêt"@de , "Lyons-la-Forêt"@en .
+
+<http://dbpedia.org/resource/Henry_I_of_England>
+        rdfs:label     "Henri Ier Beauclerc"@fr , "Heinrich I. (England)"@de , "Henry I of England"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Henry_I_of_England__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Henri_Ier_Beauclerc> , <http://de.dbpedia.org/resource/Heinrich_I._(England)> ;
+        skos:altLabel  "Henri Ier Beauclerc"@fr , "Heinrich I. (England)"@de , "Henry I of England"@en .
+
+<http://dbpedia.org/resource/Henry_I_of_England__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Lyons-la-Forêt> ;
+        dbo:from        "1068-1-1"^^xsd:date ;
+        dbo:to          "1068-1-1"^^xsd:date .

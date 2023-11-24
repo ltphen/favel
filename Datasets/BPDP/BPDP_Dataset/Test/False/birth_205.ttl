@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Vienna>
+        rdfs:label     "Vienne (Autriche)"@fr , "Wien"@de , "Vienna"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Vienne_(Autriche)> , <http://de.dbpedia.org/resource/Wien> ;
+        skos:altLabel  "Vienne (Autriche)"@fr , "Wien"@de , "Vienna"@en .
+
+<http://dbpedia.org/resource/Francis_II,_Holy_Roman_Emperor>
+        rdfs:label     "François Ier (empereur d'Autriche)"@fr , "Franz II. (HRR)"@de , "Francis II, Holy Roman Emperor"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Francis_II,_Holy_Roman_Emperor__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/François_Ier_(empereur_d'Autriche)> , <http://de.dbpedia.org/resource/Franz_II._(HRR)> ;
+        skos:altLabel  "François Ier (empereur d'Autriche)"@fr , "Franz II. (HRR)"@de , "Francis II, Holy Roman Emperor"@en .
+
+<http://dbpedia.org/resource/Francis_II,_Holy_Roman_Emperor__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Vienna> ;
+        dbo:from        "1768-2-12"^^xsd:date ;
+        dbo:to          "1768-2-12"^^xsd:date .

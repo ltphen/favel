@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Catherine_of_Aragon>
+        rdfs:label     "Catherine d'Aragon"@fr , "Katharina von Aragon"@de , "Catherine of Aragon"@en ;
+        dbo:birth      <http://dbpedia.org/resource/Catherine_of_Aragon__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Catherine_d'Aragon> , <http://de.dbpedia.org/resource/Katharina_von_Aragon> ;
+        skos:altLabel  "Catherine d'Aragon"@fr , "Katharina von Aragon"@de , "Catherine of Aragon"@en .
+
+<http://dbpedia.org/resource/Catherine_of_Aragon__1>
+        dbo:birthPlace  <http://dbpedia.org/resource/Alcalá_de_Henares> ;
+        dbo:from        "1485-12-16"^^xsd:date ;
+        dbo:to          "1485-12-16"^^xsd:date .
+
+<http://dbpedia.org/resource/Alcalá_de_Henares>
+        rdfs:label     "Alcalá de Henares"@fr , "Alcalá de Henares"@de , "Alcalá de Henares"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Alcalá_de_Henares> , <http://de.dbpedia.org/resource/Alcalá_de_Henares> ;
+        skos:altLabel  "Alcalá de Henares"@fr , "Alcalá de Henares"@de , "Alcalá de Henares"@en .

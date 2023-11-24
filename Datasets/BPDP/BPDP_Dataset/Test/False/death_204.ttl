@@ -1,0 +1,21 @@
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Diana,_Princess_of_Wales__1>
+        dbo:deathPlace  <http://dbpedia.org/resource/Sandringham,_Norfolk> ;
+        dbo:from        "1961-7-1"^^xsd:date ;
+        dbo:to          "1961-7-1"^^xsd:date .
+
+<http://dbpedia.org/resource/Diana,_Princess_of_Wales>
+        rdfs:label     "Diana Spencer"@fr , "Diana, Princess of Wales"@de , "Diana, Princess of Wales"@en ;
+        dbo:death      <http://dbpedia.org/resource/Diana,_Princess_of_Wales__1> ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Diana_Spencer> , <http://de.dbpedia.org/resource/Diana,_Princess_of_Wales> ;
+        skos:altLabel  "Diana Spencer"@fr , "Diana, Princess of Wales"@de , "Diana, Princess of Wales"@en .
+
+<http://dbpedia.org/resource/Sandringham,_Norfolk>
+        rdfs:label     "Sandringham"@fr , "Sandringham, Norfolk"@en ;
+        owl:sameAs     <http://fr.dbpedia.org/resource/Sandringham> ;
+        skos:altLabel  "Sandringham"@fr , "Sandringham, Norfolk"@en .
